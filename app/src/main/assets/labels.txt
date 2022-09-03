@@ -1,0 +1,8 @@
+0 can
+1 glass
+2 paper
+3 paperpack
+4 pet
+5 plastic
+6 vinyl
+7 trash

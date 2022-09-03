@@ -1,0 +1,106 @@
+[
+    {
+        "merged": "C:\\AndroidProjects\\ImageClassifier\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\AndroidProjects\\ImageClassifier\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\AndroidProjects\\ImageClassifier\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\AndroidProjects\\ImageClassifier\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\AndroidProjects\\ImageClassifier\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_reco.png.flat",
+        "source": "C:\\AndroidProjects\\ImageClassifier\\app\\src\\main\\res\\drawable-v24\\reco.png"
+    },
+    {
+        "merged": "C:\\AndroidProjects\\ImageClassifier\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\AndroidProjects\\ImageClassifier\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\AndroidProjects\\ImageClassifier\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\AndroidProjects\\ImageClassifier\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\AndroidProjects\\ImageClassifier\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\AndroidProjects\\ImageClassifier\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\AndroidProjects\\ImageClassifier\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_plant.png.flat",
+        "source": "C:\\AndroidProjects\\ImageClassifier\\app\\src\\main\\res\\drawable-v24\\plant.png"
+    },
+    {
+        "merged": "C:\\AndroidProjects\\ImageClassifier\\app\\build\\intermediates\\res\\merged\\debug\\xml_file_paths.xml.flat",
+        "source": "C:\\AndroidProjects\\ImageClassifier\\app\\src\\main\\res\\xml\\file_paths.xml"
+    },
+    {
+        "merged": "C:\\AndroidProjects\\ImageClassifier\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\AndroidProjects\\ImageClassifier\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\AndroidProjects\\ImageClassifier\\app\\build\\intermediates\\res\\merged\\debug\\layout_title_bar.xml.flat",
+        "source": "C:\\AndroidProjects\\ImageClassifier\\app\\src\\main\\res\\layout\\title_bar.xml"
+    },
+    {
+        "merged": "C:\\AndroidProjects\\ImageClassifier\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\AndroidProjects\\ImageClassifier\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\AndroidProjects\\ImageClassifier\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\AndroidProjects\\ImageClassifier\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\AndroidProjects\\ImageClassifier\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_camera.xml.flat",
+        "source": "C:\\AndroidProjects\\ImageClassifier\\app\\src\\main\\res\\layout\\activity_camera.xml"
+    },
+    {
+        "merged": "C:\\AndroidProjects\\ImageClassifier\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\AndroidProjects\\ImageClassifier\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\AndroidProjects\\ImageClassifier\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_camera_success.xml.flat",
+        "source": "C:\\AndroidProjects\\ImageClassifier\\app\\src\\main\\res\\layout\\activity_camera_success.xml"
+    },
+    {
+        "merged": "C:\\AndroidProjects\\ImageClassifier\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_setting.png.flat",
+        "source": "C:\\AndroidProjects\\ImageClassifier\\app\\src\\main\\res\\drawable-v24\\setting.png"
+    },
+    {
+        "merged": "C:\\AndroidProjects\\ImageClassifier\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\AndroidProjects\\ImageClassifier\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\AndroidProjects\\ImageClassifier\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\AndroidProjects\\ImageClassifier\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\AndroidProjects\\ImageClassifier\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ellipse_26.xml.flat",
+        "source": "C:\\AndroidProjects\\ImageClassifier\\app\\src\\main\\res\\drawable\\ellipse_26.xml"
+    },
+    {
+        "merged": "C:\\AndroidProjects\\ImageClassifier\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\AndroidProjects\\ImageClassifier\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\AndroidProjects\\ImageClassifier\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\AndroidProjects\\ImageClassifier\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\AndroidProjects\\ImageClassifier\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_gallery.xml.flat",
+        "source": "C:\\AndroidProjects\\ImageClassifier\\app\\src\\main\\res\\layout\\activity_gallery.xml"
+    },
+    {
+        "merged": "C:\\AndroidProjects\\ImageClassifier\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\AndroidProjects\\ImageClassifier\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\AndroidProjects\\ImageClassifier\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_coin.png.flat",
+        "source": "C:\\AndroidProjects\\ImageClassifier\\app\\src\\main\\res\\drawable-v24\\coin.png"
+    },
+    {
+        "merged": "C:\\AndroidProjects\\ImageClassifier\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_alarm.png.flat",
+        "source": "C:\\AndroidProjects\\ImageClassifier\\app\\src\\main\\res\\drawable-v24\\alarm.png"
+    },
+    {
+        "merged": "C:\\AndroidProjects\\ImageClassifier\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\AndroidProjects\\ImageClassifier\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    }
+]

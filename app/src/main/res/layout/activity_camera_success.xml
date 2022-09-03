@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context=".CameraSuccess">
+
+    <include layout="@layout/title_bar"
+        android:id="@+id/title_bar"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:fontFamily="monospace"
+        android:text="10p 획득!"
+        android:textAlignment="center"
+        android:textColor="#9CB36B"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/title_bar" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.648"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:srcCompat="@drawable/coin" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+        <View
+            android:id="@+id/ellipse_26"
+            android:layout_width="319dp"
+            android:layout_height="159dp"
+            android:background="@drawable/ellipse_26"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:text="000님 덕분에 깨끗해졌어요!\n포인트는 하루에 3번까지 적립할 수 있습니다." />
+
+    </FrameLayout>
+
+
+    <Button
+        android:id="@+id/backHome"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:background="#D3D3D3"
+        android:text="홈화면으로"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/ellipse_26" />
+
+
+
+
+</LinearLayout>
