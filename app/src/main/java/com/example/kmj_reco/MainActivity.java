@@ -24,5 +24,11 @@ public class MainActivity extends AppCompatActivity {
             Intent i = new Intent(MainActivity.this, CameraActivity.class);
             startActivity(i);
         });
+
+        Button qrscanBtn = findViewById(R.id.qrscanBtn);
+        qrscanBtn.setOnClickListener(view -> {
+            Intent i = new Intent(MainActivity.this, QrActivity.class);
+            startActivity(i);
+        });
     }
 }

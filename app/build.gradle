@@ -42,4 +42,6 @@ dependencies {
 
     implementation 'org.tensorflow:tensorflow-lite:2.7.0'
     implementation 'org.tensorflow:tensorflow-lite-support:0.3.0'
+    // qr scan
+    implementation 'com.google.android.gms:play-services-vision:20.1.3'
 }

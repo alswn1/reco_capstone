@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\AndroidProjects\\ImageClassifier\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
+            "outputFile": "C:\\AndroidProjects\\kmj_reco\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
             "map": [
                 {
                     "source": "C:\\Users\\com\\.gradle\\caches\\transforms-2\\files-2.1\\ffc4098914b91b7860907277c6a73623\\media-1.0.0\\res\\values-v24\\values-v24.xml",

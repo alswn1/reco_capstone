@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\AndroidProjects\\ImageClassifier\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w480dp-port-v13\\values-w480dp-port-v13.xml",
+            "outputFile": "C:\\AndroidProjects\\kmj_reco\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w480dp-port-v13\\values-w480dp-port-v13.xml",
             "map": [
                 {
                     "source": "C:\\Users\\com\\.gradle\\caches\\transforms-2\\files-2.1\\7c1e351657429f55aaa7f0a919e6f551\\material-1.4.0\\res\\values-w480dp-port-v13\\values-w480dp-port-v13.xml",
