@@ -10,19 +10,45 @@
     <include layout="@layout/title_bar"
         android:id="@+id/title_bar"/>
 
-    <SurfaceView
-        android:id="@+id/surfaceView"
-        android:layout_width="match_parent"
-        android:layout_height="400dp" />
+    <Button
+        android:id="@+id/scanBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="QR SACN"/>
 
     <TextView
-        android:id="@+id/qrcode_text"
+        android:id="@+id/recobin_num"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_marginTop="20dp"
         android:gravity="center"
-        android:text="qrcode"
-        android:textColor="#000"
+        android:text="result"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/recobin_roadname"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="result"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/recobin_address"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="result"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/star_score"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="result"
         android:textSize="20sp" />
 
 

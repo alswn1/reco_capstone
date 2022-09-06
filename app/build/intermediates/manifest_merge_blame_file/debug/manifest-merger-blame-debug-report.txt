@@ -17,105 +17,141 @@
 13        android:required="true" />
 13-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:8:9-32
 14
-15    <!-- <uses-permission android:name="android.permission.CAMERA" /> -->
-16    <application
-16-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:11:5-50:19
-17        android:allowBackup="true"
-17-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:12:9-35
-18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-18-->[androidx.core:core:1.5.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\2245221c36e2911ed0c78617191e7497\core-1.5.0\AndroidManifest.xml:24:18-86
-19        android:debuggable="true"
-20        android:extractNativeLibs="false"
-21        android:icon="@mipmap/ic_launcher"
-21-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:13:9-43
-22        android:label="@string/app_name"
-22-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:14:9-41
-23        android:roundIcon="@mipmap/ic_launcher_round"
-23-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:15:9-54
-24        android:supportsRtl="true"
-24-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:16:9-35
-25        android:testOnly="true"
-26        android:theme="@style/AppTheme" >
-26-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:17:9-40
-27        <activity
-27-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:18:9-20:40
-28            android:name="com.example.kmj_reco.QrActivity"
-28-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:19:13-39
-29            android:exported="false" />
-29-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:20:13-37
-30        <activity
-30-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:21:9-23:40
-31            android:name="com.example.kmj_reco.CameraSuccess"
-31-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:22:13-42
-32            android:exported="false" />
-32-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:23:13-37
-33        <activity
-33-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:24:9-26:52
-34            android:name="com.example.kmj_reco.CameraActivity"
-34-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:25:13-43
-35            android:screenOrientation="portrait" />
-35-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:26:13-49
-36        <activity
-36-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:27:9-29:52
-37            android:name="com.example.kmj_reco.GalleryActivity"
-37-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:28:13-44
-38            android:screenOrientation="portrait" />
-38-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:29:13-49
-39        <activity android:name="com.example.kmj_reco.MainActivity" >
-39-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:30:9-36:20
-39-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:30:19-47
-40            <intent-filter>
-40-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:31:13-35:29
-41                <action android:name="android.intent.action.MAIN" />
-41-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:32:17-69
-41-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:32:25-66
-42
-43                <category android:name="android.intent.category.LAUNCHER" />
-43-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:34:17-77
-43-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:34:27-74
-44            </intent-filter>
-45        </activity>
-46
-47        <provider
-47-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:38:9-46:20
-48            android:name="androidx.core.content.FileProvider"
-48-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:39:13-62
-49            android:authorities="com.example.kmj_reco"
-49-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:40:13-55
-50            android:exported="false"
-50-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:41:13-37
-51            android:grantUriPermissions="true" >
-51-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:42:13-47
-52            <meta-data
-52-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:43:13-45:54
-53                android:name="android.support.FILE_PROVIDER_PATHS"
-53-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:44:17-67
-54                android:resource="@xml/file_paths" />
-54-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:45:17-51
-55        </provider>
-56
-57        <meta-data
-57-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:48:9-49:39
-58            android:name="com.google.android.gms.vision.DEPENDENCIES"
-58-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:48:20-77
-59            android:value="barcode" />
-59-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:49:13-36
-60
-61        <activity
-61-->[com.google.android.gms:play-services-base:17.4.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\8e179282f2cc2d6bf25832e503d325b3\jetified-play-services-base-17.4.0\AndroidManifest.xml:23:9-26:75
-62            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-62-->[com.google.android.gms:play-services-base:17.4.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\8e179282f2cc2d6bf25832e503d325b3\jetified-play-services-base-17.4.0\AndroidManifest.xml:24:13-79
-63            android:exported="false"
-63-->[com.google.android.gms:play-services-base:17.4.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\8e179282f2cc2d6bf25832e503d325b3\jetified-play-services-base-17.4.0\AndroidManifest.xml:25:13-37
-64            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-64-->[com.google.android.gms:play-services-base:17.4.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\8e179282f2cc2d6bf25832e503d325b3\jetified-play-services-base-17.4.0\AndroidManifest.xml:26:13-72
+15    <uses-permission android:name="android.permission.CAMERA" />
+15-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\ea90d8435d62aed23aae6ffef8d94fc2\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:22:5-65
+15-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\ea90d8435d62aed23aae6ffef8d94fc2\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:22:22-62
+16
+17    <uses-feature
+17-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\ea90d8435d62aed23aae6ffef8d94fc2\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:28:5-30:36
+18        android:name="android.hardware.camera.front"
+18-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\ea90d8435d62aed23aae6ffef8d94fc2\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:29:9-53
+19        android:required="false" /> <!-- TODO replace above two with next line after Android 4.2 -->
+19-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\ea90d8435d62aed23aae6ffef8d94fc2\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:30:9-33
+20    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
+21    <uses-feature
+21-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\ea90d8435d62aed23aae6ffef8d94fc2\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:33:5-35:36
+22        android:name="android.hardware.camera.autofocus"
+22-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\ea90d8435d62aed23aae6ffef8d94fc2\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:34:9-57
+23        android:required="false" />
+23-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\ea90d8435d62aed23aae6ffef8d94fc2\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:35:9-33
+24    <uses-feature
+24-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\ea90d8435d62aed23aae6ffef8d94fc2\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:36:5-38:36
+25        android:name="android.hardware.camera.flash"
+25-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\ea90d8435d62aed23aae6ffef8d94fc2\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:37:9-53
+26        android:required="false" />
+26-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\ea90d8435d62aed23aae6ffef8d94fc2\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:38:9-33
+27    <uses-feature
+27-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\ea90d8435d62aed23aae6ffef8d94fc2\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:39:5-41:36
+28        android:name="android.hardware.screen.landscape"
+28-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\ea90d8435d62aed23aae6ffef8d94fc2\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:40:9-57
+29        android:required="false" />
+29-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\ea90d8435d62aed23aae6ffef8d94fc2\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:41:9-33
+30    <uses-feature
+30-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\ea90d8435d62aed23aae6ffef8d94fc2\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:42:5-44:36
+31        android:name="android.hardware.wifi"
+31-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\ea90d8435d62aed23aae6ffef8d94fc2\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:43:9-45
+32        android:required="false" />
+32-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\ea90d8435d62aed23aae6ffef8d94fc2\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:44:9-33
+33
+34    <application
+34-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:10:5-52:19
+35        android:allowBackup="true"
+35-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:11:9-35
+36        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+36-->[androidx.core:core:1.5.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\2245221c36e2911ed0c78617191e7497\core-1.5.0\AndroidManifest.xml:24:18-86
+37        android:debuggable="true"
+38        android:extractNativeLibs="false"
+39        android:hardwareAccelerated="true"
+39-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:17:9-43
+40        android:icon="@mipmap/ic_launcher"
+40-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:12:9-43
+41        android:label="@string/app_name"
+41-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:13:9-41
+42        android:roundIcon="@mipmap/ic_launcher_round"
+42-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:14:9-54
+43        android:supportsRtl="true"
+43-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:15:9-35
+44        android:testOnly="true"
+45        android:theme="@style/AppTheme" >
+45-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:16:9-40
+46        <activity
+46-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:19:9-21:40
+47            android:name="com.example.kmj_reco.QrActivity"
+47-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:20:13-39
+48            android:exported="false" />
+48-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:21:13-37
+49        <activity
+49-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:22:9-24:40
+50            android:name="com.example.kmj_reco.CameraSuccess"
+50-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:23:13-42
+51            android:exported="false" />
+51-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:24:13-37
+52        <activity
+52-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:25:9-27:52
+53            android:name="com.example.kmj_reco.CameraActivity"
+53-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:26:13-43
+54            android:screenOrientation="portrait" />
+54-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:27:13-49
+55        <activity
+55-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:28:9-30:52
+56            android:name="com.example.kmj_reco.GalleryActivity"
+56-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:29:13-44
+57            android:screenOrientation="portrait" />
+57-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:30:13-49
+58        <activity android:name="com.example.kmj_reco.MainActivity" >
+58-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:31:9-37:20
+58-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:31:19-47
+59            <intent-filter>
+59-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:32:13-36:29
+60                <action android:name="android.intent.action.MAIN" />
+60-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:33:17-69
+60-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:33:25-66
+61
+62                <category android:name="android.intent.category.LAUNCHER" />
+62-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:35:17-77
+62-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:35:27-74
+63            </intent-filter>
+64        </activity>
 65
-66        <meta-data
-66-->[com.google.android.gms:play-services-basement:17.4.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\415534c9b2d8442f1909ae643d52ceab\jetified-play-services-basement-17.4.0\AndroidManifest.xml:23:9-25:69
-67            android:name="com.google.android.gms.version"
-67-->[com.google.android.gms:play-services-basement:17.4.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\415534c9b2d8442f1909ae643d52ceab\jetified-play-services-basement-17.4.0\AndroidManifest.xml:24:13-58
-68            android:value="@integer/google_play_services_version" />
-68-->[com.google.android.gms:play-services-basement:17.4.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\415534c9b2d8442f1909ae643d52ceab\jetified-play-services-basement-17.4.0\AndroidManifest.xml:25:13-66
-69    </application>
-70
-71</manifest>
+66        <provider
+66-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:40:9-48:20
+67            android:name="androidx.core.content.FileProvider"
+67-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:41:13-62
+68            android:authorities="com.example.kmj_reco"
+68-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:42:13-55
+69            android:exported="false"
+69-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:43:13-37
+70            android:grantUriPermissions="true" >
+70-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:44:13-47
+71            <meta-data
+71-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:45:13-47:54
+72                android:name="android.support.FILE_PROVIDER_PATHS"
+72-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:46:17-67
+73                android:resource="@xml/file_paths" />
+73-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:47:17-51
+74        </provider>
+75
+76        <meta-data
+76-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:50:9-51:39
+77            android:name="com.google.android.gms.vision.DEPENDENCIES"
+77-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:50:20-77
+78            android:value="barcode" />
+78-->C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:51:13-36
+79
+80        <activity
+80-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\ea90d8435d62aed23aae6ffef8d94fc2\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:47:9-53:63
+81            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+81-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\ea90d8435d62aed23aae6ffef8d94fc2\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:48:13-74
+82            android:clearTaskOnLaunch="true"
+82-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\ea90d8435d62aed23aae6ffef8d94fc2\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:49:13-45
+83            android:screenOrientation="sensorLandscape"
+83-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\ea90d8435d62aed23aae6ffef8d94fc2\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:50:13-56
+84            android:stateNotNeeded="true"
+84-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\ea90d8435d62aed23aae6ffef8d94fc2\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:51:13-42
+85            android:theme="@style/zxing_CaptureTheme"
+85-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\ea90d8435d62aed23aae6ffef8d94fc2\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:52:13-54
+86            android:windowSoftInputMode="stateAlwaysHidden" />
+86-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\ea90d8435d62aed23aae6ffef8d94fc2\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:53:13-60
+87    </application>
+88
+89</manifest>

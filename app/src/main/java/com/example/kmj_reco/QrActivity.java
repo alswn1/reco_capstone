@@ -1,84 +1,78 @@
 package com.example.kmj_reco;
 
-import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
 
-import android.Manifest;
-import android.content.pm.PackageManager;
+import android.content.Intent;
 import android.os.Bundle;
-import android.util.SparseArray;
-import android.view.SurfaceHolder;
-import android.view.SurfaceView;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
-import com.google.android.gms.vision.CameraSource;
-import com.google.android.gms.vision.Detector;
-import com.google.android.gms.vision.barcode.Barcode;
-import com.google.android.gms.vision.barcode.BarcodeDetector;
+import com.google.zxing.integration.android.IntentIntegrator;
+import com.google.zxing.integration.android.IntentResult;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.io.IOException;
 
 public class QrActivity extends AppCompatActivity {
-    TextView textView;
-    private SurfaceView surfaceView;
-    private CameraSource cameraSource;
-    private BarcodeDetector barcodeDetector;
+    private Button scanBtn;
+    private TextView recobin_num, recobin_roadname, recobin_address, star_score;
+
+    private IntentIntegrator qrScan;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_qr);
 
-        textView = findViewById(R.id.qrcode_text);
-        surfaceView = findViewById(R.id.surfaceView);
-        barcodeDetector = new BarcodeDetector.Builder(getApplicationContext()).setBarcodeFormats(Barcode.QR_CODE).build();
-        cameraSource = new CameraSource.Builder(getApplicationContext(), barcodeDetector).setRequestedPreviewSize(640, 480).build();
+        scanBtn = findViewById(R.id.scanBtn);
+        recobin_num = findViewById(R.id.recobin_num);
+        recobin_roadname = findViewById(R.id.recobin_roadname);
+        recobin_address = findViewById(R.id.recobin_address);
+        star_score = findViewById(R.id.star_score);
 
-        surfaceView.getHolder().addCallback(new SurfaceHolder.Callback() {
+
+        qrScan = new IntentIntegrator(this);
+
+        scanBtn.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void surfaceCreated(@NonNull SurfaceHolder surfaceHolder) {
-                if (ActivityCompat.checkSelfPermission(getApplicationContext(), Manifest.permission.CAMERA)
-                        != PackageManager.PERMISSION_GRANTED) {
-                    return;
-                }
+            public void onClick(View view) {
+                qrScan.setPrompt("Scanning...");
+                qrScan.initiateScan();
+            }
+        });
+    }
+
+    // Getting the scan result to textView
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        IntentResult result = IntentIntegrator.parseActivityResult(requestCode, resultCode, data);
+        if (result != null) {
+            // qrcode가 없을 때
+            if (result.getContents() == null) {
+                Toast.makeText(this, "취소!", Toast.LENGTH_SHORT).show();
+            // qrcode가 있을 때
+            }else {
+                Toast.makeText(this, "스캔 완료!", Toast.LENGTH_SHORT).show();
+
                 try {
-                    cameraSource.start(surfaceHolder);
-                }catch (IOException e) {
+                    JSONObject obj = new JSONObject(result.getContents());
+                    recobin_num.setText(obj.getString("recobin_num"));
+                    recobin_roadname.setText(obj.getString("recobin_roadname"));
+                    recobin_address.setText(obj.getString("recobin_address"));
+                    star_score.setText(obj.getString("star_score"));
+                } catch (JSONException e) {
                     e.printStackTrace();
+                    Toast.makeText(this, "실패!!!!!!", Toast.LENGTH_SHORT).show();
                 }
             }
-
-            @Override
-            public void surfaceChanged(@NonNull SurfaceHolder surfaceHolder, int i, int i1, int i2) {
-
-            }
-
-            @Override
-            public void surfaceDestroyed(@NonNull SurfaceHolder surfaceHolder) {
-
-            }
-        });
-
-        barcodeDetector.setProcessor(new Detector.Processor<Barcode>() {
-            @Override
-            public void release() {
-
-            }
-
-            @Override
-            public void receiveDetections(@NonNull Detector.Detections<Barcode> detections) {
-                final SparseArray<Barcode> qrcode = detections.getDetectedItems();
-                if (qrcode.size() != 0) {
-                    textView.post(new Runnable() {
-                        @Override
-                        public void run() {
-                            textView.setText(qrcode.valueAt(0).displayValue);
-                        }
-                    });
-                }
-            }
-        });
+        }else {
+            super.onActivityResult(requestCode, resultCode, data);
+        }
     }
 }

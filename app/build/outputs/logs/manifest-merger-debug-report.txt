@@ -1,26 +1,19 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:2:1-52:12
-INJECTED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:2:1-52:12
-INJECTED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:2:1-52:12
-INJECTED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:2:1-52:12
+ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:2:1-54:12
+INJECTED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:2:1-54:12
+INJECTED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:2:1-54:12
+INJECTED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:2:1-54:12
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\7c1e351657429f55aaa7f0a919e6f551\material-1.4.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\com\.gradle\caches\transforms-2\files-2.1\d034ca2bdf28b835f4b3742d85d787a3\constraintlayout-2.0.4\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\3a4bf45ee1cd2799bf6d0559eb3917d7\appcompat-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\ea90d8435d62aed23aae6ffef8d94fc2\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:17:1-56:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\2fb8103c62e3ee1e6e4cc337dd696441\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [org.tensorflow:tensorflow-lite-support:0.3.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\a7f3ef9776676d169d00511f18f69ffb\jetified-tensorflow-lite-support-0.3.0\AndroidManifest.xml:2:1-5:12
 MERGED from [org.tensorflow:tensorflow-lite:2.7.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\d4b741a7b2f99ac2e6cbe4a2f7055bbb\jetified-tensorflow-lite-2.7.0\AndroidManifest.xml:2:1-12:12
-MERGED from [com.google.android.gms:play-services-vision:20.1.3] C:\Users\com\.gradle\caches\transforms-2\files-2.1\91037cdabfd0140392ca6c14442caf06\jetified-play-services-vision-20.1.3\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\51c4c178afaeff173cfa265953a5c82e\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\28174e475fcfd6ae966ed5772f6694ac\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\9b843ef8b45a09e63c481ebf2cc33a53\jetified-viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.gms:play-services-vision-common:19.1.3] C:\Users\com\.gradle\caches\transforms-2\files-2.1\7494b7444ae7d9d46a1a2354d835625f\jetified-play-services-vision-common-19.1.3\AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-clearcut:17.0.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\15b2185c1bf7cf4c2392c52cc555d373\jetified-play-services-clearcut-17.0.0\AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.gms:play-services-flags:17.0.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\8f4b4d9097f0e6be4bf179404806cbb3\jetified-play-services-flags-17.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.android.gms:play-services-phenotype:17.0.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\8c2e3f726b5c16b47821874eedc67a73\jetified-play-services-phenotype-17.0.0\AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.gms:play-services-base:17.4.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\8e179282f2cc2d6bf25832e503d325b3\jetified-play-services-base-17.4.0\AndroidManifest.xml:17:1-29:12
-MERGED from [com.google.android.gms:play-services-tasks:17.2.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\c4cd7f47f5340bba7f3d07809b2d45e4\jetified-play-services-tasks-17.2.0\AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-basement:17.4.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\415534c9b2d8442f1909ae643d52ceab\jetified-play-services-basement-17.4.0\AndroidManifest.xml:17:1-28:12
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\ce61250d0f7070aaab97d5c03ab2ab2e\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\5a84463fe3bd90b9ee3ed76258f5efd9\jetified-appcompat-resources-1.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\385ad0333dd34005ac3b322f68c176b9\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -56,53 +49,43 @@ MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\com\.gr
 MERGED from [org.tensorflow:tensorflow-lite-support-api:0.3.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\f423e2d0f278e5d8c0acad6dc0b0c21a\jetified-tensorflow-lite-support-api-0.3.0\AndroidManifest.xml:2:1-5:12
 MERGED from [org.tensorflow:tensorflow-lite-api:2.7.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\5ff7242d5b534cfef1601089e6b73433\jetified-tensorflow-lite-api-2.7.0\AndroidManifest.xml:2:1-12:12
 MERGED from [com.google.android.odml:image:1.0.0-beta1] C:\Users\com\.gradle\caches\transforms-2\files-2.1\4ff2ebaba13ccc38a81d47c9873090ce\jetified-image-1.0.0-beta1\AndroidManifest.xml:2:1-9:12
-INJECTED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:2:1-52:12
-INJECTED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:2:1-52:12
-INJECTED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:2:1-52:12
+INJECTED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:2:1-54:12
+INJECTED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:2:1-54:12
+INJECTED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:2:1-54:12
 	package
 		ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:4:5-35
 		INJECTED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml
 		INJECTED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml
-		ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:2:1-52:12
+		ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:2:1-54:12
 		INJECTED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml
-		ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:2:1-52:12
+		ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:2:1-54:12
 		INJECTED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:2:11-69
 uses-feature#android.hardware.camera
 ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:6:5-8:35
+MERGED from [com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\ea90d8435d62aed23aae6ffef8d94fc2\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:25:5-27:36
+MERGED from [com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\ea90d8435d62aed23aae6ffef8d94fc2\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:25:5-27:36
 	android:required
 		ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:8:9-32
 	android:name
 		ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:7:9-47
 application
-ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:11:5-50:19
+ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:10:5-52:19
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\7c1e351657429f55aaa7f0a919e6f551\material-1.4.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\7c1e351657429f55aaa7f0a919e6f551\material-1.4.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\com\.gradle\caches\transforms-2\files-2.1\d034ca2bdf28b835f4b3742d85d787a3\constraintlayout-2.0.4\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\com\.gradle\caches\transforms-2\files-2.1\d034ca2bdf28b835f4b3742d85d787a3\constraintlayout-2.0.4\AndroidManifest.xml:9:5-20
+MERGED from [com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\ea90d8435d62aed23aae6ffef8d94fc2\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:46:5-54:19
+MERGED from [com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\ea90d8435d62aed23aae6ffef8d94fc2\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:46:5-54:19
 MERGED from [org.tensorflow:tensorflow-lite:2.7.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\d4b741a7b2f99ac2e6cbe4a2f7055bbb\jetified-tensorflow-lite-2.7.0\AndroidManifest.xml:10:5-20
 MERGED from [org.tensorflow:tensorflow-lite:2.7.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\d4b741a7b2f99ac2e6cbe4a2f7055bbb\jetified-tensorflow-lite-2.7.0\AndroidManifest.xml:10:5-20
-MERGED from [com.google.android.gms:play-services-vision:20.1.3] C:\Users\com\.gradle\caches\transforms-2\files-2.1\91037cdabfd0140392ca6c14442caf06\jetified-play-services-vision-20.1.3\AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-vision:20.1.3] C:\Users\com\.gradle\caches\transforms-2\files-2.1\91037cdabfd0140392ca6c14442caf06\jetified-play-services-vision-20.1.3\AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-vision-common:19.1.3] C:\Users\com\.gradle\caches\transforms-2\files-2.1\7494b7444ae7d9d46a1a2354d835625f\jetified-play-services-vision-common-19.1.3\AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-vision-common:19.1.3] C:\Users\com\.gradle\caches\transforms-2\files-2.1\7494b7444ae7d9d46a1a2354d835625f\jetified-play-services-vision-common-19.1.3\AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-clearcut:17.0.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\15b2185c1bf7cf4c2392c52cc555d373\jetified-play-services-clearcut-17.0.0\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-clearcut:17.0.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\15b2185c1bf7cf4c2392c52cc555d373\jetified-play-services-clearcut-17.0.0\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-phenotype:17.0.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\8c2e3f726b5c16b47821874eedc67a73\jetified-play-services-phenotype-17.0.0\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-phenotype:17.0.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\8c2e3f726b5c16b47821874eedc67a73\jetified-play-services-phenotype-17.0.0\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-base:17.4.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\8e179282f2cc2d6bf25832e503d325b3\jetified-play-services-base-17.4.0\AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.android.gms:play-services-base:17.4.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\8e179282f2cc2d6bf25832e503d325b3\jetified-play-services-base-17.4.0\AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.android.gms:play-services-tasks:17.2.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\c4cd7f47f5340bba7f3d07809b2d45e4\jetified-play-services-tasks-17.2.0\AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-tasks:17.2.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\c4cd7f47f5340bba7f3d07809b2d45e4\jetified-play-services-tasks-17.2.0\AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-basement:17.4.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\415534c9b2d8442f1909ae643d52ceab\jetified-play-services-basement-17.4.0\AndroidManifest.xml:22:5-26:19
-MERGED from [com.google.android.gms:play-services-basement:17.4.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\415534c9b2d8442f1909ae643d52ceab\jetified-play-services-basement-17.4.0\AndroidManifest.xml:22:5-26:19
 MERGED from [androidx.core:core:1.5.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\2245221c36e2911ed0c78617191e7497\core-1.5.0\AndroidManifest.xml:24:5-89
 MERGED from [androidx.core:core:1.5.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\2245221c36e2911ed0c78617191e7497\core-1.5.0\AndroidManifest.xml:24:5-89
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\com\.gradle\caches\transforms-2\files-2.1\f8f1ded60081caa70730f6795c311ce8\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
@@ -114,77 +97,79 @@ MERGED from [com.google.android.odml:image:1.0.0-beta1] C:\Users\com\.gradle\cac
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.5.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\2245221c36e2911ed0c78617191e7497\core-1.5.0\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:16:9-35
+		ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:15:9-35
 	android:label
-		ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:14:9-41
+		ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:13:9-41
+	android:hardwareAccelerated
+		ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:17:9-43
 	android:roundIcon
-		ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:15:9-54
+		ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:14:9-54
 	android:icon
-		ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:13:9-43
+		ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:12:9-43
 	android:allowBackup
-		ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:12:9-35
+		ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:11:9-35
 	android:theme
-		ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:17:9-40
+		ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:16:9-40
 activity#com.example.kmj_reco.QrActivity
-ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:18:9-20:40
+ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:19:9-21:40
 	android:exported
-		ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:20:13-37
+		ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:21:13-37
 	android:name
-		ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:19:13-39
+		ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:20:13-39
 activity#com.example.kmj_reco.CameraSuccess
-ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:21:9-23:40
+ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:22:9-24:40
 	android:exported
-		ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:23:13-37
+		ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:24:13-37
 	android:name
-		ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:22:13-42
+		ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:23:13-42
 activity#com.example.kmj_reco.CameraActivity
-ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:24:9-26:52
+ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:25:9-27:52
 	android:screenOrientation
-		ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:26:13-49
+		ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:27:13-49
 	android:name
-		ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:25:13-43
+		ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:26:13-43
 activity#com.example.kmj_reco.GalleryActivity
-ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:27:9-29:52
+ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:28:9-30:52
 	android:screenOrientation
-		ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:29:13-49
+		ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:30:13-49
 	android:name
-		ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:28:13-44
+		ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:29:13-44
 activity#com.example.kmj_reco.MainActivity
-ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:30:9-36:20
+ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:31:9-37:20
 	android:name
-		ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:30:19-47
+		ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:31:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:31:13-35:29
+ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:32:13-36:29
 action#android.intent.action.MAIN
-ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:32:17-69
+ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:33:17-69
 	android:name
-		ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:32:25-66
+		ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:33:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:34:17-77
+ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:35:17-77
 	android:name
-		ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:34:27-74
+		ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:35:27-74
 provider#androidx.core.content.FileProvider
-ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:38:9-46:20
+ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:40:9-48:20
 	android:grantUriPermissions
-		ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:42:13-47
+		ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:44:13-47
 	android:authorities
-		ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:40:13-55
+		ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:42:13-55
 	android:exported
-		ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:41:13-37
+		ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:43:13-37
 	android:name
-		ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:39:13-62
+		ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:41:13-62
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:43:13-45:54
+ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:45:13-47:54
 	android:resource
-		ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:45:17-51
+		ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:47:17-51
 	android:name
-		ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:44:17-67
+		ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:46:17-67
 meta-data#com.google.android.gms.vision.DEPENDENCIES
-ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:48:9-49:39
+ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:50:9-51:39
 	android:value
-		ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:49:13-36
+		ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:51:13-36
 	android:name
-		ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:48:20-77
+		ADDED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml:50:20-77
 uses-sdk
 INJECTED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml
@@ -195,34 +180,20 @@ MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\com\.gra
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\com\.gradle\caches\transforms-2\files-2.1\d034ca2bdf28b835f4b3742d85d787a3\constraintlayout-2.0.4\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\3a4bf45ee1cd2799bf6d0559eb3917d7\appcompat-1.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\3a4bf45ee1cd2799bf6d0559eb3917d7\appcompat-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\ea90d8435d62aed23aae6ffef8d94fc2\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:20:5-44
+MERGED from [com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\ea90d8435d62aed23aae6ffef8d94fc2\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\2fb8103c62e3ee1e6e4cc337dd696441\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\2fb8103c62e3ee1e6e4cc337dd696441\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [org.tensorflow:tensorflow-lite-support:0.3.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\a7f3ef9776676d169d00511f18f69ffb\jetified-tensorflow-lite-support-0.3.0\AndroidManifest.xml:4:3-71
 MERGED from [org.tensorflow:tensorflow-lite-support:0.3.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\a7f3ef9776676d169d00511f18f69ffb\jetified-tensorflow-lite-support-0.3.0\AndroidManifest.xml:4:3-71
 MERGED from [org.tensorflow:tensorflow-lite:2.7.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\d4b741a7b2f99ac2e6cbe4a2f7055bbb\jetified-tensorflow-lite-2.7.0\AndroidManifest.xml:7:5-8:41
 MERGED from [org.tensorflow:tensorflow-lite:2.7.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\d4b741a7b2f99ac2e6cbe4a2f7055bbb\jetified-tensorflow-lite-2.7.0\AndroidManifest.xml:7:5-8:41
-MERGED from [com.google.android.gms:play-services-vision:20.1.3] C:\Users\com\.gradle\caches\transforms-2\files-2.1\91037cdabfd0140392ca6c14442caf06\jetified-play-services-vision-20.1.3\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-vision:20.1.3] C:\Users\com\.gradle\caches\transforms-2\files-2.1\91037cdabfd0140392ca6c14442caf06\jetified-play-services-vision-20.1.3\AndroidManifest.xml:5:5-44
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\51c4c178afaeff173cfa265953a5c82e\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\51c4c178afaeff173cfa265953a5c82e\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\28174e475fcfd6ae966ed5772f6694ac\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\28174e475fcfd6ae966ed5772f6694ac\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\9b843ef8b45a09e63c481ebf2cc33a53\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\9b843ef8b45a09e63c481ebf2cc33a53\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.gms:play-services-vision-common:19.1.3] C:\Users\com\.gradle\caches\transforms-2\files-2.1\7494b7444ae7d9d46a1a2354d835625f\jetified-play-services-vision-common-19.1.3\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-vision-common:19.1.3] C:\Users\com\.gradle\caches\transforms-2\files-2.1\7494b7444ae7d9d46a1a2354d835625f\jetified-play-services-vision-common-19.1.3\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-clearcut:17.0.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\15b2185c1bf7cf4c2392c52cc555d373\jetified-play-services-clearcut-17.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-clearcut:17.0.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\15b2185c1bf7cf4c2392c52cc555d373\jetified-play-services-clearcut-17.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-flags:17.0.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\8f4b4d9097f0e6be4bf179404806cbb3\jetified-play-services-flags-17.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-flags:17.0.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\8f4b4d9097f0e6be4bf179404806cbb3\jetified-play-services-flags-17.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-phenotype:17.0.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\8c2e3f726b5c16b47821874eedc67a73\jetified-play-services-phenotype-17.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-phenotype:17.0.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\8c2e3f726b5c16b47821874eedc67a73\jetified-play-services-phenotype-17.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-base:17.4.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\8e179282f2cc2d6bf25832e503d325b3\jetified-play-services-base-17.4.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-base:17.4.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\8e179282f2cc2d6bf25832e503d325b3\jetified-play-services-base-17.4.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-tasks:17.2.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\c4cd7f47f5340bba7f3d07809b2d45e4\jetified-play-services-tasks-17.2.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-tasks:17.2.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\c4cd7f47f5340bba7f3d07809b2d45e4\jetified-play-services-tasks-17.2.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-basement:17.4.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\415534c9b2d8442f1909ae643d52ceab\jetified-play-services-basement-17.4.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-basement:17.4.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\415534c9b2d8442f1909ae643d52ceab\jetified-play-services-basement-17.4.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\ce61250d0f7070aaab97d5c03ab2ab2e\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\ce61250d0f7070aaab97d5c03ab2ab2e\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\5a84463fe3bd90b9ee3ed76258f5efd9\jetified-appcompat-resources-1.2.0\AndroidManifest.xml:20:5-22:41
@@ -305,17 +276,51 @@ INJECTED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml
 		MERGED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml
 		MERGED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml
 		INJECTED from C:\AndroidProjects\kmj_reco\app\src\main\AndroidManifest.xml
-activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:17.4.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\8e179282f2cc2d6bf25832e503d325b3\jetified-play-services-base-17.4.0\AndroidManifest.xml:23:9-26:75
-	android:exported
-		ADDED from [com.google.android.gms:play-services-base:17.4.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\8e179282f2cc2d6bf25832e503d325b3\jetified-play-services-base-17.4.0\AndroidManifest.xml:25:13-37
+uses-permission#android.permission.CAMERA
+ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\ea90d8435d62aed23aae6ffef8d94fc2\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:22:5-65
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\ea90d8435d62aed23aae6ffef8d94fc2\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:22:22-62
+uses-feature#android.hardware.camera.front
+ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\ea90d8435d62aed23aae6ffef8d94fc2\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:28:5-30:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\ea90d8435d62aed23aae6ffef8d94fc2\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:30:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\ea90d8435d62aed23aae6ffef8d94fc2\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:29:9-53
+uses-feature#android.hardware.camera.autofocus
+ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\ea90d8435d62aed23aae6ffef8d94fc2\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:33:5-35:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\ea90d8435d62aed23aae6ffef8d94fc2\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:35:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\ea90d8435d62aed23aae6ffef8d94fc2\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:34:9-57
+uses-feature#android.hardware.camera.flash
+ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\ea90d8435d62aed23aae6ffef8d94fc2\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:36:5-38:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\ea90d8435d62aed23aae6ffef8d94fc2\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:38:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\ea90d8435d62aed23aae6ffef8d94fc2\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:37:9-53
+uses-feature#android.hardware.screen.landscape
+ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\ea90d8435d62aed23aae6ffef8d94fc2\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:39:5-41:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\ea90d8435d62aed23aae6ffef8d94fc2\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:41:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\ea90d8435d62aed23aae6ffef8d94fc2\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:40:9-57
+uses-feature#android.hardware.wifi
+ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\ea90d8435d62aed23aae6ffef8d94fc2\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:42:5-44:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\ea90d8435d62aed23aae6ffef8d94fc2\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:44:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\ea90d8435d62aed23aae6ffef8d94fc2\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:43:9-45
+activity#com.journeyapps.barcodescanner.CaptureActivity
+ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\ea90d8435d62aed23aae6ffef8d94fc2\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:47:9-53:63
+	android:screenOrientation
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\ea90d8435d62aed23aae6ffef8d94fc2\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:50:13-56
+	android:clearTaskOnLaunch
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\ea90d8435d62aed23aae6ffef8d94fc2\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:49:13-45
+	android:stateNotNeeded
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\ea90d8435d62aed23aae6ffef8d94fc2\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:51:13-42
+	android:windowSoftInputMode
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\ea90d8435d62aed23aae6ffef8d94fc2\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:53:13-60
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:17.4.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\8e179282f2cc2d6bf25832e503d325b3\jetified-play-services-base-17.4.0\AndroidManifest.xml:26:13-72
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\ea90d8435d62aed23aae6ffef8d94fc2\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:52:13-54
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:17.4.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\8e179282f2cc2d6bf25832e503d325b3\jetified-play-services-base-17.4.0\AndroidManifest.xml:24:13-79
-meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:17.4.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\415534c9b2d8442f1909ae643d52ceab\jetified-play-services-basement-17.4.0\AndroidManifest.xml:23:9-25:69
-	android:value
-		ADDED from [com.google.android.gms:play-services-basement:17.4.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\415534c9b2d8442f1909ae643d52ceab\jetified-play-services-basement-17.4.0\AndroidManifest.xml:25:13-66
-	android:name
-		ADDED from [com.google.android.gms:play-services-basement:17.4.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\415534c9b2d8442f1909ae643d52ceab\jetified-play-services-basement-17.4.0\AndroidManifest.xml:24:13-58
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\ea90d8435d62aed23aae6ffef8d94fc2\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:48:13-74

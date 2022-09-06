@@ -164,7 +164,6 @@ attr buttonCompat
 attr buttonGravity
 attr buttonIconDimen
 attr buttonPanelSideLayout
-attr buttonSize
 attr buttonStyle
 attr buttonStyleSmall
 attr buttonTint
@@ -208,7 +207,6 @@ attr chipStrokeColor
 attr chipStrokeWidth
 attr chipStyle
 attr chipSurfaceColor
-attr circleCrop
 attr circleRadius
 attr circularProgressIndicatorStyle
 attr clickAction
@@ -248,7 +246,6 @@ attr colorPrimary
 attr colorPrimaryDark
 attr colorPrimarySurface
 attr colorPrimaryVariant
-attr colorScheme
 attr colorSecondary
 attr colorSecondaryVariant
 attr colorSurface
@@ -459,8 +456,6 @@ attr iconStartPadding
 attr iconTint
 attr iconTintMode
 attr iconifiedByDefault
-attr imageAspectRatio
-attr imageAspectRatioAdjust
 attr imageButtonStyle
 attr indeterminateAnimationType
 attr indeterminateProgressStyle
@@ -739,7 +734,6 @@ attr rippleColor
 attr round
 attr roundPercent
 attr saturation
-attr scopeUris
 attr scrimAnimationDuration
 attr scrimBackground
 attr scrimVisibleHeightTrigger
@@ -960,6 +954,15 @@ attr windowNoTitle
 attr yearSelectedStyle
 attr yearStyle
 attr yearTodayStyle
+attr zxing_framing_rect_height
+attr zxing_framing_rect_width
+attr zxing_possible_result_points
+attr zxing_preview_scaling_strategy
+attr zxing_result_view
+attr zxing_scanner_layout
+attr zxing_use_texture_view
+attr zxing_viewfinder_laser
+attr zxing_viewfinder_mask
 bool abc_action_bar_embed_tabs
 bool abc_allow_stacked_button_bar
 bool abc_config_actionMenuItemAllCaps
@@ -1013,17 +1016,6 @@ color checkbox_themeable_attribute_color
 color colorAccent
 color colorPrimary
 color colorPrimaryDark
-color common_google_signin_btn_text_dark
-color common_google_signin_btn_text_dark_default
-color common_google_signin_btn_text_dark_disabled
-color common_google_signin_btn_text_dark_focused
-color common_google_signin_btn_text_dark_pressed
-color common_google_signin_btn_text_light
-color common_google_signin_btn_text_light_default
-color common_google_signin_btn_text_light_disabled
-color common_google_signin_btn_text_light_focused
-color common_google_signin_btn_text_light_pressed
-color common_google_signin_btn_tint
 color design_bottom_navigation_shadow_color
 color design_box_stroke_color
 color design_dark_default_color_background
@@ -1185,6 +1177,16 @@ color test_mtrl_calendar_day
 color test_mtrl_calendar_day_selected
 color tooltip_background_dark
 color tooltip_background_light
+color zxing_custom_possible_result_points
+color zxing_custom_result_view
+color zxing_custom_viewfinder_laser
+color zxing_custom_viewfinder_mask
+color zxing_possible_result_points
+color zxing_result_view
+color zxing_status_text
+color zxing_transparent
+color zxing_viewfinder_laser
+color zxing_viewfinder_mask
 dimen abc_action_bar_content_inset_material
 dimen abc_action_bar_content_inset_with_nav
 dimen abc_action_bar_default_height_material
@@ -1706,33 +1708,12 @@ drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
 drawable coin
-drawable common_full_open_on_phone
-drawable common_google_signin_btn_icon_dark
-drawable common_google_signin_btn_icon_dark_focused
-drawable common_google_signin_btn_icon_dark_normal
-drawable common_google_signin_btn_icon_dark_normal_background
-drawable common_google_signin_btn_icon_disabled
-drawable common_google_signin_btn_icon_light
-drawable common_google_signin_btn_icon_light_focused
-drawable common_google_signin_btn_icon_light_normal
-drawable common_google_signin_btn_icon_light_normal_background
-drawable common_google_signin_btn_text_dark
-drawable common_google_signin_btn_text_dark_focused
-drawable common_google_signin_btn_text_dark_normal
-drawable common_google_signin_btn_text_dark_normal_background
-drawable common_google_signin_btn_text_disabled
-drawable common_google_signin_btn_text_light
-drawable common_google_signin_btn_text_light_focused
-drawable common_google_signin_btn_text_light_normal
-drawable common_google_signin_btn_text_light_normal_background
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable ellipse_26
-drawable googleg_disabled_color_18
-drawable googleg_standard_color_18
 drawable ic_clock_black_24dp
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
@@ -1849,8 +1830,6 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
-id adjust_height
-id adjust_width
 id alertTitle
 id aligned
 id all
@@ -1878,6 +1857,7 @@ id cameraBtn
 id cancel_action
 id cancel_button
 id center
+id centerCrop
 id center_horizontal
 id center_vertical
 id chain
@@ -1907,7 +1887,6 @@ id counterclockwise
 id custom
 id customPanel
 id cut
-id dark
 id date_picker_actions
 id decelerate
 id decelerateAndComplete
@@ -1953,7 +1932,9 @@ id fill
 id fill_horizontal
 id fill_vertical
 id filled
+id fitCenter
 id fitToContents
+id fitXY
 id fixed
 id flip
 id floating
@@ -1975,7 +1956,6 @@ id homeAsUp
 id honorRequest
 id icon
 id icon_group
-id icon_only
 id ifRoom
 id ignore
 id ignoreRequest
@@ -1993,7 +1973,6 @@ id labeled
 id layout
 id left
 id leftToRight
-id light
 id line1
 id line3
 id linear
@@ -2086,7 +2065,6 @@ id position
 id postLayout
 id progress_circular
 id progress_horizontal
-id qrcode_text
 id qrscanBtn
 id radio
 id ratio
@@ -2094,6 +2072,9 @@ id reco_alarm
 id reco_icon
 id reco_plant
 id reco_setting
+id recobin_address
+id recobin_num
+id recobin_roadname
 id rectangles
 id reverseSawtooth
 id right
@@ -2106,6 +2087,7 @@ id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
 id scale
+id scanBtn
 id screen
 id scroll
 id scrollIndicatorDown
@@ -2147,6 +2129,7 @@ id src_atop
 id src_in
 id src_over
 id standard
+id star_score
 id start
 id startHorizontal
 id startToEnd
@@ -2158,7 +2141,6 @@ id stop
 id stretch
 id submenuarrow
 id submit_area
-id surfaceView
 id tabMode
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
@@ -2221,12 +2203,24 @@ id up
 id useLogo
 id view_offset_helper
 id visible
-id wide
 id withText
 id withinBounds
 id wrap
 id wrap_content
 id zero_corner_chip
+id zxing_back_button
+id zxing_barcode_scanner
+id zxing_barcode_surface
+id zxing_camera_closed
+id zxing_camera_error
+id zxing_decode
+id zxing_decode_failed
+id zxing_decode_succeeded
+id zxing_possible_result_points
+id zxing_preview_failed
+id zxing_prewiew_size_ready
+id zxing_status_view
+id zxing_viewfinder_view
 integer abc_config_activityDefaultDur
 integer abc_config_activityShortDur
 integer app_bar_elevation_anim_duration
@@ -2235,7 +2229,6 @@ integer cancel_button_image_alpha
 integer config_tooltipAnimTime
 integer design_snackbar_text_max_lines
 integer design_tab_indicator_anim_duration_ms
-integer google_play_services_version
 integer hide_password_duration
 integer material_motion_duration_long_1
 integer material_motion_duration_long_2
@@ -2394,9 +2387,12 @@ layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
 layout title_bar
+layout zxing_barcode_scanner
+layout zxing_capture
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
+raw zxing_beep
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
@@ -2433,24 +2429,6 @@ string character_counter_overflowed_content_description
 string character_counter_pattern
 string chip_text
 string clear_text_end_icon_content_description
-string common_google_play_services_enable_button
-string common_google_play_services_enable_text
-string common_google_play_services_enable_title
-string common_google_play_services_install_button
-string common_google_play_services_install_text
-string common_google_play_services_install_title
-string common_google_play_services_notification_channel_name
-string common_google_play_services_notification_ticker
-string common_google_play_services_unknown_issue
-string common_google_play_services_unsupported_text
-string common_google_play_services_update_button
-string common_google_play_services_update_text
-string common_google_play_services_update_title
-string common_google_play_services_updating_text
-string common_google_play_services_wear_update_text
-string common_open_on_phone
-string common_signin_button_text
-string common_signin_button_text_long
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
@@ -2521,6 +2499,10 @@ string path_password_eye_mask_visible
 string path_password_strike_through
 string search_menu_title
 string status_bar_notification_info_overflow
+string zxing_app_name
+string zxing_button_ok
+string zxing_msg_camera_framework_bug
+string zxing_msg_default_status
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style AndroidThemeColorAccentYellow
@@ -3248,6 +3230,7 @@ style Widget_MaterialComponents_Toolbar_PrimarySurface
 style Widget_MaterialComponents_Toolbar_Surface
 style Widget_MaterialComponents_Tooltip
 style Widget_Support_CoordinatorLayout
+style zxing_CaptureTheme
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
 styleable ActionBarLayout android_layout_gravity
 styleable ActionMenuItemView android_minWidth
@@ -3315,7 +3298,6 @@ styleable LinearLayoutCompat android_gravity android_orientation android_baselin
 styleable LinearLayoutCompat_Layout android_layout_gravity android_layout_width android_layout_height android_layout_weight
 styleable LinearProgressIndicator indeterminateAnimationType indicatorDirectionLinear
 styleable ListPopupWindow android_dropDownHorizontalOffset android_dropDownVerticalOffset
-styleable LoadingImageView circleCrop imageAspectRatio imageAspectRatioAdjust
 styleable MaterialAlertDialog backgroundInsetBottom backgroundInsetEnd backgroundInsetStart backgroundInsetTop
 styleable MaterialAlertDialogTheme materialAlertDialogBodyTextStyle materialAlertDialogTheme materialAlertDialogTitleIconStyle materialAlertDialogTitlePanelStyle materialAlertDialogTitleTextStyle
 styleable MaterialAutoCompleteTextView android_inputType
@@ -3357,7 +3339,6 @@ styleable ScrollingViewBehavior_Layout behavior_overlapTop
 styleable SearchView android_focusable android_maxWidth android_inputType android_imeOptions closeIcon commitIcon defaultQueryHint goIcon iconifiedByDefault layout queryBackground queryHint searchHintIcon searchIcon submitBackground suggestionRowLayout voiceIcon
 styleable ShapeAppearance cornerFamily cornerFamilyBottomLeft cornerFamilyBottomRight cornerFamilyTopLeft cornerFamilyTopRight cornerSize cornerSizeBottomLeft cornerSizeBottomRight cornerSizeTopLeft cornerSizeTopRight
 styleable ShapeableImageView contentPadding contentPaddingBottom contentPaddingEnd contentPaddingLeft contentPaddingRight contentPaddingStart contentPaddingTop shapeAppearance shapeAppearanceOverlay strokeColor strokeWidth
-styleable SignInButton buttonSize colorScheme scopeUris
 styleable Slider android_enabled android_value android_stepSize android_valueFrom android_valueTo haloColor haloRadius labelBehavior labelStyle thumbColor thumbElevation thumbRadius thumbStrokeColor thumbStrokeWidth tickColor tickColorActive tickColorInactive tickVisible trackColor trackColorActive trackColorInactive trackHeight
 styleable Snackbar snackbarButtonStyle snackbarStyle snackbarTextViewStyle
 styleable SnackbarLayout android_maxWidth actionTextColorAlpha animationMode backgroundOverlayColorAlpha backgroundTint backgroundTintMode elevation maxActionInlineWidth
@@ -3383,6 +3364,9 @@ styleable View android_theme android_focusable paddingEnd paddingStart theme
 styleable ViewBackgroundHelper android_background backgroundTint backgroundTintMode
 styleable ViewPager2 android_orientation
 styleable ViewStubCompat android_id android_layout android_inflatedId
+styleable zxing_camera_preview zxing_framing_rect_height zxing_framing_rect_width zxing_preview_scaling_strategy zxing_use_texture_view
+styleable zxing_finder zxing_possible_result_points zxing_result_view zxing_viewfinder_laser zxing_viewfinder_mask
+styleable zxing_view zxing_scanner_layout
 xml file_paths
 xml standalone_badge
 xml standalone_badge_gravity_bottom_end

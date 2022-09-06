@@ -4,6 +4,23 @@
             "outputFile": "C:\\AndroidProjects\\kmj_reco\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pt\\values-pt.xml",
             "map": [
                 {
+                    "source": "C:\\Users\\com\\.gradle\\caches\\transforms-2\\files-2.1\\ea90d8435d62aed23aae6ffef8d94fc2\\jetified-zxing-android-embedded-3.6.0\\res\\values-pt\\values-pt.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,114,161,317",
+                        "endColumns": "58,46,155,106",
+                        "endOffsets": "109,156,312,419"
+                    },
+                    "to": {
+                        "startLines": "31,32,33,34",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "3030,3089,3136,3292",
+                        "endColumns": "58,46,155,106",
+                        "endOffsets": "3084,3131,3287,3394"
+                    }
+                },
+                {
                     "source": "C:\\Users\\com\\.gradle\\caches\\transforms-2\\files-2.1\\3a4bf45ee1cd2799bf6d0559eb3917d7\\appcompat-1.2.0\\res\\values-pt\\values-pt.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
