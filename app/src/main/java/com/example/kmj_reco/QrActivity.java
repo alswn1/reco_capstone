@@ -30,10 +30,10 @@ public class QrActivity extends AppCompatActivity {
         setContentView(R.layout.activity_qr);
 
         scanBtn = findViewById(R.id.scanBtn);
-        recobin_num = findViewById(R.id.recobin_num);
+        /*recobin_num = findViewById(R.id.recobin_num);
         recobin_roadname = findViewById(R.id.recobin_roadname);
         recobin_address = findViewById(R.id.recobin_address);
-        star_score = findViewById(R.id.star_score);
+        star_score = findViewById(R.id.star_score);*/
 
 
         qrScan = new IntentIntegrator(this);
@@ -45,6 +45,7 @@ public class QrActivity extends AppCompatActivity {
                 qrScan.initiateScan();
             }
         });
+        scanBtn.performClick();
     }
 
     // Getting the scan result to textView
@@ -55,7 +56,9 @@ public class QrActivity extends AppCompatActivity {
         if (result != null) {
             // qrcode가 없을 때
             if (result.getContents() == null) {
-                Toast.makeText(this, "취소!", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(this, "취소!", Toast.LENGTH_SHORT).show();
+                Intent i = new Intent(QrActivity.this, MainActivity.class);
+                startActivity(i);
             // qrcode가 있을 때
             }else {
                 Toast.makeText(this, "스캔 완료!", Toast.LENGTH_SHORT).show();
@@ -66,6 +69,11 @@ public class QrActivity extends AppCompatActivity {
                     recobin_roadname.setText(obj.getString("recobin_roadname"));
                     recobin_address.setText(obj.getString("recobin_address"));
                     star_score.setText(obj.getString("star_score"));
+
+                    if (obj.getString("recobin_num") == "00001") {
+                        Intent i = new Intent(QrActivity.this, CameraActivity.class);
+                        startActivity(i);
+                    }
                 } catch (JSONException e) {
                     e.printStackTrace();
                     Toast.makeText(this, "실패!!!!!!", Toast.LENGTH_SHORT).show();

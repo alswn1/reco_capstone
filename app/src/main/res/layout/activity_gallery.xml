@@ -20,10 +20,12 @@
 
     <Button
         android:id="@+id/selectBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
+        android:background="#9cb36b"
+        android:textColor="#fff"
         android:text="Select Photo"
         />
 
@@ -33,6 +35,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
+        android:visibility="invisible"
         android:text="Result"
          />
 

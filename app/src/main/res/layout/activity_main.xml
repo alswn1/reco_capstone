@@ -15,18 +15,24 @@
         android:id="@+id/galleryBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:visibility="invisible"
         android:text="Gallery" />
 
     <Button
         android:id="@+id/cameraBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:visibility="invisible"
         android:text="Camera" />
 
     <Button
         android:id="@+id/qrscanBtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="390dp"
+        android:background="#9cb36b"
+        android:textColor="#fff"
         android:text="QR Scan" />
 
 </LinearLayout>

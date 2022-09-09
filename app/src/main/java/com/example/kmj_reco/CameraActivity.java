@@ -52,6 +52,7 @@ public class CameraActivity extends AppCompatActivity {
 
         Button takeBtn = findViewById(R.id.takeBtn);
         takeBtn.setOnClickListener(v -> getImageFromCamera());
+        takeBtn.performClick();
 
         imageView = findViewById(R.id.imageView);
         textView = findViewById(R.id.textView);
@@ -120,6 +121,8 @@ public class CameraActivity extends AppCompatActivity {
                     // 다시 사진을 찍을 수 있게 MainActivity로 이동
                     Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                     startActivity(intent);
+
+                    Toast.makeText(this, "해당 제품은 재활용이 아니어 인증이 불가합니다.", Toast.LENGTH_SHORT).show();
                 }else {
                     //Toast.makeText(getApplicationContext(), "첫번째 : " + c, Toast.LENGTH_SHORT).show();
 
