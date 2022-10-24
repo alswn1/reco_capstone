@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Map">
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/title_bar" />
+
+    <ImageView
+        android:id="@+id/base"
+        android:layout_width="411dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="87dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/base"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_width="72dp"
+        android:layout_height="36dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#ECECEC"
+        android:text="확인"
+        android:textColor="#444444"
+        android:textSize="11sp"
+        android:textStyle="bold" />
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="541dp"
+        android:layout_marginTop="118dp"
+        tools:context="com.viralandroid.googlemapsandroidapi.MapsActivity" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="289dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="70dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/search_box" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="235dp"
+        android:layout_height="29dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginRight="115dp"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:hint="검색"
+        android:inputType="textPersonName"
+        android:textColor="#444444"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="76dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/search_icon" />
+
+</RelativeLayout>

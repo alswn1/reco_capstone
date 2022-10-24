@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="15dp">
+
+    <ImageView
+        android:id="@+id/gifticonImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        tools:srcCompat="@tools:sample/avatars">
+
+    </ImageView>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:layout_width="200dp"
+        android:layout_height="100dp">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/gifticonBrand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="브랜드"
+            android:textColor="#9B9B9B"
+            android:textSize="15sp"/>
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/gifticonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="이름"
+            android:textColor="#000"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:id="@+id/gifticonExpiration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="만료 날짜"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

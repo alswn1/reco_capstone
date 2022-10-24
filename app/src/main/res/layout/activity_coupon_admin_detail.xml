@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CouponAdminDetail">
+    <include layout="@layout/title_bar"
+        android:id="@+id/title_bar"/>
+
+    <ImageView
+        android:id="@+id/gifticonImage"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/picname"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/picname"
+        android:layout_width="122dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:inputType="textPersonName"
+        android:text="제품 사진"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gifticon_Num" />
+
+    <TextView
+        android:id="@+id/gifticon_Num"
+        android:layout_width="122dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:inputType="textPersonName"
+        android:text="제품 번호 : 0"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_bar" />
+
+    <EditText
+        android:id="@+id/gifticon_Name_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="제품명"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gifticon_Num" />
+
+    <EditText
+        android:id="@+id/gifticon_Type_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="타입명"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gifticon_Name_edit" />
+
+    <Button
+        android:id="@+id/newCouponadButton"
+        android:layout_width="74dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:background="#4B6C11"
+        android:text="추가"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gifticon_Detail_edit" />
+
+    <EditText
+        android:id="@+id/gifticon_Brand_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="브랜드명"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gifticon_Type_edit" />
+
+    <EditText
+        android:id="@+id/gifticon_Price_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="가격"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gifticon_Brand_edit" />
+
+    <EditText
+        android:id="@+id/gifticon_Detail_edit"
+        android:layout_width="346dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:labelFor="@id/gifticon_Name_edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gifticon_Price_edit" />
+
+    <ListView
+        android:id="@+id/gifticon_admin_detail_listview"
+        android:layout_width="409dp"
+        android:layout_height="235dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:layout_constraintVertical_bias="0.0">
+
+    </ListView>
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="74dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:background="#ee2222"
+        android:text="삭제"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/gifticon_Price_edit"
+        app:layout_constraintStart_toEndOf="@+id/gifticonADaddBtn"
+        app:layout_constraintTop_toBottomOf="@+id/gifticonImage" />
+
+    <Button
+        android:id="@+id/gifticonADaddBtn"
+        android:layout_width="74dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="#4B6C11"
+        android:text="수정"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gifticonImage" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="목록"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gifticon_Detail_edit" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/emptyalert"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_marginTop="16dp"
+        android:text="재고없음"
+        android:textColor="#ff2222"
+        android:textStyle="bold"
+        android:gravity="center|center_horizontal|center_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/gifticon_Num"
+        app:layout_constraintTop_toBottomOf="@+id/title_bar" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

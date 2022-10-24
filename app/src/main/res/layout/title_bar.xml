@@ -7,14 +7,14 @@
     android:paddingBottom="15dp">
 
     <ImageView
-        android:id="@+id/reco_alarm"
+        android:id="@+id/btn_alert"
         android:layout_width="45dp"
         android:layout_height="match_parent"
         android:layout_marginLeft="30dp"
         app:srcCompat="@drawable/alarm" />
 
     <ImageView
-        android:id="@+id/reco_icon"
+        android:id="@+id/btn_home"
         android:layout_width="100dp"
         android:layout_height="match_parent"
         android:layout_marginLeft="70.5dp"
@@ -27,7 +27,7 @@
         app:srcCompat="@drawable/plant" />
 
     <ImageView
-        android:id="@+id/reco_setting"
+        android:id="@+id/btn_settings"
         android:layout_width="42dp"
         android:layout_height="match_parent"
         android:layout_marginLeft="70.5dp"

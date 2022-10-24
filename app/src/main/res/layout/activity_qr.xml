@@ -10,25 +10,46 @@
     <include layout="@layout/title_bar"
         android:id="@+id/title_bar"/>
 
+    <Button
+        android:id="@+id/scanBtn"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/camera"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:textColor="#fff" />
+
     <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="QR을 스캔하려면 위 카메라를 클릭해주세요"
+        android:textAlignment="center"
+        android:textColor="#444444"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <!--<TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="Qr 코드를 스캔하려면\n아래 버튼을 눌러주세요!"
-        android:textSize="30sp"
+        android:textSize="20sp"
         android:textColor="#000"
-        android:layout_marginTop="80dp"/>
+        android:layout_marginTop="180dp"/>
 
     <Button
         android:id="@+id/scanBtn"
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
-        android:layout_marginTop="320dp"
+        android:layout_marginTop="60dp"
         android:background="#9cb36b"
         android:textColor="#fff"
-        android:text="QR SACN"/>
+        android:text="QR SACN"/>-->
 
     <!--<TextView
         android:id="@+id/recobin_num"

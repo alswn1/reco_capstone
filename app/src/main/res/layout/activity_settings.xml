@@ -1,0 +1,134 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings">
+
+    <include layout="@layout/setting_bar"
+        android:id="@+id/setting_bar"/>
+
+    <Switch
+        android:id="@+id/login_switch"
+        android:layout_width="71dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="45dp"
+        android:scrollbarSize="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/push_switch"
+        android:layout_width="71dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="45dp"
+        android:scrollbarSize="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_switch" />
+
+    <TextView
+        android:id="@+id/settingTextLogin"
+        android:layout_width="160dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="124dp"
+        android:ems="10"
+        android:text="자동 로그인"
+        android:textColor="#000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/settingTextPush"
+        android:layout_width="160dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:text="푸시 알림"
+        android:textColor="#000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settingTextLogin" />
+
+    <TextView
+        android:id="@+id/settingTextToCenter"
+        android:layout_width="160dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:text="고객센터"
+        android:textColor="#000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settingTextPush" />
+
+    <TextView
+        android:id="@+id/settingTextToPersonal"
+        android:layout_width="160dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="80dp"
+        android:ems="10"
+        android:text="개인정보 처리 방침"
+        android:textColor="#000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settingTextToCenter" />
+
+    <TextView
+        android:id="@+id/settingTextToPersonal2"
+        android:layout_width="160dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:text="이용약관"
+        android:textColor="#000"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settingTextToPersonal"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/settingTextVersion"
+        android:layout_width="160dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:text="버전 정보"
+        android:textColor="#000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settingTextToPersonal2" />
+
+    <TextView
+        android:id="@+id/settingTextVersionText"
+        android:layout_width="114dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="50dp"
+        android:ems="10"
+        android:gravity="center|right"
+        android:text="ver 1.0"
+        android:textColor="#4B6C11"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.312"
+        app:layout_constraintStart_toEndOf="@+id/settingTextVersion"
+        app:layout_constraintTop_toBottomOf="@+id/settingTextToPersonal2"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

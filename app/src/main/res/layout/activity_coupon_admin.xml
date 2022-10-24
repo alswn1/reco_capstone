@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context=".CouponAdmin">
+
+    <include layout="@layout/title_bar"
+        android:id="@+id/title_bar"/>
+
+    <SearchView
+        android:id="@+id/gifticon_searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="기프티콘 이름을 입력하세요" />
+
+    <Button
+        android:id="@+id/couponAdminPlusbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="기프티콘 추가"
+        android:textColor="#444444"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="이름"
+            android:textColor="#000"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="재고여부"
+            android:textColor="#000"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="사진"
+            android:textColor="#000"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="수정 및 삭제"
+            android:textColor="#000"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/gifticon_listView_admin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    </LinearLayout>

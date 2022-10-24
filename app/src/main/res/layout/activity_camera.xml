@@ -10,33 +10,24 @@
     <include layout="@layout/title_bar"
         android:id="@+id/title_bar"/>
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="410dp"
-        android:layout_height="410dp"
-        app:layout_constraintDimensionRatio="1:1"
-        app:layout_constraintTop_toBottomOf="@+id/title_bar"
-        tools:layout_editor_absoluteX="0dp" />
-
     <Button
         android:id="@+id/takeBtn"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         android:layout_gravity="center"
-        android:layout_marginTop="30dp"
-        android:background="#9cb36b"
-        android:textColor="#fff"
-        android:text="Take Photo"
-        />
+        android:layout_marginTop="100dp"
+        android:background="@drawable/camera"
+        android:textColor="#fff" />
 
-    <!--<TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
         android:layout_marginTop="30dp"
-        android:text="Result"
-
-        />-->
+        android:text="재활용 마크를 찍어주세요"
+        android:textAlignment="center"
+        android:textColor="#444444"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
 </LinearLayout>

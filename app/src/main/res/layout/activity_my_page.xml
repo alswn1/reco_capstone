@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyPageActivity">
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="176dp"
+        android:text="나의 RECO : "
+        android:textColor="#C3C3C3"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/user_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="174dp"
+        android:text=""
+        android:textColor="#8CEA29"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:text="p"
+        android:textColor="#8CEA29"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/user_point"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include layout="@layout/title_bar"
+        android:id="@+id/title_bar"/>
+
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="148dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/btn_back"
+        tools:ignore="DuplicateIds,SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/btn_modification"
+        android:layout_width="159dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="145dp"
+        android:layout_marginEnd="144dp"
+        android:text="개인정보수정"
+        android:textColor="#444444"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.547"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mypage"
+        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/btn_gifticon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="나의 기프티콘"
+        android:textColor="#444444"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btn_modification"
+        app:layout_constraintStart_toStartOf="@+id/btn_modification"
+        app:layout_constraintTop_toBottomOf="@+id/btn_modification" />
+
+    <Button
+        android:id="@+id/btn_service"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="고객센터"
+        android:textColor="#444444"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btn_gifticon"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_gifticon"
+        app:layout_constraintTop_toBottomOf="@+id/btn_gifticon" />
+
+    <Button
+        android:id="@+id/btn_notice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="공지사항"
+        android:textColor="#444444"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btn_service"
+        app:layout_constraintStart_toStartOf="@+id/btn_service"
+        app:layout_constraintTop_toBottomOf="@+id/btn_service" />
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="로그아웃"
+        android:textColor="#444444"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btn_notice"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_notice"
+        app:layout_constraintTop_toBottomOf="@+id/btn_notice" />
+
+    <TextView
+        android:id="@+id/mypage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="MY PAGE"
+        android:textColor="#4B6C11"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

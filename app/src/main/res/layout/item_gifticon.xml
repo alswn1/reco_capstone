@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="15dp">
+
+    <ImageView
+        android:id="@+id/gifticonImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        tools:srcCompat="@drawable/bananamilk">
+
+    </ImageView>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:paddingTop="20dp">
+        <TextView
+
+            android:id="@+id/gifticonStodk"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="재고상황"
+            android:textColor="#ee2222"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/gifticonBrand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="브랜드"
+            android:textColor="#9B9B9B"
+            android:textSize="15sp"/>
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/gifticonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="이름"
+            android:textColor="#000"
+            android:textSize="10sp"/>
+        <TextView
+            android:id="@+id/gifticonPrice"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="가격"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/gifticonBuyButton"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="33dp"
+        android:backgroundTint="#4B6C11"
+        android:focusable="false"
+        android:padding="0dp"
+        android:text="구매"
+        android:textColor="#fff"
+        android:textSize="12sp"
+        android:textStyle="bold"/>
+
+</LinearLayout>

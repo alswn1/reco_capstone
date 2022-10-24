@@ -15,10 +15,10 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
         android:layout_gravity="center"
+        android:layout_marginTop="50dp"
         android:fontFamily="monospace"
-        android:text="10p 획득!"
+        android:text="2p 획득!"
         android:textAlignment="center"
         android:textColor="#9CB36B"
         android:textSize="50sp"
@@ -40,12 +40,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="50dp">
 
         <View
             android:id="@+id/ellipse_26"
             android:layout_width="319dp"
-            android:layout_height="159dp"
+            android:layout_height="100dp"
             android:background="@drawable/ellipse_26"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -56,10 +56,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:text="덕분에 거리가 깨끗해졌어요!"
             android:textAlignment="center"
-            android:textColor="#000"
+            android:textColor="#444444"
             android:textSize="15sp"
-            android:text="000님 덕분에 깨끗해졌어요!\n포인트는 하루에 3번까지 적립할 수 있습니다." />
+            android:textStyle="bold" />
 
     </FrameLayout>
 
@@ -68,10 +69,12 @@
         android:id="@+id/backHome"
         android:layout_width="150dp"
         android:layout_height="30dp"
-        android:background="#D3D3D3"
-        android:text="홈화면으로"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
+        android:background="#D3D3D3"
+        android:text="홈화면으로"
+        android:textColor="#444444"
+        android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@+id/ellipse_26" />
 
 
