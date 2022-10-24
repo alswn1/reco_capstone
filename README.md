@@ -34,6 +34,8 @@
 
 - 개발 (주요) 산출물 및 실행 예시 화면<br>
   <img src="https://user-images.githubusercontent.com/91466490/197558614-3566a3ac-540b-4ad9-b3eb-4b6fd38d66b8.png" width=25%>
+  <img src="https://user-images.githubusercontent.com/91466490/197560799-01338e85-80cd-4284-8d97-167b3d31839f.png" width=25%>
+  <img src="https://user-images.githubusercontent.com/91466490/197561169-d60022f6-478a-4fdc-9476-01f681229292.png" width=25%>
 <br>
 
 - 프로젝트 역할 분담 체계, 본인 역할 및 기여도
