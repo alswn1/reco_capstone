@@ -1,4 +1,4 @@
-# reco_capstone
+# RECO
 - 작품 이름
     - RECO : 태그를 이용한 쓰레기 분류 및 쓰레기통 위치 찾기 
 <br>
