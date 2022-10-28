@@ -11,7 +11,7 @@
   - 이미지 분류 인공지능 Teachable Machine을 활용하여 재활용 마크와 일반 쓰레기를 분류한다.<br>
   - 재활용임이 인증되면 포인트를 획득할 수 있다.<br>
   - 획득한 포인트로 기프티콘을 구매할 수 있다.<br>
-  <img src="https://user-images.githubusercontent.com/91466490/197551783-9ac2fbe4-7630-472a-8756-a183d72a2184.png" width=80%>
+  <img src="https://user-images.githubusercontent.com/91466490/198517154-85ff320e-391b-4c33-8e0d-e54c665a6501.png" width=80%>
 <br>
 
 - 팀원 소개
