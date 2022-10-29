@@ -193,6 +193,8 @@ public class BuyFinish extends DialogFragment implements View.OnClickListener{
                             // user gifticon에 user_num 따라 추가하기
                             USER_GIFTICON user_gifticon = new USER_GIFTICON(uid,lastNum[0], usegift[0].getad_Num());
                             reference.child("USER_GIFTICON").child(String.valueOf(lastNum[0])).setValue(user_gifticon);
+                            // gifticonadst에 구매 날짜 기입하기
+                            reference.child("GIFTICONADST").child(String.valueOf(usegift[0].getad_Num())).child("usedate").setValue(new Date());
 
                         }
                     } else {

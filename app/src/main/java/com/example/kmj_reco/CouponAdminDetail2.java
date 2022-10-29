@@ -113,7 +113,7 @@ public class CouponAdminDetail2 extends AppCompatActivity {
         TextView gifticonExpirydate = findViewById(R.id.gifticonExpirydate);
 
         GIFTICONADST selectedgifticondata = gifticonADSTList.get(0);
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy년 mm월 dd일");
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy년 MM월 dd일");
 
         gifticonadst_num.setText("재고 번호 :" + Integer.toString(gifticonADSTnum));
         GifticonAdapter.imageInsert(gifticonBarcode, selectedgifticondata.getGifticonBarcode());

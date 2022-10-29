@@ -14,7 +14,6 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.kmj_reco.DTO.GIFTICONDATA;
-import com.example.kmj_reco.utils.GifticonAdapter;
 import com.example.kmj_reco.utils.GifticonAdminAdapter;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;

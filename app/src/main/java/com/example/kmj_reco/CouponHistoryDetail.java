@@ -103,7 +103,7 @@ public class CouponHistoryDetail extends AppCompatActivity {
         if(gifticondataList_h.size()!=0) {
             GIFTICONADST selectedgifticonhistorydata = gifticondataList_h.get(0);
             GIFTICONDATA gifticondata = gifticondataList_d.get(0);
-            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-mm-dd");
+            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
             SimpleDateFormat dateFormat = new SimpleDateFormat("EE MMM dd HH:mm:ss z yyyy", Locale.ENGLISH);
             Log.d("태그",selectedgifticonhistorydata.getGifticonBarcode()+"이다");
             if(selectedgifticonhistorydata.getGifticonBarcode()!=null && selectedgifticonhistorydata.getGifticonBarcode()!=""){

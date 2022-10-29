@@ -28,6 +28,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="재고상황"
+            android:textSize="9dp"
             android:textColor="#ee2222"
             android:visibility="gone"/>
         <TextView
@@ -38,16 +39,16 @@
             android:textColor="#9B9B9B"
             android:textSize="15sp"/>
         <TextView
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="2dp"
             android:id="@+id/gifticonName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="이름"
             android:textColor="#000"
-            android:textSize="10sp"/>
+            android:textSize="13sp"/>
         <TextView
             android:id="@+id/gifticonPrice"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="3dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="가격"

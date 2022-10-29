@@ -51,7 +51,7 @@ public class CouponAdminDetail2Edit extends AppCompatActivity {
     ImageView gifticonImage;
     List<GIFTICONADST> gifticonADSTList = new ArrayList<>();
     public static final int GALLERY_IMAGE_REQUEST_CODE = 1;
-    SimpleDateFormat sdf_dt = new SimpleDateFormat("yyyy-mm-dd");
+    SimpleDateFormat sdf_dt = new SimpleDateFormat("yyyy-MM-dd");
     SimpleDateFormat dateFormat = new SimpleDateFormat("EE MMM dd HH:mm:ss z yyyy", Locale.ENGLISH);
     EditText buydate;
     EditText gifticonExpirydateEdit;

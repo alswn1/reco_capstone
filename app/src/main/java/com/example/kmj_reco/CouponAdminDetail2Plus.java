@@ -90,7 +90,7 @@ public class CouponAdminDetail2Plus extends AppCompatActivity {
 
                         // 이미지 데이터 형태와 내용 수정
                         // 각 기프티콘 리스트에 추가
-                        SimpleDateFormat sdf_dt = new SimpleDateFormat("yyyy-mm-dd");
+                        SimpleDateFormat sdf_dt = new SimpleDateFormat("yyyy-MM-dd");
                         GIFTICONADST newGifticondata = null;
                         String finalUrl = "GIFTICONBARCODE/barcode_dummy.png";
                         if (url==null|| url==""){

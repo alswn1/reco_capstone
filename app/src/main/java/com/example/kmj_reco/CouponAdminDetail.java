@@ -130,6 +130,7 @@ public class CouponAdminDetail extends AppCompatActivity {
                                     reference.child("GIFTICONDATA").child(String.valueOf(gifticondataList.get(0).getgifticon_Num())).removeValue();
                                     // 삭제
                                     Toast.makeText(context, "삭제완료", Toast.LENGTH_SHORT);
+                                    deleteAdst(gifticondataList.get(0).getgifticon_Num());
                                     Intent intent = new Intent(getApplicationContext(), CouponAdmin.class);
                                     intent.putExtra("num", num);
                                     startActivity(intent);
@@ -225,10 +226,11 @@ public class CouponAdminDetail extends AppCompatActivity {
         GIFTICONDATA selectedgifticondata = gifticondataList.get(0);
 
         selectedgifticondata.setgifticon_Name(gifticon_Name.getText().toString());
-
-        if (url!=null||url!=""){
+        String nowImage = selectedgifticondata.getgifticon_Image();
+        selectedgifticondata.setgifticon_Image(nowImage);
+        if (url != null&& url!=""){
             selectedgifticondata.setgifticon_Image(url);
-        }else {selectedgifticondata.setgifticon_Image("GIFTICON/gifticon_dummy.png");}
+        }
         selectedgifticondata.setgifticon_Brand(gifticon_Brand.getText().toString());
         selectedgifticondata.setgifticon_Price(Integer.parseInt(gifticon_Price.getText().toString()));
         selectedgifticondata.setgifticon_Detail(gifticon_Detail.getText().toString());
@@ -301,5 +303,25 @@ public class CouponAdminDetail extends AppCompatActivity {
                     }
                 });
             }}
+    }
+
+    private void deleteAdst(int gifticonnum){
+        reference = FirebaseDatabase.getInstance().getReference();
+        reference.child("GIFTICONADST").addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                for (DataSnapshot data : snapshot.getChildren()){
+                    GIFTICONADST gif = data.getValue(GIFTICONADST.class);
+                    if (gif.getGifticonNum()==gifticonnum){
+                        reference.child("GIFTICONADST").child(String.valueOf(gif.getad_Num())).removeValue();
+                    }
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
     }
 }

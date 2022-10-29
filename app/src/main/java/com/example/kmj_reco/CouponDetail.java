@@ -117,7 +117,7 @@ public class CouponDetail extends AppCompatActivity {
         GifticonAdapter.imageInsert(gifticon_Image,image);
         gifticon_Brand.setText(brand);
         gifticon_Name.setText(name);
-        gifticon_Price.setText(Integer.toString(price) + " 원");
+        gifticon_Price.setText(Integer.toString(price) + " p");
         gifticon_Detail.setText(detail);
     }
 }

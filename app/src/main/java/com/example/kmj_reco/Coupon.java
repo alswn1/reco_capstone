@@ -8,8 +8,12 @@ import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.SearchView;
+import android.widget.Toast;
+
+import com.facebook.ads.*;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -24,7 +28,6 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
 
 public class Coupon extends AppCompatActivity {
     ListView gifticonListView;
@@ -34,6 +37,8 @@ public class Coupon extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_coupon);
+
+
 
         Button gifticonAdminbtn = (Button) findViewById(R.id.gifticonAdminbtn);
         if (isAdmin()) {
@@ -154,5 +159,8 @@ public class Coupon extends AppCompatActivity {
             }
         });
     }
+
+
+
 }
 
