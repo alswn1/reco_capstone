@@ -1,62 +1,130 @@
 # RECO
-- 작품 이름
-    - RECO : 태그를 이용한 쓰레기 분류 및 쓰레기통 위치 찾기 
-<br>
+<h5>태그를 이용한 쓰레기 분류 및 쓰레기통 위치 찾기</h5>
 
-- 작품 개념 소개
-  - RECO는 공공데이터포털에서 쓰레기통의 위치들을 받아 쓰레기통의 위치를 지도에 나타낸다.<br>
-  - 쓰레기통 마커를 클릭하면 위치와 상세주소가 띄워진다.<br>
-  - 자체적으로 QR을 부착한 쓰레기통의 위치도 나타나게 되며, 그 쓰레기통의 마커를 클릭하면 QR 인식을 할 수 있는 화면이 나타난다.<br>
-  - QR을 인식한 후 쓰레기통이 확인되면 재활용 마크를 통해 재활용임을 인증할 수 있다.<br>
-  - 이미지 분류 인공지능 Teachable Machine을 활용하여 재활용 마크와 일반 쓰레기를 분류한다.<br>
-  - 재활용임이 인증되면 포인트를 획득할 수 있다.<br>
-  - 획득한 포인트로 기프티콘을 구매할 수 있다.<br>
-  <img src="https://user-images.githubusercontent.com/91466490/198517154-85ff320e-391b-4c33-8e0d-e54c665a6501.png" width=80%>
-<br>
+<br/>
 
-- 팀원 소개
-  |이름|학과|학번|
-  |---|---|---|
-  |권민주|스마트IT과|2005876|
-  |김주희|스마트IT과|2005898|
-  |박서영|스마트IT과|2005913|
-  |어수비|스마트IT과|1901765|
-  |손다정|스마트IT과|2005924|
-<br>
+## Date
+> 2022.03.08 ~ 2022.11.28
 
-- 목표 사용자
-  - 대한민국 쓰레기통의 위치가 궁금한 모든 사람
-<br>
+<br/>
 
-- 개발 기간
-  - 2022년 3월 8일 ~ 2022년 11월 28일
-<br>
+### Contents
+<h5>
+- RECO는 공공데이터포털에서 쓰레기통의 위치들을 받아 쓰레기통의 위치를 지도에 나타낸다.<br/><br/>
+- 쓰레기통 마커를 클릭하면 위치와 상세주소가 띄워진다.<br/><br/>
+- 자체적으로 QR을 부착한 쓰레기통의 위치도 나타나게 되며, 그 쓰레기통의 마커를 클릭하면 QR 인식을 할 수 있는 화면이 나타난다.<br/><br/>
+- QR을 인식한 후 쓰레기통이 확인되면 재활용 마크를 통해 재활용임을 인증할 수 있다.<br/><br/>
+- 이미지 분류 인공지능 Teachable Machine을 활용하여 재활용 마크와 일반 쓰레기를 분류한다.<br/><br/>
+- 재활용임이 인증되면 포인트를 획득할 수 있다.<br/><br/>
+- 획득한 포인트로 기프티콘을 구매할 수 있다.<br/>
 
-- 개발 기술
-  - 안드로이드(Java)
-  - Firebase Realtime Database / Firebase Authentication
-  - 인공지능(teachable machine 활용)
-  - 지도(Google Map API 활용)
-<br>
+<img src="https://user-images.githubusercontent.com/91466490/198517154-85ff320e-391b-4c33-8e0d-e54c665a6501.png" width=80%>
+</h5>
 
-- 개발 (주요) 산출물 및 실행 예시 화면<br>
-  <img src="https://user-images.githubusercontent.com/91466490/197558614-3566a3ac-540b-4ad9-b3eb-4b6fd38d66b8.png" width=25%>
-  <img src="https://user-images.githubusercontent.com/91466490/197560799-01338e85-80cd-4284-8d97-167b3d31839f.png" width=25%>
-  <img src="https://user-images.githubusercontent.com/91466490/197561169-d60022f6-478a-4fdc-9476-01f681229292.png" width=25%>
-<br>
+<br/>
 
-- 프로젝트 역할 분담 체계, 본인 역할 및 기여도
-  |이름|담당|기여도|
-  |---|---|---|
-  |권민주|로그인 이메일 인증<br>쓰레기통 QR인식 및 재활용 분류 인공지능<br>쓰레기통 데이터 저장 및 지도 쓰레기통 마커 표시|100%|
-  |김주희|자동로그인 / 로그아웃<br>홈화면 / 퀴즈 / 이벤트 / 공지<br>지도 검색, 상세주소 표시|100%|
-  |박서영|알림 / 설정<br>기프티콘 / 내역 / 어드민|100%|
-  |어수비|로그인 / 회원가입 / 회원정보 수정 / 마이페이지 / 어드민<br>고객센터 작성 / 어드민|100%|
-  |손다정|지도 사용자 위치 표시|100%|
-<br>
+## Teams 
+> 한양여자대학교 Smart IT과
 
-- 프로젝트 리포지터리
-  - 깃허브 : https://github.com/alswn1/reco_capstone
-<br>
+<br/>
 
-- 완성물 접근 경로 및 실행 방법
+##### 🐱 권민주 / Min Ju Kwon
+<h5>기여도 |  100% </h5>
+<h5>
+  - Front-end / Back-end <br/>
+  - DB Leader <br/>
+  - QR 인식 / 재활용 인증 AI / 사용자 E-Mail 인증 / Map (데이터 저장 및 가공, 쓰레기통 위치) <br/>
+</h5>
+
+<br/>
+
+<details>
+<summary>members</summary>
+<div markdown="1">
+  
+##### 🐰 김주희 / Joo Hee Kim
+<h5>기여도 |  100% </h5>
+<h5>
+  - PM, UI/UX Leader<br/>
+  - Front-end / Back-end <br/>
+  - Home / Quiz / Event / 공지 / 자동 login & Log out / Map (현재위치 , 위치 검색, 쓰레기통 상세주소) <br/>
+</h5>
+
+<br/>
+
+##### 🐨 박서영 / Seo Young Park
+<h5>기여도 |  100% </h5>
+<h5>
+  - Front-end / Back-end <br/>
+  - Programming Leader <br/>
+  - Coupon / Coupon Admin / 알림 / 설정 <br/>
+</h5>
+
+<br/>
+
+##### 🦊 어수비 / Su Bi Eo
+<h5>기여도 |  100% </h5>
+<h5>
+  - Front-end / Back-end <br/>
+  - Tech. writer <br/>
+  - Login & Sign Up / My Page / Service Center(문의) / Login Admin / Service Center Admin <br/>
+</h5>
+
+<br/>
+
+##### 🐶 손다정 / Da Jeong Son
+<h5>기여도 |  100% </h5>
+<h5>
+  - Front-end / Back-end <br/>
+  - Testing Leader <br/>
+  - Map (start location) <br/>
+</h5>
+
+<br/>
+</div>
+</details>
+
+<br/>
+
+## About Project
+
+### Target
++ 대한민국 쓰레기통의 위치가 궁금한 모든 사람
+
+<br/>
+
+### Skills
++ JAVA
++ Android Studio
++ Firebase Realtime Database / Firebase Authentication
++ AI (Teachable Machine)
++ Map (Google Map API)
+
+<br/>
+
+### Contest
++ 제 10회 K-해커톤 본선 진출
+
+
+<br/>
+
+## Results
+
+|Page|Run ex.|
+|:--:|:-:|
+|Home|<img width="30%" height="10%" alt="home" src="https://user-images.githubusercontent.com/93530261/198549541-87385c32-2a04-4249-8a23-bbfa4f7dbd59.png">|
+|Map|<img width="30%" height="10%" alt="map" src="https://user-images.githubusercontent.com/93530261/198549992-22105561-c5f9-4273-804d-8bdc741b15c0.png">|
+|Trashcan|<img width="30%" height="10%" alt="trashcan" src="https://user-images.githubusercontent.com/93530261/198550723-53c7eee9-da04-46cf-80bd-6ee3d851902c.png">|
+|Reco Bin|<img width="30%" height="10%" alt="recobin" src="https://user-images.githubusercontent.com/93530261/198550633-9ef4e2ca-9863-4e01-afb6-b42005a07eef.png">|
+
+<br/>
+
+## Project Repository
+깃허브 : https://github.com/alswn1/reco_capstone
+
+<br/>
+
+## Installing
+최종 완성 이후 추가 예정
+
+<br/>
