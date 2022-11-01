@@ -45,8 +45,8 @@
 ##### 🐰 김주희 / Joo Hee Kim
 <h5>기여도 |  100% </h5>
 <h5>
-  - PM, UI/UX Leader<br/>
   - Front-end / Back-end <br/>
+  - PM, UI/UX Leader<br/>
   - Home / Quiz / Event / 공지 / 자동 login & Log out / Map (현재위치 , 위치 검색, 쓰레기통 상세주소) <br/>
 </h5>
 
