@@ -33,7 +33,7 @@
 <h5>
   - Front-end / Back-end <br/>
   - DB Leader <br/>
-  - QR 인식 / 재활용 인증 AI / 사용자 E-Mail 인증 / Map (데이터 저장 및 가공, 쓰레기통 위치) <br/>
+  - QR 생성 및 인식 / 재활용 인증 AI / 사용자 E-Mail 인증 / Map (데이터 저장 및 가공, 쓰레기통 위치) <br/>
 </h5>
 
 <br/>
