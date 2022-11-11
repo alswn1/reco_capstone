@@ -30,7 +30,7 @@ public class NoticeAdmin extends AppCompatActivity {
         database.getReference("NOTICE").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                int notice_num = (int) snapshot.getChildrenCount();
+                int notice_num = (int) (snapshot.getChildrenCount() + 1);
 
                 Button btn_notice_submit = (Button) findViewById(R.id.btn_notice_submit);
                 btn_notice_submit.setOnClickListener(new View.OnClickListener() {

@@ -2,6 +2,7 @@ package com.example.kmj_reco;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ImageButton;
@@ -29,6 +30,8 @@ public class Notice extends AppCompatActivity {
     ListView notice2ListView;
 
     static List<NOTICE> noticeList = new ArrayList<>();
+
+    public int count;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,6 +72,7 @@ public class Notice extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 noticeList.clear();
+                count = (int) snapshot.getChildrenCount();
 
                 for(DataSnapshot data : snapshot.getChildren()){
                     NOTICE notice = data.getValue(NOTICE.class);
@@ -93,7 +97,7 @@ public class Notice extends AppCompatActivity {
         notice2ListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position2, long l) {
-                NOTICE selectedNotice = (NOTICE) notice2ListView.getItemAtPosition(position2);
+                NOTICE selectedNotice = (NOTICE) notice2ListView.getItemAtPosition(count - position2 - 1);
                 Intent showDetail = new Intent(getApplicationContext(), NoticeDetail.class);
                 showDetail.putExtra("num", selectedNotice.getNotice_num());
                 showDetail.putExtra("title", selectedNotice.getNotice_title());
