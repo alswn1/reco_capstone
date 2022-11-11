@@ -53,6 +53,15 @@ public class Notice extends AppCompatActivity {
             }
         });
 
+        ImageButton btn_event = (ImageButton) findViewById(R.id.btn_event);
+        btn_event.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), Event.class);
+                startActivity(intent);
+            }
+        });
+
         database = FirebaseDatabase.getInstance();
         reference = database.getReference();
 
@@ -84,11 +93,9 @@ public class Notice extends AppCompatActivity {
         notice2ListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position2, long l) {
-
                 NOTICE selectedNotice = (NOTICE) notice2ListView.getItemAtPosition(position2);
                 Intent showDetail = new Intent(getApplicationContext(), NoticeDetail.class);
                 showDetail.putExtra("num", selectedNotice.getNotice_num());
-                showDetail.putExtra("image", selectedNotice.getNotice_img());
                 showDetail.putExtra("title", selectedNotice.getNotice_title());
                 showDetail.putExtra("date", selectedNotice.getNotice_date());
                 showDetail.putExtra("detail", selectedNotice.getNotice_detail());

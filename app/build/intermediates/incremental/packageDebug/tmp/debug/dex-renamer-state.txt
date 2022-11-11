@@ -1,10 +1,13 @@
-#Mon Oct 24 22:43:42 KST 2022
-base.2=C\:\\AndroidProjects\\kmj_reco_2_fififififinal\\kmj_reco\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+#Fri Nov 11 22:55:28 KST 2022
+path.3=classes3.dex
 path.2=classes2.dex
-base.1=C\:\\AndroidProjects\\kmj_reco_2_fififififinal\\kmj_reco\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\classes.dex
 path.1=classes.dex
-base.0=C\:\\AndroidProjects\\kmj_reco_2_fififififinal\\kmj_reco\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+path.0=classes.dex
+base.3=C\:\\AndroidProjects\\RECO_admin\\kmj_reco\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes3.dex
+base.2=C\:\\AndroidProjects\\RECO_admin\\kmj_reco\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+base.1=C\:\\AndroidProjects\\RECO_admin\\kmj_reco\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\classes.dex
+base.0=C\:\\AndroidProjects\\RECO_admin\\kmj_reco\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+renamed.3=classes4.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
-path.0=classes.dex

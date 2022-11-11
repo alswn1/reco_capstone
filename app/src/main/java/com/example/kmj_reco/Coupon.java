@@ -8,18 +8,19 @@ import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.SearchView;
-import android.widget.Toast;
-
-import com.facebook.ads.*;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.kmj_reco.DTO.GIFTICONDATA;
 import com.example.kmj_reco.utils.GifticonAdapter;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -31,6 +32,8 @@ import java.util.List;
 
 public class Coupon extends AppCompatActivity {
     ListView gifticonListView;
+    AdView mAdView;
+
     private List<GIFTICONDATA> gifticondataList = new ArrayList<>();
 
     @Override
@@ -38,19 +41,15 @@ public class Coupon extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_coupon);
 
-
-
-        Button gifticonAdminbtn = (Button) findViewById(R.id.gifticonAdminbtn);
-        if (isAdmin()) {
-            gifticonAdminbtn.setVisibility(View.VISIBLE);
-        }
-        gifticonAdminbtn.setOnClickListener(new View.OnClickListener() {
+        // Google AD
+        MobileAds.initialize(this, new OnInitializationCompleteListener() {
             @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), CouponAdmin.class);
-                startActivity(intent);
-            }
+            public void onInitializationComplete(InitializationStatus initializationStatus) {}
         });
+
+        mAdView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
 
         ImageView btn_home = (ImageView) findViewById(R.id.btn_home);
         btn_home.setOnClickListener(new View.OnClickListener() {
@@ -131,12 +130,6 @@ public class Coupon extends AppCompatActivity {
         });
     }
 
-    private boolean isAdmin() {
-//     if (){} 어드민 조건
-        return true;
-//        else{return false};
-    }
-
     private void searchfun(List<GIFTICONDATA> gifticondataList){
         SearchView searchView = (SearchView) findViewById(R.id.gifticon_searchView);
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
@@ -159,8 +152,5 @@ public class Coupon extends AppCompatActivity {
             }
         });
     }
-
-
-
 }
 

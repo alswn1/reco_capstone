@@ -43,8 +43,8 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAd
     @Override
     public void onBindViewHolder(@NonNull final ViewHolder holder, int position) {
         ServiceAccount service = ServiceAccount.get(position);
-        holder.title.setText(service.getTitle());
-        holder.content.setText(service.getContents());
+        holder.title.setText(service.getService_Title());
+        holder.content.setText(service.getService_Contents());
 
         if (mListener != null) {
             final int pos = position;

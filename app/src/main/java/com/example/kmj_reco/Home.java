@@ -6,11 +6,16 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdSize;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -46,56 +51,54 @@ public class Home extends AppCompatActivity {
                 Integer point = snapshot.child("user_point").getValue(Integer.class);
                 user_point.setText(point.toString());
             }
-
             @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-            }
+            public void onCancelled(@NonNull DatabaseError error) {}
         });
 
         // 각 버튼 클릭 시 화면 이동
         ImageView btn_settings = (ImageView) findViewById(R.id.btn_settings);
         btn_settings.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Settings.class);
-                startActivity(intent);
-            }
+        @Override
+        public void onClick(View view) {
+        Intent intent = new Intent(getApplicationContext(), Settings.class);
+        startActivity(intent);
+        }
         });
 
         ImageView btn_alert = (ImageView) findViewById(R.id.btn_alert);
         btn_alert.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Alert.class);
-                startActivity(intent);
-            }
+        @Override
+        public void onClick(View view) {
+        Intent intent = new Intent(getApplicationContext(), Alert.class);
+        startActivity(intent);
+        }
         });
 
         ImageButton btn_map = (ImageButton) findViewById(R.id.btn_map);
         btn_map.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Map.class);
-                startActivity(intent);
-            }
+        @Override
+        public void onClick(View view) {
+        Intent intent = new Intent(getApplicationContext(), Map.class);
+        startActivity(intent);
+        }
         });
 
         ImageButton btn_coupon = (ImageButton) findViewById(R.id.btn_coupon);
         btn_coupon.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Coupon.class);
-                startActivity(intent);
-            }
+        @Override
+        public void onClick(View view) {
+        Intent intent = new Intent(getApplicationContext(), Coupon.class);
+        startActivity(intent);
+        }
         });
 
         ImageButton btn_mypage = (ImageButton) findViewById(R.id.btn_mypage);
         btn_mypage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), MyPageActivity.class);
-                startActivity(intent);
-            }
+        @Override
+        public void onClick(View view) {
+        Intent intent = new Intent(getApplicationContext(), MyPageActivity.class);
+        startActivity(intent);
+        }
         });
     }
 }

@@ -101,7 +101,7 @@ public class GifticonAdminAdapter extends ArrayAdapter<GIFTICONDATA> {
                                 @Override
                                 public void onClick(DialogInterface dialogInterface, int i) {
                                     databaseReference.child("GIFTICONDATA").child(String.valueOf(gifticondata.getgifticon_Num())).removeValue();
-
+                                    deleteAdst(gifticondata.getgifticon_Num());
                                     Toast.makeText(context, gifticondata.getgifticon_Name().toString()+" 삭제 완료",Toast.LENGTH_SHORT).show();
                                 }
                             });
@@ -158,5 +158,25 @@ public class GifticonAdminAdapter extends ArrayAdapter<GIFTICONDATA> {
             }
         });
         return mView;
+    }
+
+    private void deleteAdst(int gifticonnum){
+        databaseReference = FirebaseDatabase.getInstance().getReference();
+        databaseReference.child("GIFTICONADST").addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                for (DataSnapshot data : snapshot.getChildren()){
+                    GIFTICONADST gif = data.getValue(GIFTICONADST.class);
+                    if (gif.getGifticonNum()==gifticonnum){
+                        databaseReference.child("GIFTICONADST").child(String.valueOf(gif.getad_Num())).removeValue();
+                    }
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
     }
 }

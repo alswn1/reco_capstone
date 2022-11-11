@@ -2,11 +2,10 @@ package com.example.kmj_reco;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Debug;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -38,6 +37,16 @@ public class RegisterActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        TextView goToPersonalInfo = (TextView) findViewById(R.id.goToPersonalInfo);
+        goToPersonalInfo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // 회원가입 화면으로 이동
+                Intent intent = new Intent(getApplicationContext(), PersonalInfo.class);
                 startActivity(intent);
             }
         });
@@ -94,13 +103,11 @@ public class RegisterActivity extends AppCompatActivity {
                                 Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
                                 startActivity(intent);
                                 finish();
-                                //movePage(0);
                             } else {
                                 Toast.makeText(RegisterActivity.this, "비밀번호가 일치하지 않습니다.", Toast.LENGTH_SHORT).show();
                                 return;
                             }
                         } else {
-                            //movepage(1);
                             Toast.makeText(RegisterActivity.this, "회원가입에 실패하셨습니다", Toast.LENGTH_SHORT).show();
                             return;
                         }

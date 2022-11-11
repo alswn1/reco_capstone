@@ -98,7 +98,7 @@ public class GifticonHistoryAdapter extends ArrayAdapter<GIFTICONADST> {
                         gifticondataList.add(gif);}
                 }
                 GIFTICONDATA gifticondata = (GIFTICONDATA) gifticondataList.get(0);
-                SimpleDateFormat sdf = new SimpleDateFormat("yyyy-mm-dd");
+                SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
                 SimpleDateFormat dateFormat = new SimpleDateFormat("EE MMM dd HH:mm:ss z yyyy", Locale.ENGLISH);
 
                 imageInsert(viewHolder.gifticon_Image, gifticondata.getgifticon_Image());

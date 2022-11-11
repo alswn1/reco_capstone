@@ -159,7 +159,7 @@ public class CameraActivity extends AppCompatActivity {
                     Intent intent = new Intent(getApplicationContext(), Home.class);
                     startActivity(intent);
 
-                    Toast.makeText(this, "해당 제품은 재활용이 아니어서 인증이 불가합니다.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "해당 제품은 재활용품이 아니어서 인증이 불가합니다.", Toast.LENGTH_SHORT).show();
                 }else {
                     //Toast.makeText(getApplicationContext(), "첫번째 : " + c, Toast.LENGTH_SHORT).show();
 
@@ -190,7 +190,7 @@ public class CameraActivity extends AppCompatActivity {
                 int point = snapshot.getValue(Integer.class);
                 // addValueEventListener의 무한루프를 막는다.
                 myRef.child("user_point").removeEventListener(this);
-                // 사용자 포인트를 2 증가한다.
+                // 사용자 포인트를 1 증가한다.
                 myRef.child("user_point").setValue(point + 2);
 
                 // 성공하여 CameraSuccess로 이동

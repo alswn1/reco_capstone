@@ -36,14 +36,17 @@
         android:theme="@style/AppTheme" >
 
         <uses-library android:name="com.google.android.maps"/>
-        <uses-library android:name="org.apache.http.legacy"
-            android:required="false"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
 
         <activity android:name=".InformationActivity" />
         <activity android:name=".Home" />
         <activity android:name=".MyPageActivity" />
         <activity android:name=".RegisterActivity"
             android:usesCleartextTraffic="true"/>
+
+        <activity android:name=".AdminLogin"/>
+        <activity android:name=".AdminHome"/>
+        <activity android:name=".LoginAdmin"/>
 
         <activity android:name=".ServiceCenterActivity"/>
         <activity android:name=".ServiceDetailActivity" />
@@ -101,6 +104,7 @@
             android:name=".CameraActivity"
             android:screenOrientation="portrait" />
         <activity android:name=".CameraSuccess"/>
+        
 
         <activity android:name=".Map" />
         <activity android:name=".RecobinDetail"
@@ -120,6 +124,8 @@
         <activity android:name=".Event" />
         <activity android:name=".Notice"/>
         <activity android:name=".NoticeDetail"/>
+        
+        <activity android:name=".PersonalInfo"/>
 
         <activity android:name=".LoginActivity"
             android:label="@string/app_name">
@@ -149,5 +155,8 @@
         <meta-data
             android:name="com.google.android.gms.vision"
             android:value="@integer/google_play_services_version"/>
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-2420353707518425~3355214747"/>
     </application>
 </manifest>

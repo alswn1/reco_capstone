@@ -7,8 +7,8 @@ android:layout_height="match_parent"
 android:orientation="vertical"
 tools:context=".CouponAdmin">
 
-    <include layout="@layout/title_bar"
-        android:id="@+id/title_bar"/>
+    <include layout="@layout/title_bar2"
+        android:id="@+id/title_bar2"/>
 
     <SearchView
         android:id="@+id/gifticon_searchView"

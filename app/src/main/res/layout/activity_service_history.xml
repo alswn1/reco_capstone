@@ -1,103 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".ServiceHistoryActivity">
 
-    <include layout="@layout/title_bar"
-        android:id="@+id/title_bar"/>
 
     <ListView
-        android:id="@+id/et_inquiry1"
-        android:layout_width="291dp"
-        android:layout_height="274dp"
-        android:layout_marginStart="84dp"
-        android:layout_marginTop="96dp"
-        android:layout_marginBottom="360dp"
-        android:ems="10"
-        android:hint="문의내역"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_qna" />
+        android:id="@+id/serviceAccountListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="104dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="8dp"
-        android:text="문의내역"
-        android:textColor="#4B6C11"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/btn_qna"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
 
-    <Button
-        android:id="@+id/btn_qna2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="49dp"
-        android:layout_marginTop="136dp"
-        android:layout_marginEnd="24dp"
-        android:text="문의내역"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.951"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="DuplicateSpeakableTextCheck" />
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="55dp"
-        android:layout_marginTop="164dp"
-        android:layout_marginEnd="304dp"
-        android:text="문의내용"
-        android:textColor="#000000"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/btn_qna2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageButton
-        android:id="@+id/btn_back"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="88dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginBottom="148dp"
-        android:background="@android:color/transparent"
-        app:layout_constraintBottom_toTopOf="@+id/et_inquiry"
-        app:layout_constraintEnd_toStartOf="@+id/textView4"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/btn_back"
-        tools:ignore="SpeakableTextPresentCheck" />
-
-    <TextView
-        android:id="@+id/et_inquiry2"
-        android:layout_width="288dp"
-        android:layout_height="231dp"
-        android:layout_marginTop="60dp"
-        android:hint="문의내역"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.544"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_inquiry1" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

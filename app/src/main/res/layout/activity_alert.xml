@@ -7,6 +7,30 @@
     android:orientation="vertical"
     tools:context=".Alert">
 
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="8dp"
+        android:text="환경 퀴즈 맞추러 가기!"
+        android:textColor="#444444"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/btn_quiz"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btn_quiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/btn_move" />
+
     <include
         android:id="@+id/notice_bar"
         layout="@layout/notice_bar"
@@ -15,24 +39,14 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="73dp" />
 
-
     <ListView
         android:id="@+id/notice2ListView"
         android:layout_width="416dp"
         android:layout_height="611dp"
+        android:layout_marginTop="16dp"
         android:cacheColorHint="#dadada"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_quiz" />
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
-    <ImageButton
-        android:id="@+id/btn_quiz"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#00FFFFFF"
-        android:src="@drawable/btn_quiz"
-        android:text="Button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/notice_bar"
-        tools:ignore="SpeakableTextPresentCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>

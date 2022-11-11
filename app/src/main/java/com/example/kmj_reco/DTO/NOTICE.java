@@ -9,7 +9,6 @@ public class NOTICE{
     private String notice_detail;
     private int notice_num;
     private String notice_title;
-    private String notice_img;
 
     public NOTICE() {}
 
@@ -34,17 +33,11 @@ public class NOTICE{
     public String getNotice_title(){ return notice_title; }
     public void setNotice_title(String notice_title) { this.notice_title = notice_title; }
 
-    public void setNotice_img(String notice_img) {
-        this.notice_img = notice_img;
-    }
-    public String getNotice_img(){ return notice_img;}
-
-    public NOTICE(String notice_date, String notice_detail, int notice_num , String notice_title, String notice_img){
+    public NOTICE(String notice_date, String notice_detail, int notice_num , String notice_title){
         this.notice_date=notice_date;
         this.notice_detail=notice_detail;
         this.notice_num=notice_num;
         this.notice_title=notice_title;
-        this.notice_img=notice_img;
     }
 }
 

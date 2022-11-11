@@ -18,7 +18,7 @@ public class CameraSuccess extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_camera_success);
 
-        // 홈화면으로 돌아가기 클릭했을 때
+        // 홈 화면으로 돌아가기 클릭했을 때
         Button backHome = findViewById(R.id.backHome);
         backHome.setOnClickListener(view -> {
             // Home으로 이동

@@ -12,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.kmj_reco.utils.NoticeAdapter;
 import com.example.kmj_reco.DTO.ALERT;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -35,6 +36,7 @@ public class Alert extends AppCompatActivity {
 
         database = FirebaseDatabase.getInstance();
         reference = database.getReference();
+        String uid = FirebaseAuth.getInstance().getUid();
 
         reference.child("ALERT").limitToLast(20).addValueEventListener(new ValueEventListener() {
             @Override
@@ -42,7 +44,8 @@ public class Alert extends AppCompatActivity {
                 alertList.clear();
                 for(DataSnapshot data : snapshot.getChildren()){
                     ALERT alert = data.getValue(ALERT.class);
-                    alertList.add(0, alert);
+                    if(alert.getuser_Name().equals(uid)){
+                        alertList.add(0, alert);}
                 }
                 final NoticeAdapter noticeAdapter = new NoticeAdapter(getApplicationContext(),R.layout.item_notice, alertList,alertListView);
                 alertListView.setAdapter(noticeAdapter);

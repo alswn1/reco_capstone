@@ -24,8 +24,8 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 public class InformationActivity extends AppCompatActivity {
-    private FirebaseAuth mFirebaseAuth; //파이어베이스 인증
-    private DatabaseReference mDatabaseRef; //실시간데이터베이스
+    private FirebaseAuth mFirebaseAuth; // 파이어베이스 인증
+    private DatabaseReference mDatabaseRef; // 실시간 데이터베이스
 
     // 데이터베이스 선언
     FirebaseDatabase database;
@@ -147,7 +147,7 @@ public class InformationActivity extends AppCompatActivity {
                             @Override
                             public void onComplete(@NonNull Task<Void> task) {
                                 if (task.isSuccessful()){
-                                    startToast("회원정보 수정등록에 성공하였습니다.");
+                                    startToast("회원정보 수정에 성공하였습니다.");
                                 }
                             }
                         });

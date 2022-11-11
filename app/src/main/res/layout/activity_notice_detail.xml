@@ -26,13 +26,13 @@
 
     <TextView
         android:id="@+id/notice_detail"
-        android:layout_width="288dp"
-        android:layout_height="410dp"
-        android:layout_marginBottom="70dp"
+        android:layout_width="322dp"
+        android:layout_height="428dp"
+        android:layout_marginBottom="50dp"
         android:text="공지 내용"
         android:textAlignment="textStart"
         android:textColor="#444444"
-        android:textSize="16sp"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -47,14 +47,5 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/notice_img"
-        android:layout_width="288dp"
-        android:layout_height="412dp"
-        android:layout_marginBottom="70dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

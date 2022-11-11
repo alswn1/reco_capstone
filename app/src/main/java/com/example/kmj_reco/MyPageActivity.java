@@ -133,7 +133,7 @@ public class MyPageActivity extends AppCompatActivity {
             }
         });
 
-        // 로그아웃 버튼 클릭 시 로그아웃
+        // 로그아웃 버튼 클릭 시 로그아웃 후 로그인 화면으로 이동
         Button btn_logout = (Button) findViewById(R.id.btn_logout);
         btn_logout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -146,5 +146,4 @@ public class MyPageActivity extends AppCompatActivity {
             }
         });
     }
-
 }

@@ -16,7 +16,7 @@
         app:layout_constraintStart_toEndOf="@+id/gifticonImage2"
         app:layout_constraintTop_toBottomOf="@+id/gifticonExpirydateEdit" />
 
-    <include layout="@layout/title_bar"
+    <include layout="@layout/title_bar2"
         android:id="@+id/title_bar"/>
 
     <ImageView

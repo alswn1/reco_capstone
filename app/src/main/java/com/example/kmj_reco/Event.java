@@ -74,13 +74,13 @@ public class Event extends AppCompatActivity {
         }
         });
 
-        /*ImageButton btn_back = (ImageButton) findViewById(R.id.btn_back);
+        ImageButton btn_back = (ImageButton) findViewById(R.id.btn_back);
         btn_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), Notice.class);
                 startActivity(intent);
             }
-        });*/
+        });
     }
 }

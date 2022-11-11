@@ -111,6 +111,7 @@ public class GifticonAdapter extends ArrayAdapter<GIFTICONDATA> {
             @Override
             public void onClick(View view) {
                 Intent showDetail = new Intent(context, CouponDetail.class);
+                showDetail.putExtra("num", gifticondata.getgifticon_Num());
                 showDetail.putExtra("image", gifticondata.getgifticon_Image());
                 showDetail.putExtra("name", gifticondata.getgifticon_Name());
                 showDetail.putExtra("price", gifticondata.getgifticon_Price());
@@ -148,4 +149,5 @@ public class GifticonAdapter extends ArrayAdapter<GIFTICONDATA> {
                 }
             });
         }
-}}
+    }
+}

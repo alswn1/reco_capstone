@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".CouponAdminDetail2">
 
-    <include layout="@layout/title_bar"
+    <include layout="@layout/title_bar2"
         android:id="@+id/title_bar"/>
 
     <ImageView

@@ -37,14 +37,18 @@ import java.util.List;
 
 public class CouponAdminDetailPlus extends AppCompatActivity {
     private DatabaseReference reference;
+
     FirebaseStorage storage;
     StorageReference sTreference;
     String url;
+
     private  final int GALLERY_CODE = 10;
+
     ImageView gifticonImage;
     List<GIFTICONDATA> gifticondataList2 = new ArrayList<>();
 
     public static final int GALLERY_IMAGE_REQUEST_CODE = 1;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

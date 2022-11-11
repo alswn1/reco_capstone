@@ -51,7 +51,6 @@ public class NoticeAdapter2 extends ArrayAdapter<NOTICE> {
         private TextView notice_title;
         private TextView notice_detail;
         private TextView notice_date;
-        private TextView notice_img;
     }
 
     public NoticeAdapter2(Context context2, int resource2, List<NOTICE> notice2list, ListView notice2ListView) {
@@ -84,7 +83,7 @@ public class NoticeAdapter2 extends ArrayAdapter<NOTICE> {
             Status2 = "reused";
         }
 
-        // 이벤트를 공지에 합치자 -> 데베 화면은 이름을 바꾸자
+        // DB 에서 NOTICE 데이터 가져오기
         NOTICE notice = (NOTICE) notice2list.get(position2);
         databaseReference= FirebaseDatabase.getInstance().getReference();
         databaseReference.child("NOTICE").addListenerForSingleValueEvent(new ValueEventListener() {
@@ -104,31 +103,4 @@ public class NoticeAdapter2 extends ArrayAdapter<NOTICE> {
 
         return m2View;
     } private Context context;
-
-    /*
-    public static void imageInsert(ImageView load, String uri) {
-        FirebaseStorage storage = FirebaseStorage.getInstance();
-        StorageReference storageReference = storage.getReference();
-        StorageReference pathReference = storageReference.child("NOTICE");
-        if (pathReference == null) {
-            Toast.makeText(load.getContext(), "저장소에 사진이 없습니다.", Toast.LENGTH_SHORT);
-        } else {
-            StorageReference submitProfile;
-            if (uri != null || uri != "" || uri != " ") {
-                submitProfile = storageReference.child(uri);
-            } else {
-                submitProfile = storageReference.child("notice_img");
-            }
-            submitProfile.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
-                @Override
-                public void onSuccess(Uri uri) {
-                    Glide.with(load.getContext()).load(uri).into(load);
-                }
-            }).addOnFailureListener(new OnFailureListener() {
-                @Override
-                public void onFailure(@NonNull Exception e) {
-                }
-            });
-        }
-    }*/
 }

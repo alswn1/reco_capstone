@@ -30,6 +30,7 @@ import java.util.List;
 public class CouponAdminDetail2 extends AppCompatActivity {
     private FirebaseDatabase database;
     private DatabaseReference reference;
+
     List<GIFTICONADST> gifticonADSTList = new ArrayList<>();
 
     @Override

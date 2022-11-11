@@ -1,47 +1,69 @@
 package com.example.kmj_reco;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ImageButton;
-import android.widget.Toast;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
+import android.util.Log;
+import android.widget.AdapterView;
+import android.widget.Button;
+import android.widget.Toast;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
+
 import com.example.kmj_reco.DTO.ServiceAccount;
-import com.example.kmj_reco.utils.MyRecyclerViewAdapter;
+import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.QuerySnapshot;
 
 public class ServiceCenterActivity extends AppCompatActivity {
     private static final String TAG = "ServiceCenterActivity";
 
-    private FirebaseAuth mFirebaseAuth; // 파이어베이스 인증
-    private DatabaseReference mDatabaseRef; // 실시간데이터베이스
+    private FirebaseAuth mFirebaseAuth; //파이어베이스 인증
+    private DatabaseReference mDatabaseRef; //실시간데이터베이스
     private FirebaseUser user;
+    FirebaseFirestore fs = FirebaseFirestore.getInstance();
 
     FirebaseDatabase database = FirebaseDatabase.getInstance();
     DatabaseReference myRef = FirebaseDatabase.getInstance().getReference();
-    FirebaseFirestore fs = FirebaseFirestore.getInstance();
+    FirebaseFirestore db = FirebaseFirestore.getInstance();
     private ServiceAccount ServiceAccount;
-    private Object User;
+    private Object USER;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_service_center);
 
+        Button historyBtn = (Button) findViewById(R.id.btn_history);
+        historyBtn.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                fs.collection("posts")
+                        .get()
+                        .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                            @Override
+                            public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                                if(task.isSuccessful()){
+                                    for (QueryDocumentSnapshot document : task.getResult()) {}
+                                }else {}
+                            }
+                        });
+                Intent intent = new Intent(getApplicationContext(), ServiceHistoryActivity.class);
+                startActivity(intent);
+                }
+            });
 
+        /*
         Button btn_history = (Button) findViewById(R.id.btn_history);
         btn_history.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,7 +71,7 @@ public class ServiceCenterActivity extends AppCompatActivity {
                 Intent intent = new Intent(getApplicationContext(), ServiceHistoryActivity.class);
                 startActivity(intent);
             }
-        });
+        });*/
 
         // 제출하기 버튼 누름
         findViewById(R.id.btn_submit).setOnClickListener(onClickListener);
@@ -62,20 +84,19 @@ public class ServiceCenterActivity extends AppCompatActivity {
                     serviceWrite();
                     break;
             }
-
         }
     };
 
     private void serviceWrite() { // 고객센터 글쓰기
-        final String title = ((EditText) findViewById(R.id.et_title)).getText().toString();
-        final String contents = ((EditText) findViewById(R.id.et_inquiry)).getText().toString();
+        final String service_title = ((EditText) findViewById(R.id.et_title)).getText().toString();
+        final String service_contents = ((EditText) findViewById(R.id.et_content)).getText().toString();
 
-        if (title.length() >0 && contents.length() >0){
-            user =FirebaseAuth.getInstance().getCurrentUser();
-            ServiceAccount serviceAccount = new ServiceAccount(title, contents, user.getUid());
-            uploader(ServiceAccount);
+        if (service_title.length() >0 && service_contents.length() >0){
+            user = FirebaseAuth.getInstance().getCurrentUser();
+            ServiceAccount serviceAccount = new ServiceAccount(service_title, service_contents,user.getUid());
+            uploader(serviceAccount);
         } else{
-            startToast("회원정보를 입력해주세요.");
+            startToast("빈칸 없이 입력해주세요.");
         }
     }
 
@@ -96,6 +117,5 @@ public class ServiceCenterActivity extends AppCompatActivity {
                 });
     }
     // 보여주기
-    private void startToast(String msg) {
-        Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();}
+    private void startToast(String msg) {Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();}
 }

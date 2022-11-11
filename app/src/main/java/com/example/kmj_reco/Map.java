@@ -220,15 +220,6 @@ public class Map extends AppCompatActivity implements OnMapReadyCallback {
         }
         googleMap.setMyLocationEnabled(true);
 
-        /*
-        // 위치 확인 버튼
-        btn_location.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                requestMyLocation();
-            }
-        });*/
-
         // 검색 버튼
         btn_search.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -241,40 +232,12 @@ public class Map extends AppCompatActivity implements OnMapReadyCallback {
         });
     }
 
-    /*
-    // 사용자 위치
-    private void requestMyLocation() {
-        LocationManager manager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-        try {
-            long minTime = 1000;    //갱신 시간
-            float minDistance = 0;  //갱신에 필요한 최소 거리
-
-            manager.requestLocationUpdates(LocationManager.GPS_PROVIDER, minTime, minDistance, new LocationListener() {
-                @Override
-                public void onLocationChanged(Location location) {
-                    showCurrentLocation(location);
-                }
-
-                @Override
-                public void onStatusChanged(String s, int i, Bundle bundle) {}
-
-                @Override
-                public void onProviderEnabled(String s) {}
-
-                @Override
-                public void onProviderDisabled(String s) {}
-            });
-        } catch (SecurityException e) {
-            e.printStackTrace();
-        }
-    }*/
-
-
-    // 주소로 위치 받아오기
+    // 위치 받아오기
     private Location getLocationFromAddress(Context context, String address) {
         Geocoder geocoder = new Geocoder(context);
         List<Address> addresses;
         Location resLocation = new Location("");
+
         try {
             addresses = geocoder.getFromLocationName(address, 5);
             if((addresses == null) || (addresses.size() == 0)) {
@@ -291,26 +254,25 @@ public class Map extends AppCompatActivity implements OnMapReadyCallback {
         return resLocation;
     }
 
+    // 현재 위치 설정
     private void showCurrentLocation(Location location) {
         LatLng curPoint = new LatLng(location.getLatitude(), location.getLongitude());
-        String msg = "Latitutde : " + curPoint.latitude
-                + "\nLongitude : " + curPoint.longitude;
+        String msg = "Latitutde : " + curPoint.latitude + "\nLongitude : " + curPoint.longitude;
 
         // 화면 확대, 숫자가 클수록 확대
         map.animateCamera(CameraUpdateFactory.newLatLngZoom(curPoint, 15));
 
-        // 마커
+        /*
         Location targetLocation = new Location("");
-        targetLocation.setLatitude(37.4937);
-        targetLocation.setLongitude(127.0643);
+        targetLocation.setLatitude();
+        targetLocation.setLongitude();*/
     }
 
     // -----------------권한 설정
     private void checkDangerousPermissions() {
         String[] permissions = {
                 android.Manifest.permission.ACCESS_COARSE_LOCATION,
-                android.Manifest.permission.ACCESS_FINE_LOCATION,
-                // Manifest.permission.ACCESS_WIFI_STATE
+                android.Manifest.permission.ACCESS_FINE_LOCATION
         };
 
         int permissionCheck = PackageManager.PERMISSION_GRANTED;
@@ -324,7 +286,6 @@ public class Map extends AppCompatActivity implements OnMapReadyCallback {
         if (permissionCheck == PackageManager.PERMISSION_GRANTED) {
         } else {
             Toast.makeText(this, "권한 없음", Toast.LENGTH_LONG).show();
-
             if (ActivityCompat.shouldShowRequestPermissionRationale(this, permissions[0])) {
                 Toast.makeText(this, "권한 설명 필요", Toast.LENGTH_LONG).show();
             } else {
@@ -332,6 +293,8 @@ public class Map extends AppCompatActivity implements OnMapReadyCallback {
             }
         }
     }
+
+    // 권한 설정 결과
     @Override
     public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
         if (requestCode == 1) {

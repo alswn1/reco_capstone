@@ -13,7 +13,7 @@
         android:id="@+id/et_register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="90dp"
         android:text="회원가입"
         android:textColor="#4B6C11"
         android:textSize="18sp"
@@ -25,10 +25,10 @@
 
     <EditText
         android:id="@+id/et_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="201dp"
+        android:layout_height="43dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="135dp"
         android:layout_marginEnd="8dp"
         android:autofillHints=""
         android:ems="10"
@@ -43,8 +43,8 @@
 
     <EditText
         android:id="@+id/et_birth"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="201dp"
+        android:layout_height="43dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
@@ -60,8 +60,8 @@
 
     <EditText
         android:id="@+id/et_id"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="201dp"
+        android:layout_height="43dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
@@ -75,8 +75,8 @@
 
     <EditText
         android:id="@+id/et_pass"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="201dp"
+        android:layout_height="43dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
@@ -91,8 +91,8 @@
 
     <EditText
         android:id="@+id/et_pass2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="201dp"
+        android:layout_height="43dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
@@ -106,8 +106,8 @@
 
     <EditText
         android:id="@+id/et_phone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="201dp"
+        android:layout_height="43dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
@@ -121,8 +121,8 @@
 
     <EditText
         android:id="@+id/et_email"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="201dp"
+        android:layout_height="43dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
@@ -157,5 +157,41 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginBottom="93dp"
+        android:text="회원가입을 하면"
+        android:textColor="#444444"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/goToPersonalInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="93dp"
+        android:text="이용약관"
+        android:textColor="#4B6C11"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView16" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="93dp"
+        android:text="동의로 간주합니다."
+        android:textColor="#444444"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/goToPersonalInfo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

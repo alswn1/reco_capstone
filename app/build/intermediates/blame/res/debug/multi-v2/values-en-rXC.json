@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\AndroidProjects\\kmj_reco_2_fififififinal\\kmj_reco\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rXC\\values-en-rXC.xml",
+            "outputFile": "C:\\AndroidProjects\\RECO_admin\\kmj_reco\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rXC\\values-en-rXC.xml",
             "map": [
                 {
                     "source": "C:\\Users\\com\\.gradle\\caches\\transforms-2\\files-2.1\\c1717031593ff5abe5ad2cd63f7f9f95\\appcompat-1.2.0\\res\\values-en-rXC\\values-en-rXC.xml",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\com\\.gradle\\caches\\transforms-2\\files-2.1\\51c675bb8e06c7bd55d4deb213cf43b6\\core-1.5.0\\res\\values-en-rXC\\values-en-rXC.xml",
+                    "source": "C:\\Users\\com\\.gradle\\caches\\transforms-2\\files-2.1\\d0ae98606e9f81a90fdbd119b5e174b2\\core-1.6.0\\res\\values-en-rXC\\values-en-rXC.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

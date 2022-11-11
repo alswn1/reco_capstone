@@ -42,8 +42,8 @@
 
     <Button
         android:id="@+id/btn_login"
-        android:layout_width="88dp"
-        android:layout_height="wrap_content"
+        android:layout_width="109dp"
+        android:layout_height="49dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="8dp"
@@ -58,28 +58,15 @@
         app:rippleColor="#4B6C11" />
 
     <Button
-        android:id="@+id/btn_login2"
-        android:layout_width="90dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="32dp"
-        android:background="#6A7C4B"
-        android:backgroundTint="#A1BF6A"
-        android:text="ADMIN"
-        android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="@+id/btn_check"
-        app:layout_constraintHorizontal_bias="0.49"
-        app:layout_constraintStart_toStartOf="@+id/btn_check"
-        app:layout_constraintTop_toBottomOf="@+id/btn_check"
-        app:rippleColor="#4B6C11" />
-
-    <Button
         android:id="@+id/btn_check"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="8dp"
+        android:backgroundTint="#E6E6E6"
         android:text="회원가입"
+        android:textColor="#444444"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/btn_login"
         app:layout_constraintStart_toStartOf="@+id/btn_login"
@@ -99,4 +86,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.19" />
+
+    <TextView
+        android:id="@+id/goToAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="ADMIN으로 로그인 >"
+        android:textColor="#444444"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_check" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

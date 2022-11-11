@@ -13,47 +13,30 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="43dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginTop="90dp"
         android:text="문의하기"
         android:textColor="#4B6C11"
+        android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/btn_qna"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/btn_qna"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="49dp"
-        android:layout_marginTop="112dp"
-        android:layout_marginEnd="273dp"
-        android:text="문의하기"
-        android:textColor="#444444"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="DuplicateSpeakableTextCheck" />
 
     <EditText
-        android:id="@+id/et_inquiry"
+        android:id="@+id/et_content"
         android:layout_width="292dp"
         android:layout_height="343dp"
-        android:layout_marginTop="240dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
-        android:hint="문의내용"
+        android:hint="문의하고 싶은 내용을 적어주세요"
         android:inputType="textPersonName"
         android:minHeight="48dp"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/et_title" />
 
     <Button
         android:id="@+id/btn_submit"
@@ -68,20 +51,19 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_inquiry" />
+        app:layout_constraintTop_toBottomOf="@+id/et_content" />
 
     <Button
         android:id="@+id/btn_history"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="108dp"
-        android:layout_marginTop="112dp"
+        android:layout_width="81dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="81dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#E8E8E8"
         android:text="문의내역"
         android:textColor="#444444"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
-        app:layout_constraintStart_toEndOf="@+id/btn_qna"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
@@ -98,10 +80,10 @@
 
     <EditText
         android:id="@+id/et_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="290dp"
+        android:layout_height="41dp"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="190dp"
+        android:layout_marginTop="175dp"
         android:ems="10"
         android:hint="제목"
         android:inputType="textPersonName"

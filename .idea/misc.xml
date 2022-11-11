@@ -26,13 +26,6 @@
         <entry key="..\:/AndroidProjects/kmj_reco/app/src/main/res/layout/recode_level.xml" value="0.5536458333333333" />
         <entry key="..\:/AndroidProjects/kmj_reco/app/src/main/res/layout/recode_main.xml" value="0.2692502532928065" />
         <entry key="..\:/AndroidProjects/kmj_reco/app/src/main/res/layout/title_bar.xml" value="0.5536458333333333" />
-        <entry key="..\:/AndroidProjects/kmj_reco_2_fififififinal/kmj_reco/app/src/main/res/layout/activity_camera.xml" value="0.5489583333333333" />
-        <entry key="..\:/AndroidProjects/kmj_reco_2_fififififinal/kmj_reco/app/src/main/res/layout/activity_camera_success.xml" value="0.5489583333333333" />
-        <entry key="..\:/AndroidProjects/kmj_reco_2_fififififinal/kmj_reco/app/src/main/res/layout/activity_coupon.xml" value="0.5489583333333333" />
-        <entry key="..\:/AndroidProjects/kmj_reco_2_fififififinal/kmj_reco/app/src/main/res/layout/activity_coupon_admin.xml" value="0.5489583333333333" />
-        <entry key="..\:/AndroidProjects/kmj_reco_2_fififififinal/kmj_reco/app/src/main/res/layout/activity_my_page.xml" value="0.21388888888888888" />
-        <entry key="..\:/AndroidProjects/kmj_reco_2_fififififinal/kmj_reco/app/src/main/res/layout/activity_qr.xml" value="0.5489583333333333" />
-        <entry key="..\:/AndroidProjects/kmj_reco_2_fififififinal/kmj_reco/app/src/main/res/layout/item_gifticon.xml" value="0.5536458333333333" />
         <entry key="..\:/Users/blook/AndroidStudioProjects/kmj_reco/kmj_reco/app/src/main/res/drawable-v24/progressbar_custom.xml" value="0.137" />
         <entry key="..\:/Users/blook/AndroidStudioProjects/kmj_reco/kmj_reco/app/src/main/res/drawable/border.xml" value="0.1185" />
         <entry key="..\:/Users/blook/AndroidStudioProjects/kmj_reco/kmj_reco/app/src/main/res/layout/activity_camera.xml" value="0.1" />
@@ -56,35 +49,43 @@
         <entry key="..\:/Users/blook/AndroidStudioProjects/kmj_reco/kmj_reco/app/src/main/res/layout/quiz_get_point.xml" value="0.264" />
         <entry key="..\:/Users/blook/AndroidStudioProjects/kmj_reco/kmj_reco/app/src/main/res/layout/quiz_main.xml" value="0.264" />
         <entry key="app/src/main/res/drawable-v24/radius.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_alert.xml" value="0.26851851851851855" />
-        <entry key="app/src/main/res/layout/activity_camera.xml" value="0.18518518518518517" />
-        <entry key="app/src/main/res/layout/activity_camera_success.xml" value="0.18518518518518517" />
-        <entry key="app/src/main/res/layout/activity_coupon.xml" value="0.2765625" />
-        <entry key="app/src/main/res/layout/activity_coupon_admin.xml" value="0.18518518518518517" />
-        <entry key="app/src/main/res/layout/activity_coupon_admin_detail.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_coupon_admin_detail2.xml" value="0.18518518518518517" />
-        <entry key="app/src/main/res/layout/activity_coupon_admin_detail2_edit.xml" value="0.18518518518518517" />
-        <entry key="app/src/main/res/layout/activity_coupon_admin_detail2_plus.xml" value="0.14907407407407408" />
-        <entry key="app/src/main/res/layout/activity_coupon_admin_detail_plus.xml" value="0.14907407407407408" />
+        <entry key="app/src/main/res/layout/activity_admin_home.xml" value="0.27760416666666665" />
+        <entry key="app/src/main/res/layout/activity_admin_login.xml" value="0.27760416666666665" />
+        <entry key="app/src/main/res/layout/activity_alert.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_camera.xml" value="0.2765625" />
+        <entry key="app/src/main/res/layout/activity_camera_success.xml" value="0.2765625" />
+        <entry key="app/src/main/res/layout/activity_coupon.xml" value="0.2413793103448276" />
+        <entry key="app/src/main/res/layout/activity_coupon_admin.xml" value="0.26578073089701" />
+        <entry key="app/src/main/res/layout/activity_coupon_admin_detail.xml" value="0.27708333333333335" />
+        <entry key="app/src/main/res/layout/activity_coupon_admin_detail2.xml" value="0.27708333333333335" />
+        <entry key="app/src/main/res/layout/activity_coupon_admin_detail2_edit.xml" value="0.27708333333333335" />
+        <entry key="app/src/main/res/layout/activity_coupon_admin_detail2_plus.xml" value="0.27708333333333335" />
+        <entry key="app/src/main/res/layout/activity_coupon_admin_detail_plus.xml" value="0.27708333333333335" />
         <entry key="app/src/main/res/layout/activity_coupon_detail.xml" value="0.2765625" />
         <entry key="app/src/main/res/layout/activity_coupon_history.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_coupon_history_detail.xml" value="0.14907407407407408" />
         <entry key="app/src/main/res/layout/activity_gallery.xml" value="0.2574074074074074" />
         <entry key="app/src/main/res/layout/activity_information.xml" value="0.26666666666666666" />
-        <entry key="app/src/main/res/layout/activity_login.xml" value="0.26713663736979165" />
+        <entry key="app/src/main/res/layout/activity_item_login.xml" value="0.27760416666666665" />
+        <entry key="app/src/main/res/layout/activity_item_service.xml" value="0.2723076923076923" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.27760416666666665" />
+        <entry key="app/src/main/res/layout/activity_login_admin.xml" value="0.2723076923076923" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2786458333333333" />
         <entry key="app/src/main/res/layout/activity_map.xml" value="0.21157226562499998" />
         <entry key="app/src/main/res/layout/activity_map_detail.xml" value="0.2601851851851852" />
-        <entry key="app/src/main/res/layout/activity_my_page.xml" value="0.2786458333333333" />
-        <entry key="app/src/main/res/layout/activity_notice.xml" value="0.2601851851851852" />
+        <entry key="app/src/main/res/layout/activity_my_page.xml" value="0.2765625" />
+        <entry key="app/src/main/res/layout/activity_notice.xml" value="0.2765625" />
         <entry key="app/src/main/res/layout/activity_notice_detail.xml" value="0.2765625" />
+        <entry key="app/src/main/res/layout/activity_personal_info.xml" value="0.31519622802734376" />
         <entry key="app/src/main/res/layout/activity_qr.xml" value="0.2548674253948795" />
         <entry key="app/src/main/res/layout/activity_reco_point.xml" value="0.2786458333333333" />
-        <entry key="app/src/main/res/layout/activity_register.xml" value="0.2786458333333333" />
-        <entry key="app/src/main/res/layout/activity_service_center.xml" value="0.2765625" />
-        <entry key="app/src/main/res/layout/activity_service_detail.xml" value="0.18518518518518517" />
+        <entry key="app/src/main/res/layout/activity_recobin_admin.xml" value="0.2571929931640625" />
+        <entry key="app/src/main/res/layout/activity_recobin_admin_detail.xml" value="0.27708333333333335" />
+        <entry key="app/src/main/res/layout/activity_register.xml" value="0.2544087727864584" />
+        <entry key="app/src/main/res/layout/activity_service_center.xml" value="0.29374542236328127" />
+        <entry key="app/src/main/res/layout/activity_service_detail.xml" value="0.2765625" />
         <entry key="app/src/main/res/layout/activity_service_history.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/activity_settings.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_settings.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_user_acount.xml" value="0.2786458333333333" />
         <entry key="app/src/main/res/layout/address.xml" value="0.26851851851851855" />
         <entry key="app/src/main/res/layout/buy_coupon.xml" value="0.3333333333333333" />
@@ -97,15 +98,17 @@
         <entry key="app/src/main/res/layout/item_coupon_admin_detail.xml" value="0.2765625" />
         <entry key="app/src/main/res/layout/item_gifticon.xml" value="0.2765625" />
         <entry key="app/src/main/res/layout/item_gifticon_history.xml" value="0.2765625" />
+        <entry key="app/src/main/res/layout/item_login_admin.xml" value="0.3105876216182003" />
         <entry key="app/src/main/res/layout/item_notice.xml" value="0.2765625" />
         <entry key="app/src/main/res/layout/item_notice2.xml" value="0.2765625" />
+        <entry key="app/src/main/res/layout/item_recobin_admin.xml" value="0.27708333333333335" />
         <entry key="app/src/main/res/layout/notice_bar.xml" value="0.2765625" />
         <entry key="app/src/main/res/layout/notice_bar2.xml" value="0.2601851851851852" />
-        <entry key="app/src/main/res/layout/quiz_answer.xml" value="0.2765625" />
-        <entry key="app/src/main/res/layout/quiz_fail.xml" value="0.20555555555555555" />
+        <entry key="app/src/main/res/layout/quiz_answer.xml" value="0.2348993288590604" />
+        <entry key="app/src/main/res/layout/quiz_fail.xml" value="0.25277777777777777" />
         <entry key="app/src/main/res/layout/quiz_get_point.xml" value="0.26851851851851855" />
         <entry key="app/src/main/res/layout/quiz_item.xml" value="0.2765625" />
-        <entry key="app/src/main/res/layout/quiz_main.xml" value="0.2786458333333333" />
+        <entry key="app/src/main/res/layout/quiz_main.xml" value="0.26578073089701" />
         <entry key="app/src/main/res/layout/quiz_success.xml" value="0.2574074074074074" />
         <entry key="app/src/main/res/layout/recobin_detail.xml" value="0.2765625" />
         <entry key="app/src/main/res/layout/recobin_qr_scan.xml" value="0.2954466643156829" />

@@ -6,7 +6,9 @@ import android.util.Log;
 import android.view.View;
 import android.widget.CompoundButton;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.Switch;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -38,20 +40,43 @@ public class Settings extends AppCompatActivity {
             }
         });
 
+        TextView settingTextToCenter = (TextView) findViewById(R.id.settingTextToCenter);
+        settingTextToCenter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), ServiceCenterActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        TextView goToPersonalInfo = (TextView) findViewById(R.id.goToPersonalInfo);
+        goToPersonalInfo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), PersonalInfo.class);
+                startActivity(intent);
+            }
+        });
+
         FirebaseAuth.getInstance().signInAnonymously();
         database = FirebaseDatabase.getInstance();
         reference = database.getReference();
 
-//        user_num 혹은 해당 유저의 key 받아오기
+        // user_num 혹은 해당 유저의 key 받아오기
         String user_num = FirebaseAuth.getInstance().getUid();
+        Switch push_switch = findViewById(R.id.push_switch);
 
         reference.child("USER_SETTING").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-
-                Log.d("태그", snapshot.getKey());
                 if(snapshot.child(user_num).exists()==false) {
-                    reference.child("USER_SETTING").child(user_num).setValue(new USER_SETTING(user_num, 0, 1, 1, 1));
+                    reference.child("USER_SETTING").child(user_num).setValue(new USER_SETTING(user_num, 1, 1));
+                }
+
+                USER_SETTING user = snapshot.child(user_num).getValue(USER_SETTING.class);
+
+                if (user.getPushalarm()==1){
+                    push_switch.setChecked(true);
                 }
             }
             @Override
@@ -60,30 +85,15 @@ public class Settings extends AppCompatActivity {
             }
         });
 
-        Switch login_switch = findViewById(R.id.login_switch);
-        Switch push_switch = findViewById(R.id.push_switch);
-
-        login_switch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                if (b){
-
-                    reference.child("USER_SETTING").child(user_num).child("setAutologin").setValue(1);
-                    Toast.makeText(getApplicationContext(),"자동 로그인을 설정하셨습니다.",Toast.LENGTH_SHORT).show();
-                }else{
-                    reference.child("USER_SETTING").child(user_num).child("setAutologin").setValue(0);
-                    Toast.makeText(getApplicationContext(),"자동 로그인을 해제하셨습니다.",Toast.LENGTH_SHORT).show();}
-            }});
-
         push_switch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
                 if (b){
-                    reference.child("USER_SETTING").child(user_num).child("setPushalarm").setValue(1);
-                    Toast.makeText(getApplicationContext(),"푸시알림을 설정하셨습니다.",Toast.LENGTH_SHORT).show();
+                    reference.child("USER_SETTING").child(user_num).child("pushalarm").setValue(1);
+                    Toast.makeText(getApplicationContext(),"알림을 설정하셨습니다.",Toast.LENGTH_SHORT).show();
                 }else{
-                    reference.child("USER_SETTING").child(user_num).child("setPushalarm").setValue(0);
-                    Toast.makeText(getApplicationContext(),"푸시알림을 해제하셨습니다.",Toast.LENGTH_SHORT).show();}
+                    reference.child("USER_SETTING").child(user_num).child("pushalarm").setValue(0);
+                    Toast.makeText(getApplicationContext(),"알림을 해제하셨습니다.",Toast.LENGTH_SHORT).show();}
             }
         });
     }

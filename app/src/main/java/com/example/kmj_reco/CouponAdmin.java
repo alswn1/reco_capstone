@@ -28,8 +28,10 @@ import java.util.List;
 
 public class CouponAdmin extends AppCompatActivity {
     ListView gifticonListView;
+
     private List<GIFTICONDATA> gifticondataList = new ArrayList<GIFTICONDATA>();
     private List<GIFTICONDATA> gifticondataList2 = new ArrayList<GIFTICONDATA>();
+
     FirebaseStorage storage;
     StorageReference sTreference;
     FirebaseDatabase database;
@@ -40,8 +42,7 @@ public class CouponAdmin extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_coupon_admin);
 
-        gifticonListView = (ListView) findViewById(R.id.gifticon_listView_admin
-        );
+        gifticonListView = (ListView) findViewById(R.id.gifticon_listView_admin);
         storage = FirebaseStorage.getInstance();
         sTreference = storage.getReference();
         database = FirebaseDatabase.getInstance();

@@ -101,6 +101,9 @@ attr actionProviderClass
 attr actionTextColorAlpha
 attr actionViewClass
 attr activityChooserViewStyle
+attr adSize
+attr adSizes
+attr adUnitId
 attr alertDialogButtonGroupStyle
 attr alertDialogCenterButtons
 attr alertDialogStyle
@@ -715,6 +718,7 @@ attr navigationMode
 attr navigationRailStyle
 attr navigationViewStyle
 attr nestedScrollFlags
+attr nestedScrollViewStyle
 attr nestedScrollable
 attr nullable
 attr number
@@ -772,6 +776,7 @@ attr progressBarPadding
 attr progressBarStyle
 attr queryBackground
 attr queryHint
+attr queryPatterns
 attr radioButtonStyle
 attr rangeFillColor
 attr ratingBarStyle
@@ -804,6 +809,7 @@ attr shapeAppearanceLargeComponent
 attr shapeAppearanceMediumComponent
 attr shapeAppearanceOverlay
 attr shapeAppearanceSmallComponent
+attr shortcutMatchRequired
 attr showAnimationBehavior
 attr showAsAction
 attr showDelay
@@ -1033,7 +1039,11 @@ attr zxing_viewfinder_mask
 bool abc_action_bar_embed_tabs
 bool abc_allow_stacked_button_bar
 bool abc_config_actionMenuItemAllCaps
+bool enable_system_alarm_service_default
+bool enable_system_foreground_service_default
+bool enable_system_job_service_default
 bool mtrl_btn_textappearance_all_caps
+bool workmanager_test_configuration
 color abc_background_cache_hint_selector_material_dark
 color abc_background_cache_hint_selector_material_light
 color abc_btn_colored_borderless_text_material
@@ -1783,6 +1793,8 @@ drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable address_detail
+drawable admob_close_button_black_circle_white_cross
+drawable admob_close_button_white_circle_black_cross
 drawable alarm
 drawable avd_hide_password
 drawable avd_show_password
@@ -1790,6 +1802,7 @@ drawable bananamilk
 drawable base
 drawable base_home
 drawable border
+drawable btn_admin_coupon
 drawable btn_back
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
@@ -1797,7 +1810,9 @@ drawable btn_checkbox_unchecked_mtrl
 drawable btn_checkbox_unchecked_to_checked_mtrl_animation
 drawable btn_coupon
 drawable btn_map
+drawable btn_move
 drawable btn_mypage
+drawable btn_new_recobin
 drawable btn_quiz
 drawable btn_quiz_o
 drawable btn_quiz_x
@@ -1805,6 +1820,11 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable btn_recobin_admin_detail
+drawable btn_recobin_delete
+drawable btn_service_admin
+drawable btn_user_list
+drawable btn_userlist
 drawable camera
 drawable check
 drawable check2
@@ -1881,6 +1901,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable personal1
 drawable plant
 drawable point
 drawable quiz_answer
@@ -1969,11 +1990,14 @@ id action_mode_close_button
 id action_text
 id actions
 id activity_chooser_view_content
+id adView
 id add
 id adjust_height
 id adjust_width
 id adminDeleteButton
 id adminModiButton
+id admin_id
+id admin_pass
 id alertTitle
 id aligned
 id all
@@ -1990,6 +2014,7 @@ id autoCompleteToStart
 id backHome
 id barrier
 id base
+id base2
 id baseline
 id beginOnFirstDraw
 id beginning
@@ -2003,34 +2028,39 @@ id browser_actions_menu_items
 id browser_actions_menu_view
 id btn_alert
 id btn_back
+id btn_back2
 id btn_buy
 id btn_cancel
 id btn_check
 id btn_coupon
+id btn_coupon_admin
+id btn_event
 id btn_fail_check
 id btn_gifticon
 id btn_history
 id btn_home
 id btn_login
-id btn_login2
 id btn_logout
 id btn_map
 id btn_modification
 id btn_mypage
 id btn_n
+id btn_new_recobin
 id btn_notice
 id btn_point_check
-id btn_qna
-id btn_qna2
 id btn_qr_scan
 id btn_quiz
 id btn_quiz_answer_check
 id btn_quiz_o
 id btn_quiz_x
+id btn_recobin_admin_detail
+id btn_recobin_delete
 id btn_search
 id btn_service
+id btn_service_admin
 id btn_settings
 id btn_submit
+id btn_user_admin
 id btn_x
 id btn_y
 id buttonPanel
@@ -2115,13 +2145,11 @@ id end_padder
 id enterAlways
 id enterAlwaysCollapsed
 id et_birth
+id et_content
+id et_contents
 id et_date
 id et_email
 id et_id
-id et_inquiry
-id et_inquiry1
-id et_inquiry2
-id et_inquiry5
 id et_name
 id et_pass
 id et_pass2
@@ -2151,7 +2179,6 @@ id gif_text
 id gifticonADDeleteBtn
 id gifticonADEditButton
 id gifticonADaddBtn
-id gifticonAdminbtn
 id gifticonBrand
 id gifticonBuyButton
 id gifticonBuyDate
@@ -2184,6 +2211,8 @@ id gifticon_usage
 id gifticonadst_num
 id gifticondetail
 id glide_custom_view_target_tag
+id goToAdmin
+id goToPersonalInfo
 id gone
 id graph
 id graph_wrap
@@ -2231,7 +2260,10 @@ id linearLayout
 id listMode
 id list_item
 id login
-id login_switch
+id login2
+id loginAdminListView
+id login_delete
+id login_searchView
 id map
 id masked
 id material_clock_display
@@ -2309,7 +2341,6 @@ id notice_bar
 id notice_bar2
 id notice_date
 id notice_detail
-id notice_img
 id notice_title
 id noticedate
 id noticetext
@@ -2346,6 +2377,9 @@ id radio
 id ratio
 id reco_plant
 id recobin_fulladdress
+id recobin_index
+id recobin_listView_admin
+id recobin_search
 id rectangles
 id reverseSawtooth
 id right
@@ -2365,6 +2399,7 @@ id scroll
 id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
+id scrollView2
 id scrollable
 id search_badge
 id search_bar
@@ -2379,11 +2414,10 @@ id search_voice_btn
 id select_dialog_listview
 id selected
 id selection_type
-id settingTextLogin
+id serviceAccountListView
+id service_num
 id settingTextPush
 id settingTextToCenter
-id settingTextToPersonal
-id settingTextToPersonal2
 id settingTextVersion
 id settingTextVersionText
 id setting_bar
@@ -2451,12 +2485,26 @@ id textView10
 id textView11
 id textView12
 id textView13
+id textView14
+id textView15
+id textView16
+id textView17
 id textView18
+id textView19
 id textView2
+id textView20
 id textView21
+id textView22
+id textView23
 id textView24
+id textView25
+id textView26
+id textView27
 id textView28
+id textView29
 id textView3
+id textView30
+id textView32
 id textView34
 id textView4
 id textView46
@@ -2597,6 +2645,8 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_admin_home
+layout activity_admin_login
 layout activity_alert
 layout activity_camera
 layout activity_camera_success
@@ -2611,19 +2661,24 @@ layout activity_coupon_detail
 layout activity_coupon_history
 layout activity_coupon_history_detail
 layout activity_information
+layout activity_item_login
+layout activity_item_service
 layout activity_login
+layout activity_login_admin
 layout activity_map
 layout activity_map_detail
 layout activity_my_page
 layout activity_notice
 layout activity_notice_detail
+layout activity_personal_info
 layout activity_qr
+layout activity_recobin_admin
+layout activity_recobin_admin_detail
 layout activity_register
 layout activity_service_center
 layout activity_service_detail
 layout activity_service_history
 layout activity_settings
-layout activity_user_acount
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
 layout buy_coupon
@@ -2654,6 +2709,7 @@ layout item_gifticon
 layout item_gifticon_history
 layout item_notice
 layout item_notice2
+layout item_recobin_admin
 layout material_chip_input_combo
 layout material_clock_display
 layout material_clock_display_divider
@@ -2778,6 +2834,7 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string androidx_startup
 string app_name
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
@@ -2884,13 +2941,28 @@ string mtrl_picker_toggle_to_year_selection
 string nav_app_bar_navigate_up_description
 string nav_app_bar_open_drawer_description
 string next
+string offline_notification_text
+string offline_notification_title
+string offline_opt_in_confirm
+string offline_opt_in_confirmation
+string offline_opt_in_decline
+string offline_opt_in_message
+string offline_opt_in_title
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string personal_info
 string previous
 string project_id
+string s1
+string s2
+string s3
+string s4
+string s5
+string s6
+string s7
 string search_menu_title
 string second_fragment_label
 string status_bar_notification_info_overflow
@@ -3325,6 +3397,7 @@ style Theme_Design_Light
 style Theme_Design_Light_BottomSheetDialog
 style Theme_Design_Light_NoActionBar
 style Theme_Design_NoActionBar
+style Theme_IAPTheme
 style Theme_MaterialComponents
 style Theme_MaterialComponents_BottomSheetDialog
 style Theme_MaterialComponents_Bridge
@@ -3637,6 +3710,7 @@ styleable ActionMenuView
 styleable ActionMode background backgroundSplit closeItemLayout height subtitleTextStyle titleTextStyle
 styleable ActivityChooserView expandActivityOverflowButtonDrawable initialActivityCount
 styleable ActivityNavigator android_name action data dataPattern targetPackage
+styleable AdsAttrs adSize adSizes adUnitId
 styleable AlertDialog android_layout buttonIconDimen buttonPanelSideLayout listItemLayout listLayout multiChoiceItemLayout showTitle singleChoiceItemLayout
 styleable AnimatedStateListDrawableCompat android_dither android_visible android_variablePadding android_constantSize android_enterFadeDuration android_exitFadeDuration
 styleable AnimatedStateListDrawableItem android_id android_drawable
@@ -3655,6 +3729,7 @@ styleable BottomAppBar backgroundTint elevation fabAlignmentMode fabAnimationMod
 styleable BottomNavigationView itemHorizontalTranslationEnabled
 styleable BottomSheetBehavior_Layout android_maxWidth android_elevation backgroundTint behavior_draggable behavior_expandedOffset behavior_fitToContents behavior_halfExpandedRatio behavior_hideable behavior_peekHeight behavior_saveFlags behavior_skipCollapsed gestureInsetBottomIgnored paddingBottomSystemWindowInsets paddingLeftSystemWindowInsets paddingRightSystemWindowInsets paddingTopSystemWindowInsets shapeAppearance shapeAppearanceOverlay
 styleable ButtonBarLayout allowStacking
+styleable Capability queryPatterns shortcutMatchRequired
 styleable CardView android_minWidth android_minHeight cardBackgroundColor cardCornerRadius cardElevation cardMaxElevation cardPreventCornerOverlap cardUseCompatPadding contentPadding contentPaddingBottom contentPaddingLeft contentPaddingRight contentPaddingTop
 styleable Chip android_textAppearance android_textSize android_textColor android_ellipsize android_maxWidth android_text android_checkable checkedIcon checkedIconEnabled checkedIconTint checkedIconVisible chipBackgroundColor chipCornerRadius chipEndPadding chipIcon chipIconEnabled chipIconSize chipIconTint chipIconVisible chipMinHeight chipMinTouchTargetSize chipStartPadding chipStrokeColor chipStrokeWidth chipSurfaceColor closeIcon closeIconEnabled closeIconEndPadding closeIconSize closeIconStartPadding closeIconTint closeIconVisible ensureMinTouchTargetSize hideMotionSpec iconEndPadding iconStartPadding rippleColor shapeAppearance shapeAppearanceOverlay showMotionSpec textEndPadding textStartPadding
 styleable ChipGroup checkedChip chipSpacing chipSpacingHorizontal chipSpacingVertical selectionRequired singleLine singleSelection

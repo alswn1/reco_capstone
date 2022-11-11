@@ -6,6 +6,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -15,6 +16,9 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
+import org.checkerframework.checker.units.qual.A;
 
 import java.util.Objects;
 
@@ -33,11 +37,12 @@ public class LoginActivity extends AppCompatActivity {
         et_pass = findViewById(R.id.et_pass);
 
         // 자동 로그인
+        /*
         if (mFirebaseAuth.getCurrentUser() != null) {
             Intent intent = new Intent(LoginActivity.this, Home.class);
             startActivity(intent);
             finish();
-        }
+        }*/
 
         // 회원가입 버튼을 클릭 시 수행
         Button btn_register = (Button) findViewById(R.id.btn_check);
@@ -46,6 +51,17 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View view) {
                 // 회원가입 화면으로 이동
                 Intent intent = new Intent(getApplicationContext(), RegisterActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        // admin login 버튼 클릭 시 수행
+        TextView goToAdmin = (TextView) findViewById(R.id.goToAdmin);
+        goToAdmin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // 회원가입 화면으로 이동
+                Intent intent = new Intent(getApplicationContext(), AdminLogin.class);
                 startActivity(intent);
             }
         });
@@ -63,29 +79,28 @@ public class LoginActivity extends AppCompatActivity {
                 if (userID.getBytes().length <= 0 | userPass.getBytes().length <= 0) {
                     Toast.makeText(LoginActivity.this, "아이디와 비밀번호를 입력해주세요", Toast.LENGTH_SHORT).show();
                 } else {
+                    mFirebaseAuth.signInWithEmailAndPassword(userID, userPass).addOnCompleteListener(LoginActivity.this, new OnCompleteListener<AuthResult>() {
+                        @Override
+                        public void onComplete(@NonNull Task<AuthResult> task) {
+                            if (Objects.requireNonNull(mFirebaseAuth.getCurrentUser()).isEmailVerified()) {
+                                Log.v("Email", "이메일 인증 확인");
+                                if (task.isSuccessful()) {
+                                    // 로그인 성공
+                                    Intent intent = new Intent(LoginActivity.this, Home.class);
+                                    startActivity(intent);
+                                    finish(); // 현재 액티비티 파괴
 
-                        mFirebaseAuth.signInWithEmailAndPassword(userID, userPass).addOnCompleteListener(LoginActivity.this, new OnCompleteListener<AuthResult>() {
-                            @Override
-                            public void onComplete(@NonNull Task<AuthResult> task) {
-                                if (Objects.requireNonNull(mFirebaseAuth.getCurrentUser()).isEmailVerified()) {
-                                    Log.v("Email", "이메일 인증 확인");
-                                    if (task.isSuccessful()) {
-                                        // 로그인 성공
-                                        Intent intent = new Intent(LoginActivity.this, Home.class);
-                                        startActivity(intent);
-                                        finish(); // 현재 액티비티 파괴
-
-                                    } else {// 로그인 실패
-                                        Toast.makeText(LoginActivity.this, "로그인 실패", Toast.LENGTH_SHORT).show();
-                                    }
-                                }else{
-                                    Log.v("Email", "이메일 인증 미확인");
-                                    Toast.makeText(LoginActivity.this, "이메일 인증을 진행해주세요.", Toast.LENGTH_LONG).show();
+                                } else {// 로그인 실패
+                                    Toast.makeText(LoginActivity.this, "로그인 실패", Toast.LENGTH_SHORT).show();
                                 }
+                            }else{
+                                Log.v("Email", "이메일 인증 미확인");
+                                Toast.makeText(LoginActivity.this, "이메일 인증을 진행해주세요.", Toast.LENGTH_LONG).show();
                             }
-                        });
-                    }
+                        }
+                    });
                 }
+            }
         });
     }
 }

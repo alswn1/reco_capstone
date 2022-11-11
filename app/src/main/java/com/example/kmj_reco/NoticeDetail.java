@@ -78,19 +78,16 @@ public class NoticeDetail extends AppCompatActivity {
     }
 
     private void setValues(){
-        //ImageView notice_img = findViewById(R.id.notice_img);
         TextView notice_date = findViewById(R.id.notice_date);
         TextView notice_title = findViewById(R.id.notice_title);
         TextView notice_detail = findViewById(R.id.notice_detail);
 
         Intent intent = getIntent();
 
-        //String image = intent.getStringExtra("image");
         String date = intent.getStringExtra("date");
         String title = intent.getStringExtra("title");
         String detail = intent.getStringExtra("detail");
 
-        //NoticeAdapter2.imageInsert(notice_img,image);
         notice_date.setText(date);
         notice_title.setText(title);
         notice_detail.setText(detail);

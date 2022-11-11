@@ -77,7 +77,7 @@ public class GifticonAdminDetailAdapter extends ArrayAdapter<GIFTICONADST> {
         reference = database.getReference();
 
         GIFTICONADST gifticonadst = (GIFTICONADST) gifticonDetailList.get(position);
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-mm-dd");
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         SimpleDateFormat dateFormat = new SimpleDateFormat("EE MMM dd HH:mm:ss z yyyy", Locale.ENGLISH);
         GifticonAdapter.imageInsert(viewHolder.gifticonBarcode, gifticonadst.getGifticonBarcode()
         );

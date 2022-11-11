@@ -82,7 +82,7 @@
         android:background="@android:color/transparent"
         android:contentDescription="check"
         android:minHeight="48dp"
-        android:src="@drawable/check"
+        android:src="@drawable/check2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
