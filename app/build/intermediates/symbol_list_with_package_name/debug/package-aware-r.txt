@@ -2047,6 +2047,8 @@ id btn_mypage
 id btn_n
 id btn_new_recobin
 id btn_notice
+id btn_notice_cancel
+id btn_notice_submit
 id btn_point_check
 id btn_qr_scan
 id btn_quiz
@@ -2061,6 +2063,7 @@ id btn_service_admin
 id btn_settings
 id btn_submit
 id btn_user_admin
+id btn_user_notice
 id btn_x
 id btn_y
 id buttonPanel
@@ -2505,7 +2508,10 @@ id textView29
 id textView3
 id textView30
 id textView32
+id textView33
 id textView34
+id textView35
+id textView37
 id textView4
 id textView46
 id textView47
@@ -2547,6 +2553,9 @@ id trashcan_fulladdress
 id triangle
 id txt
 id txt_contents
+id txt_date
+id txt_notice
+id txt_title
 id unchecked
 id uniform
 id unlabeled
@@ -2669,6 +2678,7 @@ layout activity_map
 layout activity_map_detail
 layout activity_my_page
 layout activity_notice
+layout activity_notice_admin
 layout activity_notice_detail
 layout activity_personal_info
 layout activity_qr

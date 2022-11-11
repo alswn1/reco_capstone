@@ -1,27 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.kmj_reco" >
+    package="com.example.kmj_reco">
 
-    <permission android:name="com.example.kmj_reco.permission.MAPS_RECEIVE"
-        android:protectionLevel="signature"/>
+    <permission
+        android:name="com.example.kmj_reco.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
 
     <uses-permission android:name="com.example.kmj_reco.permission.MAPS_RECEIVE" />
-    <uses-permission android:name="READ_GSERVICES"/>
-
+    <uses-permission android:name="READ_GSERVICES" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.SEND_SMS"/>
-
+    <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
-    <uses-feature android:glEsVersion="0x00020000"
-        android:required="true"/>
-
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
     <uses-feature
         android:name="android.hardware.camera"
         android:required="true" />
@@ -33,25 +31,28 @@
         android:label="RECO"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".NoticeAdmin"
+            android:exported="false" />
 
-        <uses-library android:name="com.google.android.maps"/>
-        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <uses-library android:name="com.google.android.maps" />
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
 
         <activity android:name=".InformationActivity" />
         <activity android:name=".Home" />
         <activity android:name=".MyPageActivity" />
-        <activity android:name=".RegisterActivity"
-            android:usesCleartextTraffic="true"/>
-
-        <activity android:name=".AdminLogin"/>
-        <activity android:name=".AdminHome"/>
-        <activity android:name=".LoginAdmin"/>
-
-        <activity android:name=".ServiceCenterActivity"/>
+        <activity
+            android:name=".RegisterActivity"
+            android:usesCleartextTraffic="true" />
+        <activity android:name=".AdminLogin" />
+        <activity android:name=".AdminHome" />
+        <activity android:name=".LoginAdmin" />
+        <activity android:name=".ServiceCenterActivity" />
         <activity android:name=".ServiceDetailActivity" />
         <activity android:name=".ServiceHistoryActivity" />
-
         <activity
             android:name=".CouponAdminDetail2Edit"
             android:exported="false" />
@@ -96,22 +97,20 @@
         <activity
             android:name=".Settings"
             android:exported="false" />
-
         <activity
             android:name=".QrActivity"
             android:exported="false" />
         <activity
             android:name=".CameraActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".CameraSuccess"/>
-        
-
+        <activity android:name=".CameraSuccess" />
         <activity android:name=".Map" />
-        <activity android:name=".RecobinDetail"
-            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog"/>
-        <activity android:name=".AddressDetail"
-            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog"/>
-
+        <activity
+            android:name=".RecobinDetail"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog" />
+        <activity
+            android:name=".AddressDetail"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog" />
         <activity android:name=".QuizMain" />
         <activity
             android:name=".QuizFail"
@@ -120,14 +119,12 @@
             android:name=".QuizSuccess"
             android:theme="@android:style/Theme.DeviceDefault.Light.Dialog" />
         <activity android:name=".QuizAnswer" />
-
         <activity android:name=".Event" />
-        <activity android:name=".Notice"/>
-        <activity android:name=".NoticeDetail"/>
-        
-        <activity android:name=".PersonalInfo"/>
-
-        <activity android:name=".LoginActivity"
+        <activity android:name=".Notice" />
+        <activity android:name=".NoticeDetail" />
+        <activity android:name=".PersonalInfo" />
+        <activity
+            android:name=".LoginActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -140,7 +137,7 @@
             android:name="androidx.core.content.FileProvider"
             android:authorities="com.example.kmj_reco"
             android:exported="false"
-            android:grantUriPermissions="true" >
+            android:grantUriPermissions="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_paths" />
@@ -151,12 +148,13 @@
             android:value="barcode" />
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyAnc6Nh7exlKrLGoembrNdHMccZ4hffgg8"/>
+            android:value="AIzaSyAnc6Nh7exlKrLGoembrNdHMccZ4hffgg8" />
         <meta-data
             android:name="com.google.android.gms.vision"
-            android:value="@integer/google_play_services_version"/>
+            android:value="@integer/google_play_services_version" />
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-2420353707518425~3355214747"/>
+            android:value="ca-app-pub-2420353707518425~3355214747" />
     </application>
+
 </manifest>

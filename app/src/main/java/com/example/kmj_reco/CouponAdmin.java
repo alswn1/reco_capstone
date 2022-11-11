@@ -74,28 +74,11 @@ public class CouponAdmin extends AppCompatActivity {
         btn_home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Home.class);
+                Intent intent = new Intent(getApplicationContext(), AdminHome.class);
                 startActivity(intent);
             }
         });
 
-        ImageView btn_settings = (ImageView) findViewById(R.id.btn_settings);
-        btn_settings.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Settings.class);
-                startActivity(intent);
-            }
-        });
-
-        ImageView btn_alert = (ImageView) findViewById(R.id.btn_alert);
-        btn_alert.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Alert.class);
-                startActivity(intent);
-            }
-        });
 
         Button btn_cp = (Button) findViewById(R.id.couponAdminPlusbtn);
         btn_cp.setOnClickListener(new View.OnClickListener() {

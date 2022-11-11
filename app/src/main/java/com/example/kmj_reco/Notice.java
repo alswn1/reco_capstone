@@ -72,7 +72,7 @@ public class Notice extends AppCompatActivity {
 
                 for(DataSnapshot data : snapshot.getChildren()){
                     NOTICE notice = data.getValue(NOTICE.class);
-                    noticeList.add(notice);
+                    noticeList.add(0, notice);
                 }
                 final NoticeAdapter2 noticeAdapter2 = new NoticeAdapter2(getApplicationContext(),R.layout.item_notice2, noticeList, notice2ListView);
                 notice2ListView.setAdapter(noticeAdapter2);
