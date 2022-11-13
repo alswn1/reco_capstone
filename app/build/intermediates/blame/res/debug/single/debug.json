@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\AndroidProjects\\RECO_admin\\kmj_reco\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_delete_account_finish.xml.flat",
+        "source": "C:\\AndroidProjects\\RECO_admin\\kmj_reco\\app\\src\\main\\res\\layout\\activity_delete_account_finish.xml"
+    },
+    {
         "merged": "C:\\AndroidProjects\\RECO_admin\\kmj_reco\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_coupon_admin_detail2.xml.flat",
         "source": "C:\\AndroidProjects\\RECO_admin\\kmj_reco\\app\\src\\main\\res\\layout\\activity_coupon_admin_detail2.xml"
     },
@@ -28,16 +32,16 @@
         "source": "C:\\AndroidProjects\\RECO_admin\\kmj_reco\\app\\src\\main\\res\\drawable\\setting.png"
     },
     {
-        "merged": "C:\\AndroidProjects\\RECO_admin\\kmj_reco\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "C:\\AndroidProjects\\RECO_admin\\kmj_reco\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+        "merged": "C:\\AndroidProjects\\RECO_admin\\kmj_reco\\app\\build\\intermediates\\res\\merged\\debug\\drawable_trashcan_marker.png.flat",
+        "source": "C:\\AndroidProjects\\RECO_admin\\kmj_reco\\app\\src\\main\\res\\drawable\\trashcan_marker.png"
     },
     {
         "merged": "C:\\AndroidProjects\\RECO_admin\\kmj_reco\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_mylocation.png.flat",
         "source": "C:\\AndroidProjects\\RECO_admin\\kmj_reco\\app\\src\\main\\res\\drawable-v24\\mylocation.png"
     },
     {
-        "merged": "C:\\AndroidProjects\\RECO_admin\\kmj_reco\\app\\build\\intermediates\\res\\merged\\debug\\drawable_trashcan_marker.png.flat",
-        "source": "C:\\AndroidProjects\\RECO_admin\\kmj_reco\\app\\src\\main\\res\\drawable\\trashcan_marker.png"
+        "merged": "C:\\AndroidProjects\\RECO_admin\\kmj_reco\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\AndroidProjects\\RECO_admin\\kmj_reco\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
         "merged": "C:\\AndroidProjects\\RECO_admin\\kmj_reco\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btn_quiz_x.png.flat",
@@ -52,20 +56,20 @@
         "source": "C:\\AndroidProjects\\RECO_admin\\kmj_reco\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "C:\\AndroidProjects\\RECO_admin\\kmj_reco\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_btn_map.png.flat",
-        "source": "C:\\AndroidProjects\\RECO_admin\\kmj_reco\\app\\src\\main\\res\\drawable-v24\\btn_map.png"
-    },
-    {
         "merged": "C:\\AndroidProjects\\RECO_admin\\kmj_reco\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_coupon_admin.xml.flat",
         "source": "C:\\AndroidProjects\\RECO_admin\\kmj_reco\\app\\src\\main\\res\\layout\\activity_coupon_admin.xml"
     },
     {
-        "merged": "C:\\AndroidProjects\\RECO_admin\\kmj_reco\\app\\build\\intermediates\\res\\merged\\debug\\layout_quiz_fail.xml.flat",
-        "source": "C:\\AndroidProjects\\RECO_admin\\kmj_reco\\app\\src\\main\\res\\layout\\quiz_fail.xml"
+        "merged": "C:\\AndroidProjects\\RECO_admin\\kmj_reco\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_btn_map.png.flat",
+        "source": "C:\\AndroidProjects\\RECO_admin\\kmj_reco\\app\\src\\main\\res\\drawable-v24\\btn_map.png"
     },
     {
         "merged": "C:\\AndroidProjects\\RECO_admin\\kmj_reco\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_register.xml.flat",
         "source": "C:\\AndroidProjects\\RECO_admin\\kmj_reco\\app\\src\\main\\res\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "C:\\AndroidProjects\\RECO_admin\\kmj_reco\\app\\build\\intermediates\\res\\merged\\debug\\layout_quiz_fail.xml.flat",
+        "source": "C:\\AndroidProjects\\RECO_admin\\kmj_reco\\app\\src\\main\\res\\layout\\quiz_fail.xml"
     },
     {
         "merged": "C:\\AndroidProjects\\RECO_admin\\kmj_reco\\app\\build\\intermediates\\res\\merged\\debug\\drawable_point.png.flat",
@@ -390,6 +394,10 @@
     {
         "merged": "C:\\AndroidProjects\\RECO_admin\\kmj_reco\\app\\build\\intermediates\\res\\merged\\debug\\drawable_alarm.png.flat",
         "source": "C:\\AndroidProjects\\RECO_admin\\kmj_reco\\app\\src\\main\\res\\drawable\\alarm.png"
+    },
+    {
+        "merged": "C:\\AndroidProjects\\RECO_admin\\kmj_reco\\app\\build\\intermediates\\res\\merged\\debug\\layout_delete_account.xml.flat",
+        "source": "C:\\AndroidProjects\\RECO_admin\\kmj_reco\\app\\src\\main\\res\\layout\\delete_account.xml"
     },
     {
         "merged": "C:\\AndroidProjects\\RECO_admin\\kmj_reco\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_camera.xml.flat",

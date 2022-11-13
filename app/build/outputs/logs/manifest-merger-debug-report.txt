@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:2:1-160:12
-INJECTED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:2:1-160:12
-INJECTED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:2:1-160:12
-INJECTED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:2:1-160:12
+ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:2:1-167:12
+INJECTED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:2:1-167:12
+INJECTED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:2:1-167:12
+INJECTED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:2:1-167:12
 MERGED from [androidx.databinding:viewbinding:4.0.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\aac82bc6828d0751d08d5e405b65b114\jetified-viewbinding-4.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-ui:2.3.5] C:\Users\com\.gradle\caches\transforms-2\files-2.1\dde6683d0d6b9371683c9441f9fd0983\navigation-ui-2.3.5\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\c9f179fc827de6e9fbfd23a41b967c02\material-1.4.0\AndroidManifest.xml:17:1-24:12
@@ -108,22 +108,22 @@ MERGED from [org.tensorflow:tensorflow-lite-api:2.7.0] C:\Users\com\.gradle\cach
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\8feea9c0da1df28f93c5369d4b00d6b2\jetified-protolite-well-known-types-18.0.0\AndroidManifest.xml:2:1-11:12
 MERGED from [io.grpc:grpc-android:1.44.1] C:\Users\com\.gradle\caches\transforms-2\files-2.1\5e308ce791de105626d10ab9700721e3\jetified-grpc-android-1.44.1\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.android.odml:image:1.0.0-beta1] C:\Users\com\.gradle\caches\transforms-2\files-2.1\438c1e0b90136a017409373ea2b8abc1\jetified-image-1.0.0-beta1\AndroidManifest.xml:2:1-9:12
-INJECTED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:2:1-160:12
-INJECTED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:2:1-160:12
-INJECTED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:2:1-160:12
+INJECTED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:2:1-167:12
+INJECTED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:2:1-167:12
+INJECTED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:2:1-167:12
 	package
 		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:4:5-35
 		INJECTED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml
 		INJECTED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:2:1-160:12
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:2:1-167:12
 		INJECTED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:2:1-160:12
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:2:1-167:12
 		INJECTED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:2:11-69
@@ -216,7 +216,7 @@ MERGED from [com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\com\.gradle\
 	android:name
 		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:24:9-47
 application
-ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:27:5-158:19
+ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:27:5-165:19
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\c9f179fc827de6e9fbfd23a41b967c02\material-1.4.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\c9f179fc827de6e9fbfd23a41b967c02\material-1.4.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\com\.gradle\caches\transforms-2\files-2.1\9faef9201b19658d943f91957aadf2f1\constraintlayout-2.0.4\AndroidManifest.xml:9:5-20
@@ -321,278 +321,290 @@ MERGED from [com.google.android.odml:image:1.0.0-beta1] C:\Users\com\.gradle\cac
 		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:28:9-35
 	android:theme
 		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:34:9-40
-activity#com.example.kmj_reco.NoticeAdmin
-ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:35:9-37:40
+activity#com.example.kmj_reco.DeleteAccountFinish
+ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:35:9-41:20
 	android:exported
 		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:37:13-37
 	android:name
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:36:13-40
-uses-library#com.google.android.maps
-ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:39:9-64
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:36:13-48
+meta-data#android.app.lib_name
+ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:38:13-40:36
+	android:value
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:40:17-33
 	android:name
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:39:23-61
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:39:17-52
+activity#com.example.kmj_reco.NoticeAdmin
+ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:42:9-44:40
+	android:exported
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:44:13-37
+	android:name
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:43:13-40
+uses-library#com.google.android.maps
+ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:46:9-64
+	android:name
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:46:23-61
 uses-library#org.apache.http.legacy
-ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:40:9-42:40
+ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:47:9-49:40
 MERGED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\302b2d8b45fe1ca3c84a6b0cba21ea43\jetified-play-services-maps-18.1.0\AndroidManifest.xml:39:9-41:40
 MERGED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\com\.gradle\caches\transforms-2\files-2.1\302b2d8b45fe1ca3c84a6b0cba21ea43\jetified-play-services-maps-18.1.0\AndroidManifest.xml:39:9-41:40
 	android:required
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:42:13-37
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:49:13-37
 	android:name
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:41:13-50
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:48:13-50
 activity#com.example.kmj_reco.InformationActivity
-ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:44:9-57
+ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:51:9-57
 	android:name
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:44:19-54
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:51:19-54
 activity#com.example.kmj_reco.Home
-ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:45:9-42
+ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:52:9-42
 	android:name
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:45:19-39
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:52:19-39
 activity#com.example.kmj_reco.MyPageActivity
-ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:46:9-52
+ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:53:9-52
 	android:name
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:46:19-49
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:53:19-49
 activity#com.example.kmj_reco.RegisterActivity
-ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:47:9-49:51
+ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:54:9-56:51
 	android:usesCleartextTraffic
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:49:13-48
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:56:13-48
 	android:name
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:48:13-45
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:55:13-45
 activity#com.example.kmj_reco.AdminLogin
-ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:50:9-48
+ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:57:9-48
 	android:name
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:50:19-45
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:57:19-45
 activity#com.example.kmj_reco.AdminHome
-ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:51:9-47
+ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:58:9-47
 	android:name
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:51:19-44
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:58:19-44
 activity#com.example.kmj_reco.LoginAdmin
-ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:52:9-48
+ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:59:9-48
 	android:name
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:52:19-45
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:59:19-45
 activity#com.example.kmj_reco.ServiceCenterActivity
-ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:53:9-59
+ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:60:9-59
 	android:name
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:53:19-56
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:60:19-56
 activity#com.example.kmj_reco.ServiceDetailActivity
-ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:54:9-59
+ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:61:9-59
 	android:name
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:54:19-56
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:61:19-56
 activity#com.example.kmj_reco.ServiceHistoryActivity
-ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:55:9-60
+ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:62:9-60
 	android:name
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:55:19-57
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:62:19-57
 activity#com.example.kmj_reco.CouponAdminDetail2Edit
-ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:56:9-58:40
+ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:63:9-65:40
 	android:exported
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:58:13-37
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:65:13-37
 	android:name
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:57:13-51
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:64:13-51
 activity#com.example.kmj_reco.CouponAdminDetail2Plus
-ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:59:9-61:40
+ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:66:9-68:40
 	android:exported
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:61:13-37
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:68:13-37
 	android:name
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:60:13-51
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:67:13-51
 activity#com.example.kmj_reco.CouponAdminDetailPlus
-ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:62:9-64:40
+ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:69:9-71:40
 	android:exported
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:64:13-37
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:71:13-37
 	android:name
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:63:13-50
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:70:13-50
 activity#com.example.kmj_reco.CouponHistoryDetail
-ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:65:9-67:40
+ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:72:9-74:40
 	android:exported
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:67:13-37
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:74:13-37
 	android:name
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:66:13-48
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:73:13-48
 activity#com.example.kmj_reco.CouponAdminDetail2
-ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:68:9-70:40
+ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:75:9-77:40
 	android:exported
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:70:13-37
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:77:13-37
 	android:name
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:69:13-47
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:76:13-47
 activity#com.example.kmj_reco.CouponAdminDetail
-ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:71:9-73:40
-	android:exported
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:73:13-37
-	android:name
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:72:13-46
-activity#com.example.kmj_reco.BuyFinish
-ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:74:9-77:45
-	android:exported
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:76:13-37
-	tools:ignore
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:77:13-42
-	android:name
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:75:13-38
-activity#com.example.kmj_reco.BuyCoupon
-ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:78:9-81:45
+ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:78:9-80:40
 	android:exported
 		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:80:13-37
-	tools:ignore
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:81:13-42
 	android:name
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:79:13-38
-activity#com.example.kmj_reco.CouponHistory
-ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:82:9-84:40
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:79:13-46
+activity#com.example.kmj_reco.BuyFinish
+ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:81:9-84:45
 	android:exported
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:84:13-37
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:83:13-37
+	tools:ignore
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:84:13-42
 	android:name
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:83:13-42
-activity#com.example.kmj_reco.Alert
-ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:85:9-87:40
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:82:13-38
+activity#com.example.kmj_reco.BuyCoupon
+ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:85:9-88:45
 	android:exported
 		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:87:13-37
+	tools:ignore
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:88:13-42
 	android:name
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:86:13-34
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:86:13-38
+activity#com.example.kmj_reco.CouponHistory
+ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:89:9-91:40
+	android:exported
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:91:13-37
+	android:name
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:90:13-42
+activity#com.example.kmj_reco.Alert
+ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:92:9-94:40
+	android:exported
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:94:13-37
+	android:name
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:93:13-34
 activity#com.example.kmj_reco.CouponDetail
-ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:88:9-90:40
+ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:95:9-97:40
 	android:exported
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:90:13-37
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:97:13-37
 	android:name
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:89:13-41
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:96:13-41
 activity#com.example.kmj_reco.Coupon
-ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:91:9-93:40
+ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:98:9-100:40
 	android:exported
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:93:13-37
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:100:13-37
 	android:name
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:92:13-35
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:99:13-35
 activity#com.example.kmj_reco.CouponAdmin
-ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:94:9-96:40
+ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:101:9-103:40
 	android:exported
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:96:13-37
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:103:13-37
 	android:name
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:95:13-40
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:102:13-40
 activity#com.example.kmj_reco.Settings
-ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:97:9-99:40
+ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:104:9-106:40
 	android:exported
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:99:13-37
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:106:13-37
 	android:name
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:98:13-37
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:105:13-37
 activity#com.example.kmj_reco.QrActivity
-ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:100:9-102:40
+ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:107:9-109:40
 	android:exported
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:102:13-37
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:109:13-37
 	android:name
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:101:13-39
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:108:13-39
 activity#com.example.kmj_reco.CameraActivity
-ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:103:9-105:52
+ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:110:9-112:52
 	android:screenOrientation
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:105:13-49
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:112:13-49
 	android:name
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:104:13-43
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:111:13-43
 activity#com.example.kmj_reco.CameraSuccess
-ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:106:9-51
+ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:113:9-51
 	android:name
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:106:19-48
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:113:19-48
 activity#com.example.kmj_reco.Map
-ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:107:9-41
+ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:114:9-41
 	android:name
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:107:19-38
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:114:19-38
 activity#com.example.kmj_reco.RecobinDetail
-ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:108:9-110:79
-	android:theme
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:110:13-76
-	android:name
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:109:13-42
-activity#com.example.kmj_reco.AddressDetail
-ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:111:9-113:79
-	android:theme
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:113:13-76
-	android:name
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:112:13-42
-activity#com.example.kmj_reco.QuizMain
-ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:114:9-46
-	android:name
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:114:19-43
-activity#com.example.kmj_reco.QuizFail
 ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:115:9-117:79
 	android:theme
 		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:117:13-76
 	android:name
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:116:13-37
-activity#com.example.kmj_reco.QuizSuccess
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:116:13-42
+activity#com.example.kmj_reco.AddressDetail
 ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:118:9-120:79
 	android:theme
 		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:120:13-76
 	android:name
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:119:13-40
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:119:13-42
+activity#com.example.kmj_reco.QuizMain
+ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:121:9-46
+	android:name
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:121:19-43
+activity#com.example.kmj_reco.QuizFail
+ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:122:9-124:79
+	android:theme
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:124:13-76
+	android:name
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:123:13-37
+activity#com.example.kmj_reco.QuizSuccess
+ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:125:9-127:79
+	android:theme
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:127:13-76
+	android:name
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:126:13-40
 activity#com.example.kmj_reco.QuizAnswer
-ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:121:9-48
+ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:128:9-48
 	android:name
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:121:19-45
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:128:19-45
 activity#com.example.kmj_reco.Event
-ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:122:9-43
+ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:129:9-43
 	android:name
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:122:19-40
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:129:19-40
 activity#com.example.kmj_reco.Notice
-ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:123:9-44
+ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:130:9-44
 	android:name
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:123:19-41
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:130:19-41
 activity#com.example.kmj_reco.NoticeDetail
-ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:124:9-50
+ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:131:9-50
 	android:name
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:124:19-47
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:131:19-47
 activity#com.example.kmj_reco.PersonalInfo
-ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:125:9-50
+ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:132:9-50
 	android:name
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:125:19-47
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:132:19-47
 activity#com.example.kmj_reco.LoginActivity
-ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:126:9-134:20
+ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:133:9-141:20
 	android:label
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:128:13-45
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:135:13-45
 	android:name
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:127:13-42
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:134:13-42
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:129:13-133:29
+ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:136:13-140:29
 action#android.intent.action.MAIN
-ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:130:17-69
+ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:137:17-69
 	android:name
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:130:25-66
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:137:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:132:17-77
+ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:139:17-77
 	android:name
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:132:27-74
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:139:27-74
 provider#androidx.core.content.FileProvider
-ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:136:9-144:20
+ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:143:9-151:20
 	android:grantUriPermissions
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:140:13-47
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:147:13-47
 	android:authorities
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:138:13-55
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:145:13-55
 	android:exported
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:139:13-37
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:146:13-37
 	android:name
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:137:13-62
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:144:13-62
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:141:13-143:54
+ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:148:13-150:54
 	android:resource
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:143:17-51
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:150:17-51
 	android:name
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:142:17-67
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:149:17-67
 meta-data#com.google.android.gms.vision.DEPENDENCIES
-ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:146:9-148:39
+ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:153:9-155:39
 	android:value
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:148:13-36
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:155:13-36
 	android:name
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:147:13-70
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:154:13-70
 meta-data#com.google.android.geo.API_KEY
-ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:149:9-151:71
+ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:156:9-158:71
 	android:value
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:151:13-68
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:158:13-68
 	android:name
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:150:13-58
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:157:13-58
 meta-data#com.google.android.gms.vision
-ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:152:9-154:69
+ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:159:9-161:69
 	android:value
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:154:13-66
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:161:13-66
 	android:name
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:153:13-57
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:160:13-57
 meta-data#com.google.android.gms.ads.APPLICATION_ID
-ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:155:9-157:70
+ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:162:9-164:70
 	android:value
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:157:13-67
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:164:13-67
 	android:name
-		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:156:13-69
+		ADDED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml:163:13-69
 uses-sdk
 INJECTED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\AndroidManifest.xml

@@ -1,19 +1,17 @@
 package com.example.kmj_reco.DTO;
 
 public class RECOBIN {
-    public String recobin_num;
+    public int recobin_num;
     public String recobin_roadname;
     public String recobin_address;
     public String recobin_fulladdress;
     public String recobin_locate;
-    public Double recobin_latitude;
+    public Double recobin_latitude ;
     public Double recobin_longitude;
 
-    public RECOBIN() {
+    public RECOBIN() {}
 
-    }
-
-    public RECOBIN(String recobin_num, String recobin_roadname, String recobin_address, String recobin_fulladdress,String recobin_locate,Double recobin_latitude, Double recobin_longitude) {
+    public RECOBIN(int recobin_num, String recobin_roadname, String recobin_address, String recobin_fulladdress,String recobin_locate, Double recobin_latitude, Double recobin_longitude) {
         this.recobin_num = recobin_num;
         this.recobin_roadname = recobin_roadname;
         this.recobin_address = recobin_address;
@@ -23,10 +21,10 @@ public class RECOBIN {
         this.recobin_longitude = recobin_longitude;
     }
 
-    public String getRecobin_num() {
+    public int getRecobin_num() {
         return recobin_num;
     }
-    public void setRecobin_num(String recobin_num) {
+    public void setRecobin_num(int recobin_num) {
         this.recobin_num = recobin_num;
     }
 
@@ -60,13 +58,14 @@ public class RECOBIN {
     }
     public void setRecobin_longitude(Double recobin_longitude) { this.recobin_longitude = recobin_longitude; }
 
-    @Override
-    public String toString() {
-        return "RECOBIN{" +
-                "recobin_num=" + recobin_num +
-                ", recobin_roadname='" + recobin_roadname + '\'' +
-                ", recobin_address='" + recobin_address + '\'' +
-                '}';
+    public static int lastNum(java.util.List<RECOBIN> recobinList){
+        int k=0;
+        int i;
+        for(RECOBIN data:recobinList){
+            i = data.getRecobin_num();
+            if (k<=i) {k=i;}
+        }
+        return k;
     }
 }
 

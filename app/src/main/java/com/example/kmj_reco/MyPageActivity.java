@@ -133,6 +133,16 @@ public class MyPageActivity extends AppCompatActivity {
             }
         });
 
+        // 탈퇴 버튼 클릭 시 탈퇴 팝업 띄우기
+        Button btn_account_delete=(Button) findViewById(R.id.btn_account_delete);
+        btn_account_delete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                DeleteAccount e = DeleteAccount.getInstance();
+                e.show(getSupportFragmentManager(),"");
+            }
+        });
+
         // 로그아웃 버튼 클릭 시 로그아웃 후 로그인 화면으로 이동
         Button btn_logout = (Button) findViewById(R.id.btn_logout);
         btn_logout.setOnClickListener(new View.OnClickListener() {

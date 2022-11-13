@@ -2,6 +2,7 @@ package com.example.kmj_reco;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -77,6 +78,38 @@ public class RegisterActivity extends AppCompatActivity {
                 String userPass2 = et_pass2.getText().toString();
                 String userPhone = et_phone.getText().toString();
                 String userEmail = et_email.getText().toString();
+
+                // 회원가입 유효성 검사
+                if(userName.getBytes().length <= 0){//빈값이 넘어올때의 처리
+                    Toast.makeText(RegisterActivity.this, "이름을 입력하세요.", Toast.LENGTH_SHORT).show();
+                    Log.v("NAME", "이름을 입력하세요.");
+                    return;
+                }
+                if(userBirth.getBytes().length <= 0){//빈값이 넘어올때의 처리
+                    Toast.makeText(RegisterActivity.this, "생년월일을 입력하세요.", Toast.LENGTH_SHORT).show();
+                    Log.v("Birth", "생년월일을 입력하세요.");
+                    return;
+                }
+                if(userID.getBytes().length <= 0){//빈값이 넘어올때의 처리
+                    Toast.makeText(RegisterActivity.this, "아이디를 입력하세요.", Toast.LENGTH_SHORT).show();
+                    Log.v("ID", "아이디를 입력하세요.");
+                    return;
+                }
+                if(userPass.getBytes().length <= 0){//빈값이 넘어올때의 처리
+                    Toast.makeText(RegisterActivity.this, "비밀번호를 입력하세요.", Toast.LENGTH_SHORT).show();
+                    Log.v("Pass", "비밀번호를 입력하세요.");
+                    return;
+                }
+                if(userPhone.getBytes().length <= 0){//빈값이 넘어올때의 처리
+                    Toast.makeText(RegisterActivity.this, "전화번호를 입력하세요.", Toast.LENGTH_SHORT).show();
+                    Log.v("Phone", "전화번호를 입력하세요.");
+                    return;
+                }
+                if(userEmail.getBytes().length <= 0){//빈값이 넘어올때의 처리
+                    Toast.makeText(RegisterActivity.this, "이메일을 입력하세요.", Toast.LENGTH_SHORT).show();
+                    Log.v("Email", "이메일을 입력하세요.");
+                    return;
+                }
 
                 mFirebaseAuth.createUserWithEmailAndPassword(userEmail, userPass).addOnCompleteListener(RegisterActivity.this, new OnCompleteListener<AuthResult>() {
                     @Override

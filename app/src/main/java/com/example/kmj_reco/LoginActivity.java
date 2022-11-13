@@ -82,7 +82,10 @@ public class LoginActivity extends AppCompatActivity {
                     mFirebaseAuth.signInWithEmailAndPassword(userID, userPass).addOnCompleteListener(LoginActivity.this, new OnCompleteListener<AuthResult>() {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
-                            if (Objects.requireNonNull(mFirebaseAuth.getCurrentUser()).isEmailVerified()) {
+                            if (Objects.isNull(mFirebaseAuth.getCurrentUser())) {
+                                Toast.makeText(LoginActivity.this, "회원 정보가 없습니다.", Toast.LENGTH_SHORT).show();
+                            }
+                            else if (Objects.requireNonNull(mFirebaseAuth.getCurrentUser()).isEmailVerified()) {
                                 Log.v("Email", "이메일 인증 확인");
                                 if (task.isSuccessful()) {
                                     // 로그인 성공

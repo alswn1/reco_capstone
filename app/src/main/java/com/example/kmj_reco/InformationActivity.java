@@ -148,6 +148,9 @@ public class InformationActivity extends AppCompatActivity {
                             public void onComplete(@NonNull Task<Void> task) {
                                 if (task.isSuccessful()){
                                     startToast("회원정보 수정에 성공하였습니다.");
+                                    // 정보 수정 성공하면 마이페이지로 이동
+                                    Intent i = new Intent(getApplicationContext(), MyPageActivity.class);
+                                    startActivity(i);
                                 }
                             }
                         });

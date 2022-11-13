@@ -2026,6 +2026,7 @@ id browser_actions_menu_item_icon
 id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
+id btn_account_delete
 id btn_alert
 id btn_back
 id btn_back2
@@ -2041,6 +2042,7 @@ id btn_history
 id btn_home
 id btn_login
 id btn_logout
+id btn_main
 id btn_map
 id btn_modification
 id btn_mypage
@@ -2507,6 +2509,7 @@ id textView28
 id textView29
 id textView3
 id textView30
+id textView31
 id textView32
 id textView33
 id textView34
@@ -2669,6 +2672,7 @@ layout activity_coupon_admin_detail_plus
 layout activity_coupon_detail
 layout activity_coupon_history
 layout activity_coupon_history_detail
+layout activity_delete_account_finish
 layout activity_information
 layout activity_item_login
 layout activity_item_service
@@ -2694,6 +2698,7 @@ layout browser_actions_context_menu_row
 layout buy_coupon
 layout buy_success
 layout custom_dialog
+layout delete_account
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
 layout design_layout_snackbar
