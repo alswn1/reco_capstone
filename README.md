@@ -58,7 +58,7 @@
 <h5>
   - Front-end / Back-end <br/>
   - Programming Leader <br/>
-  - Coupon / Coupon Admin / 알림 / 설정 /  <br/>
+  - 기프티콘 / 기프티콘 내역 / 기프티콘 Admin / 알림 / 설정 / 회원탈퇴 <br/>
 </h5>
 
 <br/>
@@ -68,7 +68,7 @@
 <h5>
   - Front-end / Back-end <br/>
   - Tech. writer <br/>
-  - Login & Sign Up / My Page / Service Center(문의) / Login Admin / Service Center Admin <br/>
+  - Login & Sign Up / 고객센터 / Login Admin / Service Center Admin <br/>
 </h5>
 
 <br/>
