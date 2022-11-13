@@ -33,7 +33,7 @@
 <h5>
   - Front-end / Back-end <br/>
   - DB Leader <br/>
-  - QR 생성 및 인식 / 재활용 인증 AI / 사용자 E-Mail 인증 / Map (데이터 저장 및 가공, 쓰레기통 위치) <br/>
+  - QR 생성 및 인식 / 재활용 인증 AI / 사용자 E-Mail 인증 / Map (데이터 저장 및 가공, 쓰레기통 위치) / 공지 어드민 <br/>
 </h5>
 
 <br/>
@@ -48,7 +48,7 @@
 <h5>
   - Front-end / Back-end <br/>
   - PM, UI/UX Leader <br/>
-  - Home / Quiz / Event / 공지 / 자동 login & Log out / Map (현재위치 , 위치 검색, 쓰레기통 상세주소) <br/>
+  - Home / Quiz / Event / 공지 / 자동 login & Log out / Map (현재위치 , 위치 검색, 쓰레기통 상세주소) / 레코빈 어드민 <br/>
 </h5>
 
 <br/>
@@ -58,7 +58,7 @@
 <h5>
   - Front-end / Back-end <br/>
   - Programming Leader <br/>
-  - Coupon / Coupon Admin / 알림 / 설정 <br/>
+  - 기프티콘 / 기프티콘 내역 / 기프티콘 Admin / 알림 / 설정 / 회원탈퇴 <br/>
 </h5>
 
 <br/>
@@ -68,7 +68,7 @@
 <h5>
   - Front-end / Back-end <br/>
   - Tech. writer <br/>
-  - Login & Sign Up / My Page / Service Center(문의) / Login Admin / Service Center Admin <br/>
+  - Login & Sign Up / 고객센터 / Login Admin / Service Center Admin <br/>
 </h5>
 
 <br/>
