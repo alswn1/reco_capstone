@@ -68,7 +68,7 @@
 <h5>
   - Front-end / Back-end <br/>
   - Tech. writer <br/>
-  - Login & Sign Up / 고객센터 / Login Admin / Service Center Admin <br/>
+  - Login & Sign Up / 개인정보수정 / 고객센터 / Login Admin / Service Center Admin <br/>
 </h5>
 
 <br/>
