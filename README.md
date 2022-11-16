@@ -48,7 +48,7 @@
 <h5>
   - Front-end / Back-end <br/>
   - PM, UI/UX Leader <br/>
-  - Home / Quiz / Event / 공지 / 자동 login & Log out / Map (현재위치 , 위치 검색, 쓰레기통 상세주소) / 레코빈 어드민 <br/>
+  - Home / Quiz / Event / 공지 / 자동 login & Log out / Map (현재위치 , 위치 검색, 쓰레기통 상세주소) / 레코빈 어드민 / 개인정보수정 <br/>
 </h5>
 
 <br/>
@@ -68,17 +68,17 @@
 <h5>
   - Front-end / Back-end <br/>
   - Tech. writer <br/>
-  - Login & Sign Up / 고객센터 / Login Admin / Service Center Admin <br/>
+  - Login & Sign Up / 개인정보수정 / 고객센터 / Login Admin / Service Center Admin <br/>
 </h5>
 
 <br/>
 
 ##### 🐶 손다정 / Da Jeong Son
-<h5>기여도 |  100% </h5>
+<h5>기여도 |  40% </h5>
 <h5>
   - Front-end / Back-end <br/>
   - Testing Leader <br/>
-  - Map (start location) <br/>
+  - Map (current location) <br/>
 </h5>
 
 <br/>
