@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#fff"
     android:orientation="vertical"
     tools:context=".QrActivity">
 
@@ -14,7 +15,7 @@
         android:id="@+id/scanBtn"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:background="@drawable/camera"
+        android:background="@drawable/qr"
         android:layout_gravity="center"
         android:layout_marginTop="100dp"
         android:textColor="#fff" />
@@ -24,66 +25,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:text="QR을 스캔하려면 위 카메라를 클릭해주세요"
+        android:text="QR을 스캔하려면 위 아이콘을 클릭해주세요"
         android:textAlignment="center"
         android:textColor="#444444"
         android:textSize="18sp"
         android:textStyle="bold" />
-
-
-    <!--<TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Qr 코드를 스캔하려면\n아래 버튼을 눌러주세요!"
-        android:textSize="20sp"
-        android:textColor="#000"
-        android:layout_marginTop="180dp"/>
-
-    <Button
-        android:id="@+id/scanBtn"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="60dp"
-        android:background="#9cb36b"
-        android:textColor="#fff"
-        android:text="QR SACN"/>-->
-
-    <!--<TextView
-        android:id="@+id/recobin_num"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginTop="20dp"
-        android:gravity="center"
-        android:text="result"
-        android:textSize="20sp" />
-    <TextView
-        android:id="@+id/recobin_roadname"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginTop="20dp"
-        android:gravity="center"
-        android:text="result"
-        android:textSize="20sp" />
-    <TextView
-        android:id="@+id/recobin_address"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginTop="20dp"
-        android:gravity="center"
-        android:text="result"
-        android:textSize="20sp" />
-    <TextView
-        android:id="@+id/star_score"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginTop="20dp"
-        android:gravity="center"
-        android:text="result"
-        android:textSize="20sp" />-->
-
-
-
 </LinearLayout>

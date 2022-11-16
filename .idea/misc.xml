@@ -13,6 +13,8 @@
         <entry key="..\:/AndroidProjects/ImageClassifier/app/src/main/res/layout/title_bar.xml" value="0.2361111111111111" />
         <entry key="..\:/AndroidProjects/RECO_admin/kmj_reco/app/src/main/res/layout/activity_admin_home.xml" value="0.5536458333333333" />
         <entry key="..\:/AndroidProjects/RECO_admin/kmj_reco/app/src/main/res/layout/activity_alert.xml" value="0.2692502532928065" />
+        <entry key="..\:/AndroidProjects/RECO_admin/kmj_reco/app/src/main/res/layout/activity_camera.xml" value="0.5" />
+        <entry key="..\:/AndroidProjects/RECO_admin/kmj_reco/app/src/main/res/layout/activity_camera_success.xml" value="0.5536458333333333" />
         <entry key="..\:/AndroidProjects/RECO_admin/kmj_reco/app/src/main/res/layout/activity_coupon_admin.xml" value="0.44565217391304346" />
         <entry key="..\:/AndroidProjects/RECO_admin/kmj_reco/app/src/main/res/layout/activity_delete_account_finish.xml" value="0.5153985507246377" />
         <entry key="..\:/AndroidProjects/RECO_admin/kmj_reco/app/src/main/res/layout/activity_login_admin.xml" value="0.34003350083752093" />
@@ -20,6 +22,7 @@
         <entry key="..\:/AndroidProjects/RECO_admin/kmj_reco/app/src/main/res/layout/activity_notice.xml" value="0.33229166666666665" />
         <entry key="..\:/AndroidProjects/RECO_admin/kmj_reco/app/src/main/res/layout/activity_notice_admin.xml" value="0.5536458333333333" />
         <entry key="..\:/AndroidProjects/RECO_admin/kmj_reco/app/src/main/res/layout/activity_notice_detail.xml" value="0.17350557244174267" />
+        <entry key="..\:/AndroidProjects/RECO_admin/kmj_reco/app/src/main/res/layout/activity_qr.xml" value="0.5536458333333333" />
         <entry key="..\:/AndroidProjects/RECO_admin/kmj_reco/app/src/main/res/layout/activity_recobin_admin_edit.xml" value="0.26874366767983787" />
         <entry key="..\:/AndroidProjects/RECO_admin/kmj_reco/app/src/main/res/layout/activity_register.xml" value="0.5536458333333333" />
         <entry key="..\:/AndroidProjects/RECO_admin/kmj_reco/app/src/main/res/layout/item_recobin_admin.xml" value="0.26874366767983787" />
