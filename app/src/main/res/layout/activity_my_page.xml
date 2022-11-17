@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#fff"
     tools:context=".MyPageActivity">
 
     <TextView
@@ -11,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="90dp"
-        android:layout_marginTop="176dp"
+        android:layout_marginTop="170dp"
         android:text="나의 RECO : "
         android:textColor="#C3C3C3"
         android:textSize="20sp"
@@ -24,7 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="33dp"
-        android:layout_marginTop="174dp"
+        android:layout_marginTop="168dp"
         android:text=""
         android:textColor="#8CEA29"
         android:textSize="25sp"
@@ -36,7 +37,7 @@
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="180dp"
+        android:layout_marginTop="174dp"
         android:text="p"
         android:textColor="#8CEA29"
         android:textSize="20sp"
@@ -44,8 +45,9 @@
         app:layout_constraintStart_toEndOf="@+id/user_point"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <include layout="@layout/title_bar"
-        android:id="@+id/title_bar"/>
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/title_bar" />
 
     <ImageButton
         android:id="@+id/btn_back"
@@ -63,10 +65,10 @@
 
     <Button
         android:id="@+id/btn_modification"
-        android:layout_width="159dp"
+        android:layout_width="140dp"
         android:layout_height="47dp"
         android:layout_marginStart="150dp"
-        android:layout_marginTop="145dp"
+        android:layout_marginTop="100dp"
         android:layout_marginEnd="144dp"
         android:text="개인정보수정"
         android:textColor="#444444"
@@ -144,7 +146,7 @@
         android:id="@+id/mypage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="93dp"
         android:text="MY PAGE"
         android:textColor="#4B6C11"
         android:textSize="24sp"
@@ -152,5 +154,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-3940256099942544/6300978111"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

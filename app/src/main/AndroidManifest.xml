@@ -16,6 +16,9 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
 
     <uses-feature
         android:glEsVersion="0x00020000"
@@ -33,6 +36,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".DeleteAccountFinish"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".NoticeAdmin"
             android:exported="false" />
 
@@ -47,12 +57,22 @@
         <activity
             android:name=".RegisterActivity"
             android:usesCleartextTraffic="true" />
+
         <activity android:name=".AdminLogin" />
         <activity android:name=".AdminHome" />
         <activity android:name=".LoginAdmin" />
+
+        <activity android:name=".RecobinAdmin"/>
+        <activity android:name=".RecobinAdminEdit"/>
+        <activity android:name=".RecobinAdminAdd"/>
+
+        <activity android:name=".ServiceAdmin"/>
+        <activity android:name=".ServiceAdminDetail"/>
+
         <activity android:name=".ServiceCenterActivity" />
         <activity android:name=".ServiceDetailActivity" />
-        <activity android:name=".ServiceHistoryActivity" />
+        <activity android:name=".ServiceHistoryActivity"/>
+
         <activity
             android:name=".CouponAdminDetail2Edit"
             android:exported="false" />

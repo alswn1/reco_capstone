@@ -3,119 +3,106 @@ package com.example.kmj_reco;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.util.Log;
-import android.widget.AdapterView;
-import android.widget.Button;
-import android.widget.Toast;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.kmj_reco.DTO.ServiceAccount;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.firestore.DocumentReference;
-import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.firestore.QueryDocumentSnapshot;
-import com.google.firebase.firestore.QuerySnapshot;
+import com.google.firebase.database.ValueEventListener;
+
 
 public class ServiceCenterActivity extends AppCompatActivity {
-    private static final String TAG = "ServiceCenterActivity";
-
-    private FirebaseAuth mFirebaseAuth; //파이어베이스 인증
-    private DatabaseReference mDatabaseRef; //실시간데이터베이스
-    private FirebaseUser user;
-    FirebaseFirestore fs = FirebaseFirestore.getInstance();
-
-    FirebaseDatabase database = FirebaseDatabase.getInstance();
-    DatabaseReference myRef = FirebaseDatabase.getInstance().getReference();
-    FirebaseFirestore db = FirebaseFirestore.getInstance();
-    private ServiceAccount ServiceAccount;
-    private Object USER;
+    FirebaseDatabase database;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_service_center);
 
-        Button historyBtn = (Button) findViewById(R.id.btn_history);
-        historyBtn.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                fs.collection("posts")
-                        .get()
-                        .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
-                            @Override
-                            public void onComplete(@NonNull Task<QuerySnapshot> task) {
-                                if(task.isSuccessful()){
-                                    for (QueryDocumentSnapshot document : task.getResult()) {}
-                                }else {}
-                            }
-                        });
-                Intent intent = new Intent(getApplicationContext(), ServiceHistoryActivity.class);
-                startActivity(intent);
-                }
-            });
+        database = FirebaseDatabase.getInstance(); //db
+        database.getReference("ServiceAccount").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                int service_num = (int) (snapshot.getChildrenCount());
 
-        /*
+                Button btn_service_submit = (Button) findViewById(R.id.btn_submit);
+                btn_service_submit.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        EditText et_title = findViewById(R.id.et_title);
+                        EditText et_content = findViewById(R.id.et_content);
+                        EditText et_publisher = findViewById(R.id.et_publisher);
+                        EditText et_date = findViewById(R.id.et_date);
+
+                        ServiceAccount serviceAccount = new ServiceAccount(et_title.getText().toString(), et_content.getText().toString(), et_publisher.getText().toString(), service_num, et_date.getText().toString());
+                        database.getReference("ServiceAccount").child(String.valueOf(service_num)).setValue(serviceAccount);
+
+                        Toast.makeText(ServiceCenterActivity.this, "새로운 문의사항을 등록했습니다.",Toast.LENGTH_SHORT).show();
+                        Intent i = new Intent(getApplicationContext(), ServiceHistoryActivity.class);
+                        startActivity(i);
+                    }
+                });
+            }
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
+        // 취소 시 홈 화면 이동
+        ImageButton btn_back = (ImageButton)findViewById(R.id.btn_back);
+        btn_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), MyPageActivity.class);
+                startActivity(i);
+            }
+        });
+
+        ImageView btn_home = (ImageView) findViewById(R.id.btn_home);
+        btn_home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), Home.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageView btn_settings = (ImageView) findViewById(R.id.btn_settings);
+        btn_settings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), Settings.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageView btn_alert = (ImageView) findViewById(R.id.btn_alert);
+        btn_alert.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), Alert.class);
+                startActivity(intent);
+            }
+        });
+
         Button btn_history = (Button) findViewById(R.id.btn_history);
         btn_history.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), ServiceHistoryActivity.class);
-                startActivity(intent);
+                Intent i = new Intent(getApplicationContext(), ServiceHistoryActivity.class);
+                startActivity(i);
             }
-        });*/
-
-        // 제출하기 버튼 누름
-        findViewById(R.id.btn_submit).setOnClickListener(onClickListener);
+        });
     }
-    View.OnClickListener onClickListener = new View.OnClickListener() {
-        @Override
-        public void onClick(View view) {
-            switch(view.getId()){
-                case R.id.btn_submit:
-                    serviceWrite();
-                    break;
-            }
-        }
-    };
-
-    private void serviceWrite() { // 고객센터 글쓰기
-        final String service_title = ((EditText) findViewById(R.id.et_title)).getText().toString();
-        final String service_contents = ((EditText) findViewById(R.id.et_content)).getText().toString();
-
-        if (service_title.length() >0 && service_contents.length() >0){
-            user = FirebaseAuth.getInstance().getCurrentUser();
-            ServiceAccount serviceAccount = new ServiceAccount(service_title, service_contents,user.getUid());
-            uploader(serviceAccount);
-        } else{
-            startToast("빈칸 없이 입력해주세요.");
-        }
-    }
-
-    private void uploader(ServiceAccount ServiceAccount){ // 업로드
-        FirebaseFirestore fs = FirebaseFirestore.getInstance();
-        fs.collection("posts").add(ServiceAccount)
-                .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
-                    @Override
-                    public void onSuccess(DocumentReference documentReference) {
-                        Log.d(TAG, "DocumentSnapshot added with ID: " + documentReference.getId());
-                    }
-                })
-                .addOnFailureListener(new OnFailureListener() {
-                    @Override
-                    public void onFailure(@NonNull Exception e) {
-                        Log.w(TAG, "Error adding document", e);
-                    }
-                });
-    }
-    // 보여주기
-    private void startToast(String msg) {Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();}
 }

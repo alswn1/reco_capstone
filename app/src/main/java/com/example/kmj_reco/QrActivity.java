@@ -9,6 +9,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -39,6 +41,33 @@ public class QrActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_qr);
+
+        ImageView btn_home = (ImageView) findViewById(R.id.btn_home);
+        btn_home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), Home.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageView btn_settings = (ImageView) findViewById(R.id.btn_settings);
+        btn_settings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), Settings.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageView btn_alert = (ImageView) findViewById(R.id.btn_alert);
+        btn_alert.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), Alert.class);
+                startActivity(intent);
+            }
+        });
 
         scanBtn = findViewById(R.id.scanBtn);
         /*recobin_num = findViewById(R.id.recobin_num);
@@ -82,7 +111,7 @@ public class QrActivity extends AppCompatActivity {
                     star_score.setText(obj.getString("star_score"));*/
                     Log.v("test : ", "recobin_num : " + obj.getString("recobin_num"));
 
-                    // qr코드가 db에 있는 qr코드인지 확인
+                    // qr코드가 db에 있는 qr 코드인지 확인
 
                     // db
                     database = FirebaseDatabase.getInstance();

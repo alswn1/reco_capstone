@@ -3,13 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#fff">
 
     <include
         android:id="@+id/notice_bar2"
         layout="@layout/notice_bar2"
         android:layout_width="match_parent"
-        android:layout_height="71dp"/>
+        android:layout_height="71dp" />
 
     <TextView
         android:id="@+id/notice_title"

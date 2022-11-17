@@ -3,17 +3,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#fff"
     android:orientation="vertical"
     tools:context=".CouponHistory">
-    <include layout="@layout/title_bar"
-        android:id="@+id/title_bar"/>
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/title_bar" />
+
     <ImageButton
-        android:background="@android:color/transparent"
         android:id="@+id/btn_back"
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="73dp"
+        android:background="@android:color/transparent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@drawable/btn_back" />
@@ -27,7 +31,7 @@
         android:textColor="#444444"
         android:textSize="20dp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/title_bar"/>
+        app:layout_constraintTop_toBottomOf="@+id/title_bar" />
 
     <TextView
         android:id="@+id/textView3"
@@ -40,12 +44,13 @@
         android:textColor="#fff"
         android:textSize="20dp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"/>
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <ListView
         android:id="@+id/gifticon_listView_history"
         android:layout_width="match_parent"
-        android:layout_height="500dp"
+        android:layout_height="0dp"
+        android:background="#fff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />

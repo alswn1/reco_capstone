@@ -49,9 +49,7 @@ public class GIFTICONDATA {
         return gifticon_Num;
     }
 
-    public void setgifticon_Detail(String gifticon_Detail){
-        this.gifticon_Detail = gifticon_Detail;
-    }
+    public void setgifticon_Detail(String gifticon_Detail){ this.gifticon_Detail = gifticon_Detail; }
 
     public String getgifticon_Detail(){
         return gifticon_Detail;

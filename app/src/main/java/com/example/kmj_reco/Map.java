@@ -45,7 +45,6 @@ public class Map extends AppCompatActivity implements OnMapReadyCallback {
     GoogleMap map;
     Button btn_search;
     EditText editText;
-    //Button btn_location;
 
     // 데이터베이스 선언
     FirebaseDatabase database;
@@ -114,10 +113,9 @@ public class Map extends AppCompatActivity implements OnMapReadyCallback {
         map = googleMap;
 
         // 시작 위치 지정 --> 사용자 현재 위치로 변경할 것
-        /*
-        LatLng seoul = new LatLng(37.558438930646076, 127.04904563423179);
-        googleMap.addMarker(new MarkerOptions().position(seoul).title("한양여자대학교 정보문화관").icon(BitmapDescriptorFactory.fromResource(R.drawable.trashcan_marker)));
-        googleMap.moveCamera(CameraUpdateFactory.newLatLng(seoul));*/
+
+        LatLng startLocation = new LatLng(37.558438930646076, 127.04904563423179);
+        googleMap.moveCamera(CameraUpdateFactory.newLatLng(startLocation));
 
         // 줌 애니메이션
         CameraUpdate zoom = CameraUpdateFactory.zoomTo(15);
@@ -163,11 +161,11 @@ public class Map extends AppCompatActivity implements OnMapReadyCallback {
                 for (int j=0; j < snapshot.getChildrenCount(); j++) {
                     // 위도 받아와 latitude에 저장
                     Double recobin_latitude = snapshot.child(String.valueOf(j)).child("recobin_latitude").getValue(Double.class);
-                    Log.v("test", "recobin_latitude" + recobin_latitude);
+                    //Log.v("test", "recobin_latitude" + recobin_latitude);
 
                     // 경도 받아와 longitude에 저장
                     Double recobin_longitude = snapshot.child(String.valueOf(j)).child("recobin_longitude").getValue(Double.class);
-                    Log.v("test", "recobin_longitude" + recobin_longitude);
+                    //Log.v("test", "recobin_longitude" + recobin_longitude);
 
                     // 상세주소 받아와 recobin_fulladdress에 저장
                     String recobin_fulladdress = snapshot.child(String.valueOf(j)).child("recobin_fulladdress").getValue(String.class);
@@ -261,18 +259,14 @@ public class Map extends AppCompatActivity implements OnMapReadyCallback {
 
         // 화면 확대, 숫자가 클수록 확대
         map.animateCamera(CameraUpdateFactory.newLatLngZoom(curPoint, 15));
-
-        /*
-        Location targetLocation = new Location("");
-        targetLocation.setLatitude();
-        targetLocation.setLongitude();*/
     }
 
     // -----------------권한 설정
     private void checkDangerousPermissions() {
         String[] permissions = {
                 android.Manifest.permission.ACCESS_COARSE_LOCATION,
-                android.Manifest.permission.ACCESS_FINE_LOCATION
+                android.Manifest.permission.ACCESS_FINE_LOCATION,
+                Manifest.permission.ACCESS_WIFI_STATE
         };
 
         int permissionCheck = PackageManager.PERMISSION_GRANTED;

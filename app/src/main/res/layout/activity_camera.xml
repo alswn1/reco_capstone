@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#fff"
     android:orientation="vertical"
     tools:context=".CameraActivity">
 
@@ -12,11 +13,11 @@
 
     <Button
         android:id="@+id/takeBtn"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
         android:layout_gravity="center"
         android:layout_marginTop="100dp"
-        android:background="@drawable/camera"
+        android:background="@drawable/phone"
         android:textColor="#fff" />
 
     <TextView

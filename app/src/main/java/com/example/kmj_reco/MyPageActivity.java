@@ -11,6 +11,11 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -22,12 +27,24 @@ public class MyPageActivity extends AppCompatActivity {
     private FirebaseAuth mFirebaseAuth; //파이어베이스 인증
     private DatabaseReference mDatabaseRef; //실시간데이터베이스
     FirebaseDatabase database;
+
     TextView user_point;
+    AdView mAdView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_page);
+
+        // Google AD
+        MobileAds.initialize(this, new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(InitializationStatus initializationStatus) {}
+        });
+
+        mAdView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
 
         mFirebaseAuth = FirebaseAuth.getInstance();
         database = FirebaseDatabase.getInstance();
@@ -55,15 +72,6 @@ public class MyPageActivity extends AppCompatActivity {
             }
         });
 
-        ImageView btn_settings = (ImageView) findViewById(R.id.btn_settings);
-        btn_settings.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Settings.class);
-                startActivity(intent);
-            }
-        });
-
         ImageView btn_alert = (ImageView) findViewById(R.id.btn_alert);
         btn_alert.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -74,8 +82,8 @@ public class MyPageActivity extends AppCompatActivity {
         });
 
         // 상단바 설정 버튼 클릭 시 설정 액티비티 전환
-        ImageView btn_setting = (ImageView) findViewById(R.id.btn_settings);
-        btn_setting.setOnClickListener(new View.OnClickListener() {
+        ImageView btn_settings = (ImageView) findViewById(R.id.btn_settings);
+        btn_settings.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), Settings.class);
@@ -130,6 +138,16 @@ public class MyPageActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), Notice.class);
                 startActivity(intent);
+            }
+        });
+
+        // 탈퇴 버튼 클릭 시 탈퇴 팝업 띄우기
+        Button btn_account_delete=(Button) findViewById(R.id.btn_account_delete);
+        btn_account_delete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                DeleteAccount e = DeleteAccount.getInstance();
+                e.show(getSupportFragmentManager(),"");
             }
         });
 

@@ -4,10 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#fff"
     tools:context=".Event">
 
-    <include layout="@layout/title_bar"
-        android:id="@+id/title_bar"/>
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/title_bar" />
 
     <ImageView
         android:id="@+id/base"
@@ -28,9 +30,9 @@
         android:contentDescription="btn_back"
         android:minWidth="48dp"
         android:minHeight="48dp"
+        android:src="@drawable/btn_back"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/btn_back" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView2"
@@ -51,6 +53,7 @@
         android:layout_width="298dp"
         android:layout_height="494dp"
         android:layout_marginBottom="32dp"
+        android:background="#fff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -4,10 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#fff"
     tools:context=".DeleteAccountFinish">
 
-    <include layout="@layout/title_bar"
-        android:id="@+id/title_bar"/>
+    <include
+        android:id="@+id/title_bar2"
+        layout="@layout/title_bar2" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="423dp"
@@ -17,6 +19,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.491"
         tools:context=".RegisterActivity"
         tools:ignore="MissingConstraints">
 

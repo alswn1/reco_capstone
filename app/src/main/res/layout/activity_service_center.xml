@@ -4,10 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#fff"
     tools:context=".ServiceCenterActivity">
 
-    <include layout="@layout/title_bar"
-        android:id="@+id/title_bar"/>
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/title_bar" />
 
     <TextView
         android:id="@+id/textView4"
@@ -26,41 +28,90 @@
 
     <EditText
         android:id="@+id/et_content"
-        android:layout_width="292dp"
-        android:layout_height="343dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="307dp"
+        android:layout_height="346dp"
+        android:layout_marginBottom="72dp"
         android:ems="10"
         android:hint="문의하고 싶은 내용을 적어주세요"
         android:inputType="textPersonName"
         android:minHeight="48dp"
+        android:textColor="#444444"
         android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/et_date"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="188dp"
+        android:ems="10"
+        android:hint="작성일"
+        android:inputType="textPersonName"
+        android:textColor="#444444"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/et_title"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/et_title"
+        android:layout_width="220dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="188dp"
+        android:ems="10"
+        android:hint="제목"
+        android:inputType="textPersonName"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_title" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/et_publisher"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="140dp"
+        android:ems="10"
+        android:hint="E-MAIL"
+        android:inputType="textPersonName"
+        android:textColor="#000"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btn_submit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="62dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="62dp"
         android:backgroundTint="#A1BF6A"
         android:text="제출하기"
         android:textColor="#FFFFFF"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_content" />
 
     <Button
         android:id="@+id/btn_history"
-        android:layout_width="81dp"
+        android:layout_width="100dp"
         android:layout_height="43dp"
         android:layout_marginTop="81dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="#E8E8E8"
-        android:text="문의내역"
+        android:text="문의 게시판"
         android:textColor="#444444"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -77,21 +128,5 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/btn_back"
         tools:ignore="SpeakableTextPresentCheck" />
-
-    <EditText
-        android:id="@+id/et_title"
-        android:layout_width="290dp"
-        android:layout_height="41dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="175dp"
-        android:ems="10"
-        android:hint="제목"
-        android:inputType="textPersonName"
-        android:textColor="#444444"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="TouchTargetSizeCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

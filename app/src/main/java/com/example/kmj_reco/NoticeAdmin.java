@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.example.kmj_reco.DTO.NOTICE;
@@ -18,7 +19,6 @@ import com.google.firebase.database.ValueEventListener;
 
 
 public class NoticeAdmin extends AppCompatActivity {
-
     FirebaseDatabase database;
 
     @Override
@@ -56,7 +56,16 @@ public class NoticeAdmin extends AppCompatActivity {
             }
         });
 
-        // 취소시 어드민 홈화면으로 이동
+        ImageButton btn_back = (ImageButton) findViewById(R.id.btn_back);
+        btn_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), AdminHome.class);
+                startActivity(intent);
+            }
+        });
+
+        // 취소 시 어드민 홈 화면으로 이동
         Button btn_notice_cancel = (Button) findViewById(R.id.btn_notice_cancel);
         btn_notice_cancel.setOnClickListener(new View.OnClickListener() {
             @Override

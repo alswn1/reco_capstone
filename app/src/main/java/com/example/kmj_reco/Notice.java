@@ -51,7 +51,7 @@ public class Notice extends AppCompatActivity {
         btn_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Home.class);
+                Intent intent = new Intent(getApplicationContext(), MyPageActivity.class);
                 startActivity(intent);
             }
         });

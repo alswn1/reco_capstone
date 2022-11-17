@@ -4,11 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#fff"
     android:orientation="vertical"
     tools:context=".Notice">
 
-    <include layout="@layout/notice_bar2"
-        android:id="@+id/notice_bar"/>
+    <include
+        android:id="@+id/notice_bar"
+        layout="@layout/notice_bar2" />
 
     <ImageButton
         android:id="@+id/btn_event"

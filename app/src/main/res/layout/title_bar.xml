@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="#fff"
     android:paddingTop="15dp"
     android:paddingBottom="15dp">
 
@@ -10,26 +11,30 @@
         android:id="@+id/btn_alert"
         android:layout_width="45dp"
         android:layout_height="match_parent"
-        android:layout_marginLeft="30dp"
-        app:srcCompat="@drawable/alarm" />
+        android:layout_marginLeft="20dp"
+        app:srcCompat="@drawable/alert3" />
 
     <ImageView
         android:id="@+id/btn_home"
         android:layout_width="100dp"
         android:layout_height="match_parent"
-        android:layout_marginLeft="70.5dp"
+        android:layout_marginLeft="70dp"
+        android:layout_weight="1"
         app:srcCompat="@drawable/reco" />
 
     <ImageView
-        android:id="@+id/reco_plant"
+        android:id="@+id/reco_plant2"
         android:layout_width="25dp"
         android:layout_height="41dp"
+        android:layout_weight="1"
         app:srcCompat="@drawable/plant" />
 
     <ImageView
         android:id="@+id/btn_settings"
         android:layout_width="42dp"
         android:layout_height="match_parent"
-        android:layout_marginLeft="70.5dp"
-        app:srcCompat="@drawable/setting" />
+        android:layout_marginLeft="20.5dp"
+        android:layout_marginRight="25dp"
+        app:srcCompat="@drawable/btn_setting" />
+
 </LinearLayout>

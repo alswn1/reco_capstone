@@ -7,7 +7,6 @@
     android:layout_height="match_parent"
     android:background="#FFFFFF"
     tools:context=".Home"
-    android:backgroundTint="#FFFFFF"
     tools:layout_editor_absoluteX="-27dp"
     tools:layout_editor_absoluteY="0dp">
 
@@ -19,7 +18,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="168dp"
+        android:layout_marginTop="158dp"
         android:layout_marginEnd="84dp"
         android:textColor="#8CEA29"
         android:textSize="26sp"
@@ -34,7 +33,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="40dp"
         android:text="나의 RECO : "
         android:textColor="#C3C3C3"
         android:textSize="22sp"
@@ -56,7 +55,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="50dp"
-        android:layout_marginBottom="65dp"
+        android:layout_marginBottom="75dp"
         android:background="@android:color/transparent"
         android:contentDescription="btn_mypage"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -67,7 +66,7 @@
         android:id="@+id/btn_map"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="300dp"
+        android:layout_marginBottom="305dp"
         android:background="@android:color/transparent"
         android:contentDescription="btn_map"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -79,7 +78,7 @@
         android:id="@+id/textView21"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="167dp"
+        android:layout_marginTop="157dp"
         android:text="p"
         android:textColor="#8CEA29"
         android:textSize="26sp"
@@ -92,10 +91,23 @@
         android:layout_width="152dp"
         android:layout_height="212dp"
         android:layout_marginStart="50dp"
-        android:layout_marginBottom="65dp"
-        android:contentDescription="btn_coupon"
+        android:layout_marginBottom="75dp"
         android:background="@android:color/transparent"
+        android:contentDescription="btn_coupon"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/btn_coupon" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-3940256099942544/6300978111"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

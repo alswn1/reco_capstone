@@ -4,9 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#fff"
     tools:context=".CouponAdminDetailPlus">
-    <include layout="@layout/title_bar2"
-        android:id="@+id/title_bar"/>
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="COUPON"
+        android:textColor="#000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="412dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22"
+        app:srcCompat="@drawable/recobin_add_line" />
 
     <ImageView
         android:id="@+id/gifticonImage"
@@ -23,21 +46,23 @@
         android:id="@+id/picname"
         android:layout_width="122dp"
         android:layout_height="28dp"
-        android:layout_marginStart="26dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="45dp"
         android:ems="10"
         android:gravity="center|center_horizontal|center_vertical"
         android:inputType="textPersonName"
         android:text="제품 사진 설정"
+        android:textColor="#000"
         android:textSize="15dp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title_bar" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView16" />
 
     <EditText
         android:id="@+id/gifticon_Name_edit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="37dp"
         android:layout_marginEnd="16dp"
         android:ems="10"
         android:hint="제품명"
@@ -45,7 +70,7 @@
         android:minHeight="48dp"
         android:text=""
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title_bar" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView16" />
 
     <EditText
         android:id="@+id/gifticon_Type_edit"
@@ -54,9 +79,9 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:ems="10"
+        android:hint="타입명"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        android:hint="타입명"
         android:text=""
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/gifticon_Name_edit" />
@@ -68,9 +93,9 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:ems="10"
+        android:hint="브랜드명"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        android:hint="브랜드명"
         android:text=""
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/gifticon_Type_edit" />
@@ -82,9 +107,9 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:ems="10"
+        android:hint="가격"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        android:hint="가격"
         android:text=""
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/gifticon_Brand_edit" />
@@ -109,7 +134,7 @@
         android:layout_width="74dp"
         android:layout_height="35dp"
         android:layout_marginTop="16dp"
-        android:background="#4B6C11"
+        android:background="#000"
         android:text="추가"
         android:textColor="#fff"
         android:textStyle="bold"

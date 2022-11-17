@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#fff"
     tools:context=".Map">
 
     <include
@@ -31,7 +32,7 @@
         android:layout_marginTop="68dp"
         android:layout_marginEnd="20dp"
         android:backgroundTint="#ECECEC"
-        android:text="확인"
+        android:text="검색"
         android:textColor="#444444"
         android:textSize="11sp"
         android:textStyle="bold" />
@@ -66,7 +67,7 @@
         android:layout_marginRight="115dp"
         android:background="@android:color/transparent"
         android:ems="10"
-        android:hint="검색"
+        android:hint="장소를 입력하세요"
         android:inputType="textPersonName"
         android:textColor="#444444"
         android:textSize="12sp" />

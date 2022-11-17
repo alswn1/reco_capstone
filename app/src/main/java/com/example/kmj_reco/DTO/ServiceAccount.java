@@ -1,15 +1,13 @@
 package com.example.kmj_reco.DTO;
 
-import java.util.ArrayList;
-
-public class ServiceAccount  {
+public class ServiceAccount {
     private String service_title; //제목
     private String service_contents; //내용
     private String service_publisher; //게시자
     private String service_date; //날짜
     private int service_num; //번호
 
-    public ServiceAccount(String service_title, String service_contents, String service_publisher) {
+    public ServiceAccount(String service_title, String service_contents, String service_publisher, int service_num, String service_date) {
         this.service_title = service_title;
         this.service_contents = service_contents;
         this.service_publisher = service_publisher;
@@ -17,9 +15,11 @@ public class ServiceAccount  {
         this.service_num = service_num;
     }
 
+    public ServiceAccount() {}
+
     public String getService_Title() {return service_title;}
 
-    public void setService_Title(String title) {this.service_title = service_title;}
+    public void setService_Title(String service_title) {this.service_title = service_title;}
 
     public String getService_Contents() {return service_contents;}
 
@@ -36,7 +36,4 @@ public class ServiceAccount  {
     public int getService_Num() {return service_num;}
 
     public void setService_Num(int service_num) {this.service_num = service_num;}
-
-
-
 }

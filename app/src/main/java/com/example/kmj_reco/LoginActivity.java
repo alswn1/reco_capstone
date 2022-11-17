@@ -1,6 +1,9 @@
 package com.example.kmj_reco;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -10,15 +13,13 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
-
-import org.checkerframework.checker.units.qual.A;
 
 import java.util.Objects;
 
@@ -80,9 +81,13 @@ public class LoginActivity extends AppCompatActivity {
                     Toast.makeText(LoginActivity.this, "아이디와 비밀번호를 입력해주세요", Toast.LENGTH_SHORT).show();
                 } else {
                     mFirebaseAuth.signInWithEmailAndPassword(userID, userPass).addOnCompleteListener(LoginActivity.this, new OnCompleteListener<AuthResult>() {
+                        @RequiresApi(api = Build.VERSION_CODES.N)
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
-                            if (Objects.requireNonNull(mFirebaseAuth.getCurrentUser()).isEmailVerified()) {
+                            if (Objects.isNull(mFirebaseAuth.getCurrentUser())) {
+                                Toast.makeText(LoginActivity.this, "회원 정보가 없습니다.", Toast.LENGTH_SHORT).show();
+                            }
+                            else if (Objects.requireNonNull(mFirebaseAuth.getCurrentUser()).isEmailVerified()) {
                                 Log.v("Email", "이메일 인증 확인");
                                 if (task.isSuccessful()) {
                                     // 로그인 성공
@@ -96,11 +101,42 @@ public class LoginActivity extends AppCompatActivity {
                             }else{
                                 Log.v("Email", "이메일 인증 미확인");
                                 Toast.makeText(LoginActivity.this, "이메일 인증을 진행해주세요.", Toast.LENGTH_LONG).show();
+                                sendEmailVerification();
+
                             }
                         }
                     });
                 }
             }
         });
+    }
+
+    private void sendEmailVerification() {
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
+        builder.setTitle("로그인 문제").setMessage("인증 메일을 재발송해드릴까요?");
+
+        builder.setNegativeButton("아니오", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+
+            }
+        });
+        builder.setPositiveButton("예", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                mFirebaseAuth.getCurrentUser().sendEmailVerification().addOnCompleteListener(task -> {
+                    if (task.isSuccessful()) {
+                        Toast.makeText(LoginActivity.this, "확인메일을 보냈습니다.", Toast.LENGTH_SHORT).show();
+                    }else{
+                        Toast.makeText(LoginActivity.this, task.getException().toString(), Toast.LENGTH_SHORT).show();
+                    }
+                });
+
+            }
+        });
+        AlertDialog alertDialog = builder.create();
+        alertDialog.show();
+
     }
 }

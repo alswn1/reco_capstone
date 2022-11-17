@@ -4,10 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#fff"
     tools:context=".CouponAdminDetail2">
 
-    <include layout="@layout/title_bar2"
-        android:id="@+id/title_bar"/>
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="COUPON"
+        android:textColor="#000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="412dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22"
+        app:srcCompat="@drawable/recobin_add_line" />
 
     <ImageView
         android:id="@+id/gifticonImage"
@@ -26,6 +48,8 @@
         android:layout_marginStart="100dp"
         android:layout_marginTop="16dp"
         android:text="바코드"
+        android:textColor="#000"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/gifticonadst_num" />
 
@@ -33,11 +57,13 @@
         android:id="@+id/gifticonadst_num"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="184dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="18dp"
         android:text="수량 번호 : 0"
+        android:textColor="#000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title_bar" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView16" />
 
     <TextView
         android:id="@+id/textView8"

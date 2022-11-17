@@ -6,6 +6,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.SearchView;
@@ -70,21 +71,20 @@ public class CouponAdmin extends AppCompatActivity {
             }
         });
 
-        ImageView btn_home = (ImageView) findViewById(R.id.btn_home);
-        btn_home.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), AdminHome.class);
-                startActivity(intent);
-            }
-        });
-
-
         Button btn_cp = (Button) findViewById(R.id.couponAdminPlusbtn);
         btn_cp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), CouponAdminDetailPlus.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageButton btn_back = (ImageButton) findViewById(R.id.btn_back);
+        btn_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), AdminHome.class);
                 startActivity(intent);
             }
         });

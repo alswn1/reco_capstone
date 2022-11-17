@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -36,7 +37,7 @@ public class InformationActivity extends AppCompatActivity {
     EditText et_id;
     EditText et_pass;
     EditText et_phone;
-    EditText et_email;
+    TextView et_email;
 
     // 현재 로그인한 사용자 정보 불러오는 법
     @Override
@@ -90,6 +91,16 @@ public class InformationActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        ImageButton btn_back = (ImageButton) findViewById(R.id.btn_back);
+        btn_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), MyPageActivity.class);
+                startActivity(intent);
+            }
+        });
+
         ImageView btn_home = (ImageView) findViewById(R.id.btn_home);
         btn_home.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -118,6 +129,7 @@ public class InformationActivity extends AppCompatActivity {
         });
         findViewById(R.id.btn_check).setOnClickListener(onClickListener);
     }
+
     View.OnClickListener onClickListener =(v) ->{
         switch (v.getId()){
             case R.id.btn_check:
@@ -125,6 +137,7 @@ public class InformationActivity extends AppCompatActivity {
                 break;
         }
     };
+
     private void informationUpdate(){
         String userName = ((EditText) findViewById(R.id.et_name)).getText().toString();
         String userBirth = ((EditText) findViewById(R.id.et_birth)).getText().toString();
@@ -132,14 +145,13 @@ public class InformationActivity extends AppCompatActivity {
         String userPass = ((EditText) findViewById(R.id.et_pass)).getText().toString();
         String userPass2 = ((EditText) findViewById(R.id.et_pass2)).getText().toString();
         String userPhone = ((EditText) findViewById(R.id.et_phone)).getText().toString();
-        String userEmail = ((EditText) findViewById(R.id.et_email)).getText().toString();
+        String userEmail = ((TextView) findViewById(R.id.et_email)).getText().toString();
 
         if (userName.length() > 0 && userBirth.length() >0 && userID.length() > 0 && userPass.length() > 5 && userPass2.length() > 5 && userPhone.length() >9 && userEmail.length() > 9){
             FirebaseUser user = mFirebaseAuth.getCurrentUser();
+            String uid = mFirebaseAuth.getCurrentUser().getUid();
 
-            UserProfileChangeRequest profileUpdates = new UserProfileChangeRequest.Builder()
-                    .setDisplayName("userName")
-                    .build();
+            UserProfileChangeRequest profileUpdates = new UserProfileChangeRequest.Builder().setDisplayName("userName").build();
 
             if(user !=null){
                 user.updateProfile(profileUpdates)
@@ -147,7 +159,16 @@ public class InformationActivity extends AppCompatActivity {
                             @Override
                             public void onComplete(@NonNull Task<Void> task) {
                                 if (task.isSuccessful()){
+                                    myRef.child(uid).child("user_name").setValue(userName);
+                                    myRef.child(uid).child("user_birth").setValue(userBirth);
+                                    myRef.child(uid).child("user_id").setValue(userID);
+                                    myRef.child(uid).child("user_pwd").setValue(userPass);
+                                    myRef.child(uid).child("user_phone").setValue(userPhone);
+
                                     startToast("회원정보 수정에 성공하였습니다.");
+                                    // 정보 수정 성공하면 마이페이지로 이동
+                                    Intent i = new Intent(getApplicationContext(), MyPageActivity.class);
+                                    startActivity(i);
                                 }
                             }
                         });

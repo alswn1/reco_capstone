@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\AndroidProjects\\RECO_admin\\kmj_reco\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w600dp-land-v13\\values-w600dp-land-v13.xml",
+            "outputFile": "/Users/juhi/AndroidStudioProjects/RECO/kmj_reco/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w600dp-land-v13/values-w600dp-land-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\com\\.gradle\\caches\\transforms-2\\files-2.1\\c9f179fc827de6e9fbfd23a41b967c02\\material-1.4.0\\res\\values-w600dp-land-v13\\values-w600dp-land-v13.xml",
+                    "source": "/Users/juhi/.gradle/caches/transforms-2/files-2.1/c9f179fc827de6e9fbfd23a41b967c02/material-1.4.0/res/values-w600dp-land-v13/values-w600dp-land-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

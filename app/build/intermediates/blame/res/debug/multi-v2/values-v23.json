@@ -1,39 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\AndroidProjects\\RECO_admin\\kmj_reco\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
+            "outputFile": "/Users/juhi/AndroidStudioProjects/RECO/kmj_reco/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\com\\.gradle\\caches\\transforms-2\\files-2.1\\748035e266d21116d8b1b4e7c8a8e82a\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endLines": "4",
-                        "endColumns": "12",
-                        "endOffsets": "200"
-                    },
-                    "to": {
-                        "startLines": "52",
-                        "startColumns": "4",
-                        "startOffsets": "3653",
-                        "endLines": "54",
-                        "endColumns": "12",
-                        "endOffsets": "3798"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\com\\.gradle\\caches\\transforms-2\\files-2.1\\47c7e745350707ff41628ca9943c4ae8\\work-runtime-2.7.0\\res\\values-v23\\values-v23.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,121",
-                        "endColumns": "65,62",
-                        "endOffsets": "116,179"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\com\\.gradle\\caches\\transforms-2\\files-2.1\\c1717031593ff5abe5ad2cd63f7f9f95\\appcompat-1.2.0\\res\\values-v23\\values-v23.xml",
+                    "source": "/Users/juhi/.gradle/caches/transforms-2/files-2.1/c1717031593ff5abe5ad2cd63f7f9f95/appcompat-1.2.0/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,20,34,35,36,39,43,44,45,46",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -52,7 +23,36 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\com\\.gradle\\caches\\transforms-2\\files-2.1\\c9f179fc827de6e9fbfd23a41b967c02\\material-1.4.0\\res\\values-v23\\values-v23.xml",
+                    "source": "/Users/juhi/.gradle/caches/transforms-2/files-2.1/47c7e745350707ff41628ca9943c4ae8/work-runtime-2.7.0/res/values-v23/values-v23.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,121",
+                        "endColumns": "65,62",
+                        "endOffsets": "116,179"
+                    }
+                },
+                {
+                    "source": "/Users/juhi/.gradle/caches/transforms-2/files-2.1/748035e266d21116d8b1b4e7c8a8e82a/cardview-1.0.0/res/values-v23/values-v23.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "200"
+                    },
+                    "to": {
+                        "startLines": "52",
+                        "startColumns": "4",
+                        "startOffsets": "3653",
+                        "endLines": "54",
+                        "endColumns": "12",
+                        "endOffsets": "3798"
+                    }
+                },
+                {
+                    "source": "/Users/juhi/.gradle/caches/transforms-2/files-2.1/c9f179fc827de6e9fbfd23a41b967c02/material-1.4.0/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2,6",
                         "startColumns": "4,4",

@@ -3,16 +3,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#fff"
     tools:context=".CouponDetail">
 
     <include
         android:id="@+id/title_bar"
         layout="@layout/title_bar"
         android:layout_width="match_parent"
-        android:layout_height="71dp"/>
+        android:layout_height="71dp" />
 
     <TextView
-        android:visibility="gone"
         android:id="@+id/emptyalert"
         android:layout_width="wrap_content"
         android:layout_height="28dp"
@@ -21,9 +21,11 @@
         android:text="재고없음"
         android:textColor="#ff2222"
         android:textStyle="bold"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/gifticonName" />
+
     <ImageButton
         android:id="@+id/btn_back"
         android:layout_width="25dp"
@@ -120,19 +122,20 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="11dp"
-        app:srcCompat="@android:drawable/divider_horizontal_textfield"
+        android:layout_marginTop="15dp"
         app:layout_constraintTop_toBottomOf="@+id/btn_buy"
-        android:layout_marginTop="15dp"/>
+        app:srcCompat="@android:drawable/divider_horizontal_textfield" />
+
     <TextView
         android:id="@+id/gifticondetail"
         android:layout_width="130dp"
         android:layout_height="39dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="25dp"
-        android:textColor="#999"
-        android:textSize="12dp"
         android:gravity="center"
         android:text="자세한 제품 설명"
+        android:textColor="#999"
+        android:textSize="12dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_buy" />

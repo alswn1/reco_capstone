@@ -1,20 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:orientation="vertical"
-tools:context=".CouponAdmin">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context=".CouponAdmin">
 
-    <include layout="@layout/title_bar2"
-        android:id="@+id/title_bar2"/>
-
-    <SearchView
-        android:id="@+id/gifticon_searchView"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:queryHint="기프티콘 이름을 입력하세요" />
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:contentDescription="btn_back"
+            android:gravity="center"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:src="@drawable/btn_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <SearchView
+            android:id="@+id/gifticon_searchView"
+            android:layout_width="315dp"
+            android:layout_height="27dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/search_bg"
+            android:textSize="12sp" />
+
+    </LinearLayout>
 
     <Button
         android:id="@+id/couponAdminPlusbtn"
@@ -25,10 +46,10 @@ tools:context=".CouponAdmin">
         android:textStyle="bold" />
 
     <LinearLayout
-        android:orientation="horizontal"
-        android:paddingLeft="15dp"
         android:layout_width="match_parent"
-        android:layout_height="50dp">
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp">
 
         <TextView
             android:layout_width="50dp"
@@ -37,7 +58,8 @@ tools:context=".CouponAdmin">
             android:gravity="center"
             android:text="이름"
             android:textColor="#000"
-            android:textSize="13sp" />
+            android:textSize="13sp"
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="80dp"
@@ -47,7 +69,8 @@ tools:context=".CouponAdmin">
             android:gravity="center"
             android:text="재고여부"
             android:textColor="#000"
-            android:textSize="13sp" />
+            android:textSize="13sp"
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="50dp"
@@ -57,17 +80,19 @@ tools:context=".CouponAdmin">
             android:gravity="center"
             android:text="사진"
             android:textColor="#000"
-            android:textSize="13sp" />
+            android:textSize="13sp"
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="80dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="47dp"
             android:layout_marginTop="20dp"
             android:gravity="center"
             android:text="수정 및 삭제"
             android:textColor="#000"
-            android:textSize="13sp" />
+            android:textSize="13sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
@@ -75,4 +100,4 @@ tools:context=".CouponAdmin">
         android:id="@+id/gifticon_listView_admin"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
-    </LinearLayout>
+</LinearLayout>

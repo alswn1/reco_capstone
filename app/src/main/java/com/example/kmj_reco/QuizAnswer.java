@@ -38,20 +38,20 @@ public class QuizAnswer extends Activity {
 
         ImageView btn_settings = (ImageView) findViewById(R.id.btn_settings);
         btn_settings.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View view) {
-        Intent intent = new Intent(getApplicationContext(), Settings.class);
-        startActivity(intent);
-        }
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), Settings.class);
+                startActivity(intent);
+            }
         });
 
         ImageView btn_alert = (ImageView) findViewById(R.id.btn_alert);
         btn_alert.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View view) {
-        Intent intent = new Intent(getApplicationContext(), Alert.class);
-        startActivity(intent);
-        }
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), Alert.class);
+                startActivity(intent);
+            }
         });
 
         ImageButton btn_quiz_answer_check = (ImageButton) findViewById(R.id.btn_quiz_answer_check);
