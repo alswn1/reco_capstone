@@ -100,15 +100,6 @@ public class RecobinAdminAdd extends AppCompatActivity {
                 }
             }
         });
-
-        ImageButton btn_back = (ImageButton) findViewById(R.id.btn_back);
-        btn_back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), RecobinAdmin.class);
-                startActivity(intent);
-            }
-        });
     }
 
     public void onActivityResult(int requestCode, final int resultCode, final Intent data){

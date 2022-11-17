@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fff"
+    android:backgroundTint="#F2F2F2"
     android:orientation="vertical">
 
     <LinearLayout
@@ -27,12 +27,10 @@
 
         <SearchView
             android:id="@+id/recobin_search"
-            android:layout_width="315dp"
-            android:layout_height="27dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/search_bg"
-            android:textSize="12sp" />
+            android:layout_width="316dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F2F2F2"
+            android:queryHint="레코빈 주소를 입력하세요" />
 
     </LinearLayout>
 
