@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/juhi/AndroidStudioProjects/RECO/kmj_reco/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
+            "outputFile": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
             "map": [
                 {
-                    "source": "/Users/juhi/.gradle/caches/transforms-2/files-2.1/c9f179fc827de6e9fbfd23a41b967c02/material-1.4.0/res/values-land/values-land.xml",
+                    "source": "C:\\Users\\com\\.gradle\\caches\\transforms-2\\files-2.1\\c9f179fc827de6e9fbfd23a41b967c02\\material-1.4.0\\res\\values-land\\values-land.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,26,32",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -23,17 +23,7 @@
                     }
                 },
                 {
-                    "source": "/Users/juhi/.gradle/caches/transforms-2/files-2.1/c1717031593ff5abe5ad2cd63f7f9f95/appcompat-1.2.0/res/values-land/values-land.xml",
-                    "from": {
-                        "startLines": "2,3,4",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "55,125,196",
-                        "endColumns": "69,70,67",
-                        "endOffsets": "120,191,259"
-                    }
-                },
-                {
-                    "source": "/Users/juhi/AndroidStudioProjects/RECO/kmj_reco/app/src/main/res/values-land/dimens.xml",
+                    "source": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\src\\main\\res\\values-land\\dimens.xml",
                     "from": {
                         "startLines": "1",
                         "startColumns": "4",
@@ -47,6 +37,16 @@
                         "startOffsets": "264",
                         "endColumns": "41",
                         "endOffsets": "301"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\com\\.gradle\\caches\\transforms-2\\files-2.1\\c1717031593ff5abe5ad2cd63f7f9f95\\appcompat-1.2.0\\res\\values-land\\values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,125,196",
+                        "endColumns": "69,70,67",
+                        "endOffsets": "120,191,259"
                     }
                 }
             ]

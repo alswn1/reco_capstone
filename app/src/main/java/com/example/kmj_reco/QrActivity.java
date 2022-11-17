@@ -125,9 +125,10 @@ public class QrActivity extends AppCompatActivity {
                             public void onDataChange(@NonNull DataSnapshot snapshot) {
                                 // qr의 recobin_num을 firebase에 저장되어 있는 recobin_num과 비교
                                 // 맞다면 화면 이동
-                                String recobin_num = snapshot.child("recobin_num").getValue(String.class);
+                                int recobin_num = snapshot.child("recobin_num").getValue(Integer.class);
+                                String fir_recobin_num = String.valueOf(recobin_num);
                                 //Log.v("RECOBIN_NUM", recobin_num);
-                                if (recobinNum.equals(recobin_num)) {
+                                if (recobinNum.equals(fir_recobin_num)) {
                                     Intent i = new Intent(QrActivity.this, CameraActivity.class);
                                     startActivity(i);
                                 }
