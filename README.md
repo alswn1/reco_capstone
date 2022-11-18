@@ -48,7 +48,7 @@
 <h5>
   - Front-end / Back-end <br/>
   - PM, UI/UX Leader <br/>
-  - Home / Quiz / Event / 공지 / 자동 login & Log out / Map (현재위치 , 위치 검색, 쓰레기통 상세주소) / 레코빈 어드민 / 개인정보수정 <br/>
+  - Home / Quiz / Event / 공지 / 자동 login & Log out / Map (현재위치 , 위치 검색, 쓰레기통 상세주소)/ 마이페이지-개인정보수정 / 레코빈 어드민 / 홈 어드민 / 어드민  <br/>
 </h5>
 
 <br/>
