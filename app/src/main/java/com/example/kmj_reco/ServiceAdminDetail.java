@@ -81,7 +81,7 @@ public class ServiceAdminDetail extends AppCompatActivity {
                                 public void onClick(View v) {
                                     EditText service_admin_answer = findViewById(R.id.service_admin_answer);
 
-                                    SERVICE_ANSWER service_answer = new SERVICE_ANSWER((answer_num+1), service_admin_answer.getText().toString(), service.getService_Num());
+                                    SERVICE_ANSWER service_answer = new SERVICE_ANSWER((answer_num+1), service_admin_answer.getText().toString(), num);
                                     database.getReference("SERVICE_ANSWER").child(String.valueOf(answer_num)).setValue(service_answer);
 
                                     Toast.makeText(ServiceAdminDetail.this, "답변을 작성했습니다.", Toast.LENGTH_SHORT).show();
