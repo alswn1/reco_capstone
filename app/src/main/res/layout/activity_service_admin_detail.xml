@@ -36,25 +36,26 @@
     <TextView
         android:id="@+id/et_content"
         android:layout_width="298dp"
-        android:layout_height="350dp"
-        android:layout_marginBottom="112dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="10dp"
         android:text="문의 내용"
         android:textColor="#444444"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_title" />
 
     <TextView
         android:id="@+id/et_title"
-        android:layout_width="212dp"
+        android:layout_width="298dp"
         android:layout_height="30dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginTop="10dp"
         android:text="문의 제목"
         android:textColor="#000"
-        app:layout_constraintBottom_toTopOf="@+id/et_content"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_date" />
 
     <TextView
         android:id="@+id/et_publisher"
@@ -72,12 +73,49 @@
         android:id="@+id/et_date"
         android:layout_width="80dp"
         android:layout_height="30dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginTop="96dp"
         android:hint="작성일"
         android:textColor="#444444"
-        app:layout_constraintBottom_toTopOf="@+id/et_content"
-        app:layout_constraintStart_toEndOf="@+id/et_title" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.758"
+        app:layout_constraintStart_toEndOf="@+id/et_publisher"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_content"
+        app:srcCompat="@drawable/recobin_add_line" />
+
+    <EditText
+        android:id="@+id/service_admin_answer"
+        android:layout_width="298dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="15dp"
+        android:gravity="top"
+        android:hint="답변을 입력해주세요."
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView15" />
+
+    <Button
+        android:id="@+id/btn_service_admin_submit"
+        android:layout_width="71dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:text="작성"
+        android:textColor="#444444"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.835"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/service_admin_answer" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

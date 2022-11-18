@@ -3,6 +3,7 @@ package com.example.kmj_reco;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -85,9 +86,32 @@ public class ServiceDetailActivity extends AppCompatActivity {
                 for (DataSnapshot data: snapshot.getChildren()){
                     ServiceAccount service = data.getValue(ServiceAccount.class);
                     if(service.getService_Num()==num){
-                        serviceAccountList.add(service);}
+                        serviceAccountList.add(service);
+                    }
                 }
             }
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
+
+        databaseReference.child("SERVICE_ANSWER").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                for (int i = 0; i<snapshot.getChildrenCount(); i++) {
+                    TextView service_admin_answer = findViewById(R.id.service_admin_answer);
+
+                    if (snapshot.child(String.valueOf(i)).child("service_num").getValue(Integer.class).equals(num)) {
+                        Log.v("ANSWER", "같은 문의 번호 찾음");
+                        String answer = snapshot.child(String.valueOf(i)).child("service_answer").getValue(String.class);
+                        service_admin_answer.setText(answer);
+                        Log.v("ANSWER", "답변 바꾸기 성공");
+                    }
+                }
+            }
+
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
 

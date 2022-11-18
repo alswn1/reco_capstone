@@ -2068,6 +2068,7 @@ id btn_recobin_delete
 id btn_search
 id btn_service
 id btn_service_admin
+id btn_service_admin_submit
 id btn_service_delete
 id btn_settings
 id btn_submit
@@ -2251,6 +2252,7 @@ id imageView11
 id imageView12
 id imageView13
 id imageView14
+id imageView15
 id imageView16
 id imageView18
 id imageView19
@@ -2447,6 +2449,7 @@ id select_dialog_listview
 id selected
 id selection_type
 id serviceAccountListView
+id service_admin_answer
 id service_num
 id settingTextPush
 id settingTextToCenter
@@ -2555,6 +2558,7 @@ id textView44
 id textView45
 id textView46
 id textView47
+id textView48
 id textView49
 id textView5
 id textView50

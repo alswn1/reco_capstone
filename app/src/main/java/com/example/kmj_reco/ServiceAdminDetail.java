@@ -16,6 +16,7 @@ import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.kmj_reco.DTO.NOTICE;
+import com.example.kmj_reco.DTO.SERVICE_ANSWER;
 import com.example.kmj_reco.DTO.ServiceAccount;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -63,7 +64,38 @@ public class ServiceAdminDetail extends AppCompatActivity {
                 for (DataSnapshot data: snapshot.getChildren()){
                     ServiceAccount service = data.getValue(ServiceAccount.class);
                     if(service.getService_Num()==num){
-                        serviceAccountList.add(service);}
+                        serviceAccountList.add(service);
+                    }
+
+                    // 답변 남기기
+                    FirebaseDatabase database;
+                    database = FirebaseDatabase.getInstance();  // db
+                    database.getReference("SERVICE_ANSWER").addValueEventListener(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot snapshot) {
+                            final int answer_num = (int) snapshot.getChildrenCount();
+
+                            Button btn_service_admin_submit = (Button) findViewById(R.id.btn_service_admin_submit);
+                            btn_service_admin_submit.setOnClickListener(new View.OnClickListener() {
+                                @Override
+                                public void onClick(View v) {
+                                    EditText service_admin_answer = findViewById(R.id.service_admin_answer);
+
+                                    SERVICE_ANSWER service_answer = new SERVICE_ANSWER((answer_num+1), service_admin_answer.getText().toString(), service.getService_Num());
+                                    database.getReference("SERVICE_ANSWER").child(String.valueOf(answer_num)).setValue(service_answer);
+
+                                    Toast.makeText(ServiceAdminDetail.this, "답변을 작성했습니다.", Toast.LENGTH_SHORT).show();
+                                    Intent i = new Intent(getApplicationContext(), ServiceAdmin.class);
+                                    startActivity(i);
+                                }
+                            });
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError error) {
+
+                        }
+                    });
                 }
             }
             @Override

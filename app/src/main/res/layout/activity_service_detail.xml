@@ -40,32 +40,32 @@
     <TextView
         android:id="@+id/et_content"
         android:layout_width="298dp"
-        android:layout_height="350dp"
-        android:layout_marginBottom="50dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="10dp"
         android:text="문의 내용"
         android:textColor="#444444"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_title" />
 
     <TextView
         android:id="@+id/et_title"
-        android:layout_width="212dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginBottom="24dp"
+        android:layout_width="298dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="10dp"
         android:text="문의 제목"
         android:textColor="#000"
-        app:layout_constraintBottom_toTopOf="@+id/et_content"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_date" />
 
     <TextView
         android:id="@+id/et_publisher"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="56dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="32dp"
         android:text="작성자"
         android:textColor="#000"
         android:textStyle="bold"
@@ -76,12 +76,46 @@
         android:id="@+id/et_date"
         android:layout_width="80dp"
         android:layout_height="30dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginTop="152dp"
         android:hint="작성일"
         android:textColor="#444444"
-        app:layout_constraintBottom_toTopOf="@+id/et_content"
-        app:layout_constraintStart_toEndOf="@+id/et_title" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.762"
+        app:layout_constraintStart_toEndOf="@+id/et_publisher"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_content"
+        app:srcCompat="@drawable/recobin_add_line" />
+
+    <TextView
+        android:id="@+id/textView48"
+        android:layout_width="298dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:text="답변"
+        android:textColor="#000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView15" />
+
+    <TextView
+        android:id="@+id/service_admin_answer"
+        android:layout_width="298dp"
+        android:layout_height="100dp"
+        android:text=""
+        android:textColor="#000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView48" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
