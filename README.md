@@ -58,7 +58,7 @@
 <h5>
   - Front-end / Back-end <br/>
   - Programming Leader <br/>
-  - 기프티콘 / 기프티콘 내역 / 기프티콘 Admin / 알림 / 설정 / 회원탈퇴 <br/>
+  - 기프티콘 / 기프티콘 내역 / 알림 / 설정 / 회원탈퇴 / 기프티콘 어드민 <br/>
 </h5>
 
 <br/>
@@ -78,7 +78,7 @@
 <h5>
   - Front-end / Back-end <br/>
   - Testing Leader <br/>
-  - Map (current location) <br/>
+  - Map (현재위치) <br/>
 </h5>
 
 <br/>
