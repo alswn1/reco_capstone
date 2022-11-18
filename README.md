@@ -33,7 +33,7 @@
 <h5>
   - Front-end / Back-end <br/>
   - DB Leader <br/>
-  - QR 생성 및 인식 / 재활용 인증 AI / 사용자 E-Mail 인증 / Map (데이터 저장 및 가공, 쓰레기통 위치) / 공지 어드민 <br/>
+  - QR 생성 및 인식 / 재활용 인증 AI / 사용자 E-Mail 인증 / Map (데이터 저장 및 가공, 쓰레기통 위치) / 마이페이지-고객센터 내역 및 답변 / 공지 어드민 / 고객센터 어드민 - 답변  <br/>
 </h5>
 
 <br/>
@@ -68,7 +68,7 @@
 <h5>
   - Front-end / Back-end <br/>
   - Tech. writer <br/>
-  - Login & Sign Up / 개인정보수정 / 고객센터 / Login Admin / Service Center Admin <br/>
+  - Login & Sign Up / 개인정보수정 / 고객센터 / 사용자 어드민 / 고객센터 어드민 <br/>
 </h5>
 
 <br/>
