@@ -6,7 +6,7 @@ public class RECOBIN {
     public String recobin_address;
     public String recobin_fulladdress;
     public String recobin_locate;
-    public Double recobin_latitude ;
+    public Double recobin_latitude;
     public Double recobin_longitude;
 
     public RECOBIN() {}

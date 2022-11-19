@@ -7,6 +7,16 @@
     android:background="#fff"
     tools:context=".InformationActivity">
 
+    <ImageView
+        android:id="@+id/base5"
+        android:layout_width="411dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="45dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/base"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageButton
         android:id="@+id/btn_back"
         android:layout_width="wrap_content"
@@ -144,7 +154,7 @@
             android:layout_height="40dp"
             android:layout_marginStart="115dp"
             android:layout_marginTop="32dp"
-            android:background="#24330A"
+            android:background="#4B6C11"
             android:text="수정"
             android:textColor="#fff"
             android:textStyle="bold"

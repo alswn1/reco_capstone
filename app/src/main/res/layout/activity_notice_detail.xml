@@ -6,6 +6,17 @@
     android:layout_height="match_parent"
     android:background="#fff">
 
+    <ImageView
+        android:id="@+id/imageView27"
+        android:layout_width="322dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notice_title"
+        app:srcCompat="@drawable/recobin_admin_line" />
+
     <include
         android:id="@+id/notice_bar2"
         layout="@layout/notice_bar2"
@@ -16,10 +27,10 @@
         android:id="@+id/notice_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="90dp"
+        android:layout_marginTop="100dp"
         android:text="공지 제목"
         android:textColor="#444444"
-        android:textSize="19sp"
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -29,7 +40,7 @@
         android:id="@+id/notice_detail"
         android:layout_width="322dp"
         android:layout_height="428dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="38dp"
         android:text="공지 내용"
         android:textAlignment="textStart"
         android:textColor="#444444"

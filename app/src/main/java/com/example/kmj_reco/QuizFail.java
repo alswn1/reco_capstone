@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
+import android.widget.Button;
 import android.widget.ImageButton;
 
 import androidx.fragment.app.FragmentActivity;
@@ -19,7 +20,7 @@ public class QuizFail extends FragmentActivity {
         String quizAnswer = getIntent().getStringExtra("quiz_answer");
         String quizAnswerContent = getIntent().getStringExtra("quiz_answer_content");
 
-        ImageButton btn_fail_check = (ImageButton) findViewById(R.id.btn_fail_check);
+        Button btn_fail_check = (Button) findViewById(R.id.btn_fail_check);
         btn_fail_check.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

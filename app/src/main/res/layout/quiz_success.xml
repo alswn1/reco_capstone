@@ -2,8 +2,8 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="300dp"
-    android:layout_height="400dp"
+    android:layout_width="280dp"
+    android:layout_height="180dp"
     android:background="#fff"
     tools:context=".QuizSuccess">
 
@@ -11,37 +11,40 @@
         android:id="@+id/txt_contents"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="24dp"
         android:fontFamily="sans-serif"
         android:text="정답 !"
-        android:textColor="#90D342"
-        android:textSize="42sp"
+        android:textColor="#444444"
+        android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="287dp"
-        android:layout_height="159dp"
-        android:layout_marginTop="24dp"
-        android:src="@drawable/point"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_contents" />
-
-    <ImageButton
+    <Button
         android:id="@+id/btn_point_check"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
-        android:background="@android:color/transparent"
-        android:contentDescription="btn_point_check"
-        android:minHeight="48dp"
-        android:src="@drawable/check2"
+        android:layout_width="90dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="24dp"
+        android:background="#444444"
+        android:text="확인"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView66"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="다음 화면에서 설명을 확인하세요 !"
+        android:textColor="#444444"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

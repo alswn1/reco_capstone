@@ -7,6 +7,17 @@
     android:background="#fff"
     tools:context=".ServiceDetailActivity">
 
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_publisher"
+        app:srcCompat="@drawable/recobin_add_line" />
+
     <ImageButton
         android:id="@+id/btn_back"
         android:layout_width="48dp"
@@ -23,9 +34,9 @@
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="28dp"
         android:text="문의 답변"
-        android:textColor="#4B6C11"
+        android:textColor="#000"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -36,7 +47,7 @@
     <TextView
         android:id="@+id/et_content"
         android:layout_width="298dp"
-        android:layout_height="300dp"
+        android:layout_height="290dp"
         android:layout_marginTop="10dp"
         android:text="문의 내용"
         android:textColor="#444444"
@@ -83,7 +94,7 @@
 
     <ImageView
         android:id="@+id/imageView15"
-        android:layout_width="wrap_content"
+        android:layout_width="298dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -108,8 +119,9 @@
         android:layout_width="71dp"
         android:layout_height="35dp"
         android:layout_marginTop="10dp"
+        android:background="#000"
         android:text="작성"
-        android:textColor="#444444"
+        android:textColor="#fff"
         android:textSize="11sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"

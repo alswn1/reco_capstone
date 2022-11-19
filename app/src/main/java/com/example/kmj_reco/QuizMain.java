@@ -52,7 +52,7 @@ public class QuizMain extends AppCompatActivity {
                 String quiz_answer_content = snapshot.child(String.valueOf(i)).child("quiz_answer_content").getValue(String.class);
 
                 // O 버튼 클릭 시
-                ImageButton btn_quiz_o = (ImageButton) findViewById(R.id.btn_quiz_o);
+                TextView btn_quiz_o = (TextView) findViewById(R.id.btn_quiz_o);
                 btn_quiz_o.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -73,7 +73,7 @@ public class QuizMain extends AppCompatActivity {
                 });
 
                 // X 버튼 클릭 시
-                ImageButton btn_quiz_x = (ImageButton) findViewById(R.id.btn_quiz_x);
+                TextView btn_quiz_x = (TextView) findViewById(R.id.btn_quiz_x);
                 btn_quiz_x.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {

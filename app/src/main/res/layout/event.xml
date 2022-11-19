@@ -38,7 +38,7 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="90dp"
+        android:layout_marginTop="93dp"
         android:fontFamily="sans-serif"
         android:text="이번 달의 EVENT !"
         android:textColor="#444444"

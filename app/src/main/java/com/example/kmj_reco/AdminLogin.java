@@ -22,7 +22,6 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 public class AdminLogin extends AppCompatActivity {
-    private FirebaseAuth mFirebaseAuth;
     private DatabaseReference mDatabaseRef;
 
     private EditText admin_id, admin_pass;
@@ -32,7 +31,6 @@ public class AdminLogin extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_login);
 
-        mFirebaseAuth = FirebaseAuth.getInstance();
         mDatabaseRef = FirebaseDatabase.getInstance().getReference("ADMIN");
 
         admin_id = findViewById(R.id.admin_id);
@@ -56,8 +54,9 @@ public class AdminLogin extends AppCompatActivity {
                         public void onDataChange(@NonNull DataSnapshot snapshot) {
                             for (int i=0; i < snapshot.getChildrenCount(); i++) {
                                 String admin_ID = snapshot.child(String.valueOf(i)).child("admin_id").getValue(String.class);
+                                String admin_Pass = snapshot.child(String.valueOf(i)).child("admin_pass").getValue(String.class);
 
-                                if (adminID.equals(admin_ID)) { // 로그인 성공
+                                if (adminID.equals(admin_ID) && adminPass.equals(admin_Pass)) { // 로그인 성공
                                     Intent intent = new Intent(AdminLogin.this, AdminHome.class);
                                     startActivity(intent);
                                     finish(); // 현재 액티비티 파괴

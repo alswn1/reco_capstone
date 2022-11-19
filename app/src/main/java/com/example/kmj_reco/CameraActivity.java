@@ -62,7 +62,7 @@ public class CameraActivity extends AppCompatActivity {
         setContentView(R.layout.activity_camera);
 
         // RECO 글씨
-        ImageView btn_home = (ImageView) findViewById(R.id.btn_home);
+        TextView btn_home = (TextView) findViewById(R.id.btn_home);
         btn_home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

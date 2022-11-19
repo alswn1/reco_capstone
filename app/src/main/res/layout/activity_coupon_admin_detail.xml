@@ -105,13 +105,12 @@
         android:layout_width="74dp"
         android:layout_height="35dp"
         android:layout_marginTop="8dp"
-        android:background="#4B6C11"
+        android:layout_marginEnd="38dp"
+        android:background="#000"
         android:text="추가"
         android:textColor="#fff"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.955"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/gifticon_Detail_edit" />
 
     <EditText
@@ -143,7 +142,7 @@
     <EditText
         android:id="@+id/gifticon_Detail_edit"
         android:layout_width="346dp"
-        android:layout_height="91dp"
+        android:layout_height="80dp"
         android:layout_marginTop="16dp"
         android:ems="10"
         android:gravity="start|top"
@@ -171,22 +170,22 @@
 
     <Button
         android:id="@+id/deleteButton"
-        android:layout_width="74dp"
+        android:layout_width="62dp"
         android:layout_height="35dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:background="#ee2222"
         android:text="삭제"
         android:textColor="#fff"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/gifticon_Price_edit"
         app:layout_constraintStart_toEndOf="@+id/gifticonADaddBtn"
         app:layout_constraintTop_toBottomOf="@+id/gifticonImage" />
 
     <Button
         android:id="@+id/gifticonADaddBtn"
-        android:layout_width="74dp"
+        android:layout_width="62dp"
         android:layout_height="35dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="26dp"
         android:layout_marginTop="16dp"
         android:background="#4B6C11"
         android:text="수정"

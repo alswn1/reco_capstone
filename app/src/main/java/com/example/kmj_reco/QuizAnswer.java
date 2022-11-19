@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -54,7 +55,7 @@ public class QuizAnswer extends Activity {
             }
         });
 
-        ImageButton btn_quiz_answer_check = (ImageButton) findViewById(R.id.btn_quiz_answer_check);
+        Button btn_quiz_answer_check = (Button) findViewById(R.id.btn_quiz_answer_check);
         btn_quiz_answer_check.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -20,8 +20,8 @@
         android:fontFamily="monospace"
         android:text="2p 획득!"
         android:textAlignment="center"
-        android:textColor="#9CB36B"
-        android:textSize="50sp"
+        android:textColor="#4B6C11"
+        android:textSize="47sp"
         android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@+id/title_bar" />
 
@@ -30,11 +30,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="35dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.648"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:srcCompat="@drawable/coin" />
+        app:srcCompat="@drawable/coin2" />
 
     <FrameLayout
         android:layout_width="wrap_content"
@@ -59,7 +59,7 @@
             android:text="덕분에 거리가 깨끗해졌어요!"
             android:textAlignment="center"
             android:textColor="#444444"
-            android:textSize="15sp"
+            android:textSize="16sp"
             android:textStyle="bold" />
 
     </FrameLayout>
@@ -67,12 +67,12 @@
 
     <Button
         android:id="@+id/backHome"
-        android:layout_width="150dp"
+        android:layout_width="140dp"
         android:layout_height="30dp"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
-        android:background="#D3D3D3"
-        android:text="홈화면으로"
+        android:background="#E6E6E6"
+        android:text="홈으로"
         android:textColor="#444444"
         android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@+id/ellipse_26" />

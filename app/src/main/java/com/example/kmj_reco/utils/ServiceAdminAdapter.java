@@ -13,6 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -76,7 +77,7 @@ public class ServiceAdminAdapter extends ArrayAdapter<ServiceAccount> {
         viewHolder.service_title.setText("" + serviceAccount.getService_Title());
         viewHolder.service_contents.setText(""+ serviceAccount.getService_Contents());
 
-        Button btn_service_delete = (Button) mView.findViewById(R.id.btn_service_delete);
+        ImageButton btn_service_delete = (ImageButton) mView.findViewById(R.id.btn_service_delete);
         btn_service_delete.setFocusable(false);
         btn_service_delete.setClickable(false);
         View finalMView = mView;

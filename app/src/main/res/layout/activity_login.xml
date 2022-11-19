@@ -7,10 +7,6 @@
     android:background="#fff"
     tools:context=".LoginActivity">
 
-    <include
-        android:id="@+id/title_bar"
-        layout="@layout/title_bar2" />
-
     <EditText
         android:id="@+id/et_id"
         android:layout_width="wrap_content"
@@ -44,11 +40,9 @@
 
     <Button
         android:id="@+id/btn_login"
-        android:layout_width="120dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="8dp"
+        android:layout_width="115dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="45dp"
         android:background="#4B6C11"
         android:backgroundTint="#4B6C11"
         android:text="로그인"
@@ -61,12 +55,10 @@
 
     <Button
         android:id="@+id/btn_check"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="8dp"
-        android:backgroundTint="#E6E6E6"
+        android:layout_width="85dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:background="#F6F6F6"
         android:text="회원가입"
         android:textColor="#444444"
         android:textStyle="bold"
@@ -87,7 +79,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.19" />
+        app:layout_constraintVertical_bias="0.199" />
 
     <TextView
         android:id="@+id/goToAdmin"

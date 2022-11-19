@@ -42,7 +42,7 @@ public class QrActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_qr);
 
-        ImageView btn_home = (ImageView) findViewById(R.id.btn_home);
+        TextView btn_home = (TextView) findViewById(R.id.btn_home);
         btn_home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

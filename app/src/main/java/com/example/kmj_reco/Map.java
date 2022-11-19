@@ -17,6 +17,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -112,9 +113,8 @@ public class Map extends AppCompatActivity implements OnMapReadyCallback {
     public void onMapReady(GoogleMap googleMap) {
         map = googleMap;
 
-        // 시작 위치 지정 --> 사용자 현재 위치로 변경할 것
-
-        LatLng startLocation = new LatLng(37.558438930646076, 127.04904563423179);
+        // 시작 위치 지정 --> 63 빌딩
+        LatLng startLocation = new LatLng(37.51981489443144, 126.94026724041389);
         googleMap.moveCamera(CameraUpdateFactory.newLatLng(startLocation));
 
         // 줌 애니메이션
