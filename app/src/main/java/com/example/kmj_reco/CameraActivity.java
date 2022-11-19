@@ -61,31 +61,34 @@ public class CameraActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_camera);
 
-        // RECO 글씨
-        TextView btn_home = (TextView) findViewById(R.id.btn_home);
+        // RECO 글씨 클릭 이벤트
+        ImageView btn_home = (ImageView) findViewById(R.id.btn_home);
         btn_home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                // 홈으로 이동
                 Intent intent = new Intent(getApplicationContext(), Home.class);
                 startActivity(intent);
             }
         });
 
-        // 톱니바퀴 버튼
+        // 톱니바퀴 버튼 클릭 이벤트
         ImageView btn_settings = (ImageView) findViewById(R.id.btn_settings);
         btn_settings.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                // 설정으로 이동
                 Intent intent = new Intent(getApplicationContext(), Settings.class);
                 startActivity(intent);
             }
         });
 
-        // 종 버튼
+        // 종 버튼 클릭 이벤트
         ImageView btn_alert = (ImageView) findViewById(R.id.btn_alert);
         btn_alert.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                // 알림창으로 이동
                 Intent intent = new Intent(getApplicationContext(), Alert.class);
                 startActivity(intent);
             }
@@ -93,6 +96,7 @@ public class CameraActivity extends AppCompatActivity {
 
         // 카메라 촬영 버튼
         Button takeBtn = findViewById(R.id.takeBtn);
+        // 카메라 버튼 클릭 시 getImageFromCamera 함수 실행
         takeBtn.setOnClickListener(v -> getImageFromCamera());
 
         cls = new ClassifierWithModel(this);
@@ -136,6 +140,7 @@ public class CameraActivity extends AppCompatActivity {
 
             Bitmap bitmap = null;
             try {
+                // 이미지를 bitmap에 저장
                 if(Build.VERSION.SDK_INT >= 29) {
                     ImageDecoder.Source src = ImageDecoder.createSource(
                             getContentResolver(), selectedImageUri);
@@ -152,17 +157,15 @@ public class CameraActivity extends AppCompatActivity {
                 Pair<String, Float> output = cls.classify(bitmap);
 
                 Character c = output.first.charAt(0);
+                // 종류가 '7'이면 -> 일반 쓰레기이면
                 if (c == '7') {
-                    //Toast.makeText(getApplicationContext(), "첫번째 : " + c, Toast.LENGTH_SHORT).show();
-
                     // 다시 사진을 찍을 수 있게 지도로 이동
                     Intent intent = new Intent(getApplicationContext(), Home.class);
                     startActivity(intent);
 
                     Toast.makeText(this, "해당 제품은 재활용품이 아니어서 인증이 불가합니다.", Toast.LENGTH_SHORT).show();
+                // 종류가 '7'이 아니면 -> 재활용이면    
                 }else {
-                    //Toast.makeText(getApplicationContext(), "첫번째 : " + c, Toast.LENGTH_SHORT).show();
-
                     // db
                     database = FirebaseDatabase.getInstance();
                     mFirebaseAuth = FirebaseAuth.getInstance();
@@ -171,7 +174,7 @@ public class CameraActivity extends AppCompatActivity {
                     String ref = "USER/" + userId;
                     myRef = database.getReference(ref);
 
-                    // 사진 인증 횟수 검사 및 증가
+                    // 사용자 포인트 증가
                     increaseUserPoint(myRef);
                 }
             }
@@ -180,7 +183,7 @@ public class CameraActivity extends AppCompatActivity {
     }
 
     // 사용자 포인트 증가
-    // 사진 인증 : 1 포인트 증가
+    // 사진 인증 : 2 포인트 증가
     private void increaseUserPoint(DatabaseReference myRef) {
         // 포인트 업데이트
         myRef.child("user_point").addValueEventListener(new ValueEventListener() {
@@ -190,7 +193,7 @@ public class CameraActivity extends AppCompatActivity {
                 int point = snapshot.getValue(Integer.class);
                 // addValueEventListener의 무한루프를 막는다.
                 myRef.child("user_point").removeEventListener(this);
-                // 사용자 포인트를 1 증가한다.
+                // 사용자 포인트를 2 증가한다.
                 myRef.child("user_point").setValue(point + 2);
 
                 // 성공하여 CameraSuccess로 이동

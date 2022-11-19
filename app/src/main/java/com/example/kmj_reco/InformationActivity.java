@@ -35,7 +35,7 @@ public class InformationActivity extends AppCompatActivity {
     EditText et_name;
     EditText et_birth;
     EditText et_id;
-    EditText et_pass;
+    TextView et_pass;
     EditText et_phone;
     TextView et_email;
 
@@ -142,7 +142,7 @@ public class InformationActivity extends AppCompatActivity {
         String userName = ((EditText) findViewById(R.id.et_name)).getText().toString();
         String userBirth = ((EditText) findViewById(R.id.et_birth)).getText().toString();
         String userID = ((EditText) findViewById(R.id.et_id)).getText().toString();
-        String userPass = ((EditText) findViewById(R.id.et_pass)).getText().toString();
+        String userPass = ((TextView) findViewById(R.id.et_pass)).getText().toString();
         String userPass2 = ((EditText) findViewById(R.id.et_pass2)).getText().toString();
         String userPhone = ((EditText) findViewById(R.id.et_phone)).getText().toString();
         String userEmail = ((TextView) findViewById(R.id.et_email)).getText().toString();
@@ -162,7 +162,6 @@ public class InformationActivity extends AppCompatActivity {
                                     myRef.child(uid).child("user_name").setValue(userName);
                                     myRef.child(uid).child("user_birth").setValue(userBirth);
                                     myRef.child(uid).child("user_id").setValue(userID);
-                                    myRef.child(uid).child("user_pwd").setValue(userPass);
                                     myRef.child(uid).child("user_phone").setValue(userPhone);
 
                                     startToast("회원정보 수정에 성공하였습니다.");

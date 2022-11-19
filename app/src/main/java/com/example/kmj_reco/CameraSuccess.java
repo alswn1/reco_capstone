@@ -18,39 +18,42 @@ public class CameraSuccess extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_camera_success);
 
-        // 홈 화면으로 돌아가기 클릭했을 때
+        // 홈 화면으로 돌아가기 버튼 클릭 이벤트
         Button backHome = findViewById(R.id.backHome);
         backHome.setOnClickListener(view -> {
-            // Home으로 이동
+            // 홈으로 이동
             Intent i = new Intent(CameraSuccess.this, Home.class);
             startActivity(i);
         });
 
-        // RECO 클릭했을 때
+        // RECO 글씨 클릭 이벤트
         ImageView btn_home = (ImageView) findViewById(R.id.btn_home);
         btn_home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                // 홈으로 이동
                 Intent intent = new Intent(getApplicationContext(), Home.class);
                 startActivity(intent);
             }
         });
 
-        // 톱니바퀴 클릭했을 때
+        // 톱니바퀴 버튼 클릭 이벤트
         ImageView btn_settings = (ImageView) findViewById(R.id.btn_settings);
         btn_settings.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                // 설정으로 이동
                 Intent intent = new Intent(getApplicationContext(), Settings.class);
                 startActivity(intent);
             }
         });
 
-        // 종 클릭했을 때
+        // 종 버튼 클릭 이벤트
         ImageView btn_alert = (ImageView) findViewById(R.id.btn_alert);
         btn_alert.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                // 알림창으로 이동
                 Intent intent = new Intent(getApplicationContext(), Alert.class);
                 startActivity(intent);
             }

@@ -41,19 +41,23 @@ public class NoticeDetail extends AppCompatActivity {
         Intent intent = getIntent();
         int num = intent.getIntExtra("num", 0);
 
+        // 설정 버튼 클릭 이벤트
         ImageView btn_settings = (ImageView) findViewById(R.id.btn_settings);
         btn_settings.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                // 설정으로 이동
                 Intent intent = new Intent(getApplicationContext(), Settings.class);
                 startActivity(intent);
             }
         });
 
+        // 뒤로가기 버튼 클릭 이벤트
         ImageButton btn_back = (ImageButton) findViewById(R.id.btn_back);
         btn_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                // 공지로 이동
                 Intent intent = new Intent(getApplicationContext(), Notice.class);
                 startActivity(intent);
             }

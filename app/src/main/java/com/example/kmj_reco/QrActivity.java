@@ -5,6 +5,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -42,51 +43,50 @@ public class QrActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_qr);
 
-        TextView btn_home = (TextView) findViewById(R.id.btn_home);
+        // RECO 글씨 클릭 이벤트
+        ImageView btn_home = (ImageView) findViewById(R.id.btn_home);
         btn_home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                // 홈으로 이동
                 Intent intent = new Intent(getApplicationContext(), Home.class);
                 startActivity(intent);
             }
         });
 
+        // 설정 버튼 클릭 이벤트
         ImageView btn_settings = (ImageView) findViewById(R.id.btn_settings);
         btn_settings.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                // 설정으로 이동
                 Intent intent = new Intent(getApplicationContext(), Settings.class);
                 startActivity(intent);
             }
         });
 
+        // 종 버튼 클릭 이벤트
         ImageView btn_alert = (ImageView) findViewById(R.id.btn_alert);
         btn_alert.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                // 알림창으로 이동
                 Intent intent = new Intent(getApplicationContext(), Alert.class);
                 startActivity(intent);
             }
         });
 
+        // 큐알 스캔 버튼
         scanBtn = findViewById(R.id.scanBtn);
-        /*recobin_num = findViewById(R.id.recobin_num);
-        recobin_roadname = findViewById(R.id.recobin_roadname);
-        recobin_address = findViewById(R.id.recobin_address);
-        star_score = findViewById(R.id.star_score);*/
-
-
         qrScan = new IntentIntegrator(this);
-
         scanBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                qrScan.setBeepEnabled(false);
-                qrScan.setPrompt("Scanning...");
-                qrScan.initiateScan();
+                qrScan.setBeepEnabled(false);       // beep 소리 끔
+                qrScan.setPrompt("Scanning...");    // Scanning... 글씨 화면에 표시
+                qrScan.initiateScan();              // 스캔
             }
         });
-        //scanBtn.performClick();
     }
 
     // qr 스캔 결과
@@ -96,27 +96,19 @@ public class QrActivity extends AppCompatActivity {
         if (result != null) {
             // qrcode가 없을 때
             if (result.getContents() == null) {
-                //Toast.makeText(this, "취소!", Toast.LENGTH_SHORT).show();
+                // 홈으로 이동
                 Intent i = new Intent(QrActivity.this, Home.class);
                 startActivity(i);
-                // qrcode가 있을 때
+            // qrcode가 있을 때
             }else {
-                //Toast.makeText(this, "스캔 완료!", Toast.LENGTH_SHORT).show();
-
                 try {
                     JSONObject obj = new JSONObject(result.getContents());
-                    /*recobin_num.setText(obj.getString("recobin_num"));
-                    recobin_roadname.setText(obj.getString("recobin_roadname"));
-                    recobin_address.setText(obj.getString("recobin_address"));
-                    star_score.setText(obj.getString("star_score"));*/
-                    Log.v("test : ", "recobin_num : " + obj.getString("recobin_num"));
 
                     // qr코드가 db에 있는 qr 코드인지 확인
-
-                    // db
-                    database = FirebaseDatabase.getInstance();
+                    database = FirebaseDatabase.getInstance();  // db
                     String recobinNum = obj.getString("recobin_num");
 
+                    // RECOBIN의 데이터를 for문으로 돌음
                     for (int j=0; j<database.getReference("RECOBIN").getKey().length(); j++) {
                         myRef = database.getReference("RECOBIN/" + j);
 
@@ -124,10 +116,9 @@ public class QrActivity extends AppCompatActivity {
                             @Override
                             public void onDataChange(@NonNull DataSnapshot snapshot) {
                                 // qr의 recobin_num을 firebase에 저장되어 있는 recobin_num과 비교
-                                // 맞다면 화면 이동
                                 int recobin_num = snapshot.child("recobin_num").getValue(Integer.class);
                                 String fir_recobin_num = String.valueOf(recobin_num);
-                                //Log.v("RECOBIN_NUM", recobin_num);
+                                // 맞다면 화면 이동
                                 if (recobinNum.equals(fir_recobin_num)) {
                                     Intent i = new Intent(QrActivity.this, CameraActivity.class);
                                     startActivity(i);
@@ -141,14 +132,8 @@ public class QrActivity extends AppCompatActivity {
                             }
                         });
                     }
-
-                    /*if (obj.getString("recobin_num").equals("1")) {
-                        Intent i = new Intent(QrActivity.this, CameraActivity.class);
-                        startActivity(i);
-                    }*/
                 } catch (JSONException e) {
                     e.printStackTrace();
-                    //Toast.makeText(this, "실패!!!!!!", Toast.LENGTH_SHORT).show();
                 }
             }
         }else {

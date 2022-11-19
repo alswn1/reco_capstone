@@ -3,6 +3,7 @@ package com.example.kmj_reco;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -46,10 +47,12 @@ public class ServiceAdminDetail extends AppCompatActivity {
 
         int num = intent.getIntExtra("num", 0);
 
+        // 뒤로가기 버튼 클릭 이벤트
         ImageButton btn_back = (ImageButton) findViewById(R.id.btn_back);
         btn_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                // 고객센터 어드민으로 이동
                 Intent intent = new Intent(getApplicationContext(), ServiceAdmin.class);
                 startActivity(intent);
             }
@@ -73,18 +76,24 @@ public class ServiceAdminDetail extends AppCompatActivity {
                     database.getReference("SERVICE_ANSWER").addValueEventListener(new ValueEventListener() {
                         @Override
                         public void onDataChange(@NonNull DataSnapshot snapshot) {
+                            // answer_num을 length로 설정
                             final int answer_num = (int) snapshot.getChildrenCount();
 
+                            // 작성 버튼 클릭 이벤트
                             Button btn_service_admin_submit = (Button) findViewById(R.id.btn_service_admin_submit);
                             btn_service_admin_submit.setOnClickListener(new View.OnClickListener() {
                                 @Override
                                 public void onClick(View v) {
+                                    // 어드민이 남긴 답변
                                     EditText service_admin_answer = findViewById(R.id.service_admin_answer);
 
+                                    // SERVICE_ANSWER 생성자에 인덱스, 답변, 문의번호를 저장
                                     SERVICE_ANSWER service_answer = new SERVICE_ANSWER((answer_num+1), service_admin_answer.getText().toString(), num);
+                                    // SERVICE_ANSWER에 데이터 삽입
                                     database.getReference("SERVICE_ANSWER").child(String.valueOf(answer_num)).setValue(service_answer);
 
                                     Toast.makeText(ServiceAdminDetail.this, "답변을 작성했습니다.", Toast.LENGTH_SHORT).show();
+                                    // 답변 작성 성공하면 고객센터 어드민으로 이동
                                     Intent i = new Intent(getApplicationContext(), ServiceAdmin.class);
                                     startActivity(i);
                                 }
@@ -93,14 +102,16 @@ public class ServiceAdminDetail extends AppCompatActivity {
 
                         @Override
                         public void onCancelled(@NonNull DatabaseError error) {
-
+                            // 에러문 출력
+                            Log.e("ServiceAdminDetail", String.valueOf(error.toException()));
                         }
                     });
                 }
             }
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-
+                // 에러문 출력
+                Log.e("ServiceAdminDetail", String.valueOf(error.toException()));
             }
         });
         setValues();

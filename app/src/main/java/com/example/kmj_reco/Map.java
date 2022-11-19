@@ -60,28 +60,34 @@ public class Map extends AppCompatActivity implements OnMapReadyCallback {
         editText = findViewById(R.id.editText);
         btn_search = findViewById(R.id.btn_search);
 
+        // RECO 글씨 클릭 이벤트
         ImageView btn_home = (ImageView) findViewById(R.id.btn_home);
         btn_home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                // 홈으로 이동
                 Intent intent = new Intent(getApplicationContext(), Home.class);
                 startActivity(intent);
             }
         });
 
+        // 톱니바퀴 버튼 클릭 이벤트
         ImageView btn_settings = (ImageView) findViewById(R.id.btn_settings);
         btn_settings.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                // 설정으로 이동
                 Intent intent = new Intent(getApplicationContext(), Settings.class);
                 startActivity(intent);
             }
         });
 
+        // 종 버튼 클릭 이벤트
         ImageView btn_alert = (ImageView) findViewById(R.id.btn_alert);
         btn_alert.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                // 알림창으로 이동
                 Intent intent = new Intent(getApplicationContext(), Alert.class);
                 startActivity(intent);
             }
