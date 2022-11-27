@@ -11,18 +11,28 @@
         <entry key="..\:/AndroidProjects/ImageClassifier/app/src/main/res/layout/activity_gallery.xml" value="0.2692502532928065" />
         <entry key="..\:/AndroidProjects/ImageClassifier/app/src/main/res/layout/activity_main.xml" value="0.2689969604863222" />
         <entry key="..\:/AndroidProjects/ImageClassifier/app/src/main/res/layout/title_bar.xml" value="0.2361111111111111" />
+        <entry key="..\:/AndroidProjects/RECO/kmj_reco/app/src/main/res/drawable/frame_loading.xml" value="0.2475" />
         <entry key="..\:/AndroidProjects/RECO/kmj_reco/app/src/main/res/layout/activity_admin_home.xml" value="0.5536458333333333" />
         <entry key="..\:/AndroidProjects/RECO/kmj_reco/app/src/main/res/layout/activity_camera.xml" value="0.33229166666666665" />
         <entry key="..\:/AndroidProjects/RECO/kmj_reco/app/src/main/res/layout/activity_camera_success.xml" value="0.33229166666666665" />
         <entry key="..\:/AndroidProjects/RECO/kmj_reco/app/src/main/res/layout/activity_information.xml" value="0.5920758928571429" />
+        <entry key="..\:/AndroidProjects/RECO/kmj_reco/app/src/main/res/layout/activity_my_page.xml" value="0.5357789855072463" />
         <entry key="..\:/AndroidProjects/RECO/kmj_reco/app/src/main/res/layout/activity_notice_admin.xml" value="0.3713768115942029" />
         <entry key="..\:/AndroidProjects/RECO/kmj_reco/app/src/main/res/layout/activity_notice_detail.xml" value="0.3713768115942029" />
         <entry key="..\:/AndroidProjects/RECO/kmj_reco/app/src/main/res/layout/activity_personal_info.xml" value="0.5536458333333333" />
+        <entry key="..\:/AndroidProjects/RECO/kmj_reco/app/src/main/res/layout/activity_qr.xml" value="0.5536458333333333" />
         <entry key="..\:/AndroidProjects/RECO/kmj_reco/app/src/main/res/layout/activity_recobin_admin.xml" value="0.33229166666666665" />
+        <entry key="..\:/AndroidProjects/RECO/kmj_reco/app/src/main/res/layout/activity_recobin_admin_add.xml" value="0.5489583333333333" />
         <entry key="..\:/AndroidProjects/RECO/kmj_reco/app/src/main/res/layout/activity_service_admin.xml" value="0.3713768115942029" />
         <entry key="..\:/AndroidProjects/RECO/kmj_reco/app/src/main/res/layout/activity_service_admin_detail.xml" value="0.33" />
         <entry key="..\:/AndroidProjects/RECO/kmj_reco/app/src/main/res/layout/activity_service_detail.xml" value="0.5" />
         <entry key="..\:/AndroidProjects/RECO/kmj_reco/app/src/main/res/layout/activity_service_history.xml" value="0.5536458333333333" />
+        <entry key="..\:/AndroidProjects/RECO/kmj_reco/app/src/main/res/layout/animation_list.xml" value="0.32019927536231885" />
+        <entry key="..\:/AndroidProjects/RECO/kmj_reco/app/src/main/res/layout/intro.xml" value="0.32019927536231885" />
+        <entry key="..\:/AndroidProjects/RECO/kmj_reco/app/src/main/res/layout/item_coupon_admin.xml" value="0.5489583333333333" />
+        <entry key="..\:/AndroidProjects/RECO/kmj_reco/app/src/main/res/layout/item_recobin_admin.xml" value="0.5489583333333333" />
+        <entry key="..\:/AndroidProjects/RECO/kmj_reco/app/src/main/res/layout/item_service_admin.xml" value="0.5489583333333333" />
+        <entry key="..\:/AndroidProjects/RECO/kmj_reco/app/src/main/res/layout/progress_loading.xml" value="0.32019927536231885" />
         <entry key="..\:/AndroidProjects/RECO/kmj_reco/app/src/main/res/layout/title_bar.xml" value="0.4098731884057971" />
         <entry key="..\:/AndroidProjects/RECO_admin/kmj_reco/app/src/main/res/layout/activity_admin_home.xml" value="0.5536458333333333" />
         <entry key="..\:/AndroidProjects/RECO_admin/kmj_reco/app/src/main/res/layout/activity_alert.xml" value="0.2692502532928065" />

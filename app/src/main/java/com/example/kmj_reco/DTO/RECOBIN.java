@@ -1,13 +1,13 @@
 package com.example.kmj_reco.DTO;
 
 public class RECOBIN {
-    public int recobin_num;
-    public String recobin_roadname;
-    public String recobin_address;
-    public String recobin_fulladdress;
-    public String recobin_locate;
-    public Double recobin_latitude;
-    public Double recobin_longitude;
+    public int recobin_num; // recobin Index
+    public String recobin_roadname; // 도로명
+    public String recobin_address; // 주소
+    public String recobin_fulladdress; // 상세주소
+    public String recobin_locate; // 위치
+    public Double recobin_latitude; // 위도
+    public Double recobin_longitude; // 경도
 
     public RECOBIN() {}
 

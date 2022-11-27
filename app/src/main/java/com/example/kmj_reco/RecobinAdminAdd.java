@@ -38,7 +38,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class RecobinAdminAdd extends AppCompatActivity {
-    private DatabaseReference reference;
+    private DatabaseReference reference; // 데이터베이스 선언
 
     String url;
 
@@ -49,9 +49,11 @@ public class RecobinAdminAdd extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recobin_admin_add);
 
+        // DB 설정
         FirebaseAuth.getInstance().signInAnonymously();
-        reference= FirebaseDatabase.getInstance().getReference();
+        reference = FirebaseDatabase.getInstance().getReference();
 
+        // RecobinAdmin Activity에서 데이터 받아오기
         Intent intent = getIntent();
         int num = intent.getIntExtra("num",0);
 
@@ -70,10 +72,12 @@ public class RecobinAdminAdd extends AppCompatActivity {
             public void onCancelled(@NonNull DatabaseError error) {}
         });
 
+        // 추가 버튼 터치 이벤트
         ImageButton btn_add = (ImageButton) findViewById(R.id.btn_add);
         btn_add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                // xml 데이터 변수 선언
                 EditText recobin_address = findViewById(R.id.recobin_address);
                 EditText recobin_roadname = findViewById(R.id.recobin_roadname);
                 EditText recobin_locate = findViewById(R.id.recobin_locate);
@@ -81,17 +85,19 @@ public class RecobinAdminAdd extends AppCompatActivity {
                 EditText recobin_latitude = findViewById(R.id.recobin_latitude);
                 EditText recobin_longitude = findViewById(R.id.recobin_longitude);
 
-                // 리스트에 데이터가 들어왔을 경우에만
+                // 리스트에 데이터가 들어왔을 경우에만 새 레코빈 데이터 추가
                 try {
                     if (url == null || url =="") {
                         RECOBIN newRecobin = new RECOBIN(recobin_num[0], recobin_address.getText().toString(), recobin_roadname.getText().toString(), recobin_locate.getText().toString(), recobin_fulladdress.getText().toString(),
                                 Double.valueOf(recobin_latitude.getText().toString()),  Double.valueOf(recobin_longitude.getText().toString()));
                         reference.child("RECOBIN").child(String.valueOf(recobin_num[0])).setValue(newRecobin);
                     } else {
+                        // EditText에 작성한 정보를 리스트 및 DB에 추가
                         RECOBIN newRecobin = new RECOBIN(recobin_num[0], recobin_address.getText().toString(), recobin_roadname.getText().toString(), recobin_locate.getText().toString(), recobin_fulladdress.getText().toString(),
                                 Double.valueOf(recobin_latitude.getText().toString()),  Double.valueOf(recobin_longitude.getText().toString()));
                         reference.child("RECOBIN").child(String.valueOf(recobin_num[0])).setValue(newRecobin);
                     }
+                    // RecobinAdmin Activity에 추가된 데이터 전송
                     Intent intent2 = new Intent(getApplicationContext(), RecobinAdmin.class);
                     intent2.putExtra("num", num);
                     startActivity(intent2);
@@ -101,6 +107,7 @@ public class RecobinAdminAdd extends AppCompatActivity {
             }
         });
 
+        // 뒤로가기 버튼 터치 시 RecobinAdmin 화면으로 이동
         ImageButton btn_back = (ImageButton) findViewById(R.id.btn_back);
         btn_back.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -111,6 +118,7 @@ public class RecobinAdminAdd extends AppCompatActivity {
         });
     }
 
+    // 액티비티 결과
     public void onActivityResult(int requestCode, final int resultCode, final Intent data){
         super.onActivityResult(requestCode, resultCode, data);
         Intent intent = getIntent();

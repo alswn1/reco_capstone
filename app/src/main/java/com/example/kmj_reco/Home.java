@@ -11,7 +11,6 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdSize;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.initialization.InitializationStatus;
@@ -24,6 +23,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 public class Home extends AppCompatActivity {
+    // 데이터베이스 선언
     FirebaseDatabase database;
     DatabaseReference myRef;
     FirebaseAuth mFirebaseAuth;
@@ -65,7 +65,7 @@ public class Home extends AppCompatActivity {
             public void onCancelled(@NonNull DatabaseError error) {}
         });
 
-        // 각 버튼 클릭 시 화면 이동
+        // 설정 버튼 터치 시 설정 화면으로 이동
         ImageView btn_settings = (ImageView) findViewById(R.id.btn_settings);
         btn_settings.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -75,6 +75,7 @@ public class Home extends AppCompatActivity {
             }
         });
 
+        // 알림 버튼 터치 시 알림 화면으로 이동
         ImageView btn_alert = (ImageView) findViewById(R.id.btn_alert);
         btn_alert.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -84,6 +85,7 @@ public class Home extends AppCompatActivity {
             }
         });
 
+        // 지도 버튼 터치 시 지도 화면으로 이동
         ImageButton btn_map = (ImageButton) findViewById(R.id.btn_map);
         btn_map.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -93,6 +95,7 @@ public class Home extends AppCompatActivity {
             }
         });
 
+        // 쿠폰 버튼 터치 시 쿠폰 화면으로 이동
         ImageButton btn_coupon = (ImageButton) findViewById(R.id.btn_coupon);
         btn_coupon.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -102,6 +105,7 @@ public class Home extends AppCompatActivity {
             }
         });
 
+        // 마이 페이지 버튼 터치 시  마이 페이지 화면으로 이동
         ImageButton btn_mypage = (ImageButton) findViewById(R.id.btn_mypage);
         btn_mypage.setOnClickListener(new View.OnClickListener() {
             @Override

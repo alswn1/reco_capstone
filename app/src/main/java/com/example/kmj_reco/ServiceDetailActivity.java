@@ -28,9 +28,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ServiceDetailActivity extends AppCompatActivity {
-    private FirebaseAuth mFirebaseAuth; //파이어베이스 인증
-    private DatabaseReference mDatabaseRef; //실시간데이터베이스
+    private FirebaseAuth mFirebaseAuth; // 파이어베이스 인증
+    private DatabaseReference mDatabaseRef; // 실시간 데이터베이스
     private FirebaseUser user;
+
     ServiceAccount selectedService;
     private List<ServiceAccount> serviceAccountList = new ArrayList<>();
 
@@ -40,10 +41,12 @@ public class ServiceDetailActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_service_detail);
+
+        // ServiceHistoryActivity에서 데이터 받아오기
         Intent intent = getIntent();
         int num = intent.getIntExtra("num", 0);
 
-        // RECO 글씨 클릭 이벤트
+        // 홈 버튼 클릭 이벤트
         ImageView btn_home = (ImageView) findViewById(R.id.btn_home);
         btn_home.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -65,7 +68,7 @@ public class ServiceDetailActivity extends AppCompatActivity {
             }
         });
 
-        // 종 버튼 클릭 이벤트
+        // 알림 버튼 클릭 이벤트
         ImageView btn_alert = (ImageView) findViewById(R.id.btn_alert);
         btn_alert.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -87,14 +90,16 @@ public class ServiceDetailActivity extends AppCompatActivity {
             }
         });
 
-        DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference();
+        // ServiceAccount 데이터 가져오기
+        DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference(); // DB 설정
         databaseReference.child("ServiceAccount").addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 for (DataSnapshot data: snapshot.getChildren()){
                     ServiceAccount service = data.getValue(ServiceAccount.class);
-                    if(service.getService_Num()==num){
-                        serviceAccountList.add(service);
+
+                    if(service.getService_Num()==num){ // service_num이 선택된 문의번호와 같다면
+                        serviceAccountList.add(service); // 리스트에 추가
                     }
                 }
             }
@@ -121,7 +126,6 @@ public class ServiceDetailActivity extends AppCompatActivity {
                     }
                 }
             }
-
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
                 // 에러문 출력
@@ -131,12 +135,15 @@ public class ServiceDetailActivity extends AppCompatActivity {
         setValues();
     }
 
-    private void setValues(){
+    // xml 데이터 설정 함수
+    private void setValues() {
+        // xml 요소
         TextView date = findViewById(R.id.et_date);
         TextView title = findViewById(R.id.et_title);
         TextView contents = findViewById(R.id.et_content);
         TextView publisher = findViewById(R.id.et_publisher);
 
+        // title, date, contents, publisher 데이터 받아오기
         Intent intent = getIntent();
 
         String title1 = intent.getStringExtra("title");
@@ -144,6 +151,7 @@ public class ServiceDetailActivity extends AppCompatActivity {
         String contents1 = intent.getStringExtra("contents");
         String publisher1 = intent.getStringExtra("publisher");
 
+        // 데이터 저장
         date.setText(date1);
         title.setText(title1);
         contents.setText(contents1);

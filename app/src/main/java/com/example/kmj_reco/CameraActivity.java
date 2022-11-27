@@ -26,6 +26,11 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.FileProvider;
 
 import com.example.kmj_reco.tflite.ClassifierWithModel;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -56,12 +61,24 @@ public class CameraActivity extends AppCompatActivity {
     DatabaseReference myRef;
     FirebaseAuth mFirebaseAuth;
 
+    AdView mAdView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_camera);
 
-        // RECO 글씨 클릭 이벤트
+        // Google AD
+        MobileAds.initialize(this, new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(InitializationStatus initializationStatus) {}
+        });
+
+        mAdView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+
+        // 홈 버튼 클릭 이벤트
         ImageView btn_home = (ImageView) findViewById(R.id.btn_home);
         btn_home.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -72,7 +89,7 @@ public class CameraActivity extends AppCompatActivity {
             }
         });
 
-        // 톱니바퀴 버튼 클릭 이벤트
+        // 설정 버튼 클릭 이벤트
         ImageView btn_settings = (ImageView) findViewById(R.id.btn_settings);
         btn_settings.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -83,7 +100,7 @@ public class CameraActivity extends AppCompatActivity {
             }
         });
 
-        // 종 버튼 클릭 이벤트
+        // 알림 버튼 클릭 이벤트
         ImageView btn_alert = (ImageView) findViewById(R.id.btn_alert);
         btn_alert.setOnClickListener(new View.OnClickListener() {
             @Override

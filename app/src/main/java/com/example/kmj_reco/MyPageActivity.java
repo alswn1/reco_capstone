@@ -24,8 +24,8 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 public class MyPageActivity extends AppCompatActivity {
-    private FirebaseAuth mFirebaseAuth; //파이어베이스 인증
-    private DatabaseReference mDatabaseRef; //실시간데이터베이스
+    private FirebaseAuth mFirebaseAuth; // 파이어베이스 인증
+    private DatabaseReference mDatabaseRef; // 실시간 데이터베이스
     FirebaseDatabase database;
 
     TextView user_point;
@@ -46,16 +46,19 @@ public class MyPageActivity extends AppCompatActivity {
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
 
+        // DB 설정
         mFirebaseAuth = FirebaseAuth.getInstance();
         database = FirebaseDatabase.getInstance();
 
         user_point = findViewById(R.id.user_point);
 
+        // DB에서 USER 데이터 가져오기
         mDatabaseRef = database.getReference("USER");
-        String uid = mFirebaseAuth.getCurrentUser().getUid();
+        String uid = mFirebaseAuth.getCurrentUser().getUid();  // 현재 로그인한 사용자 uid 가져오기
         mDatabaseRef.child(uid).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
+                // 사용자 포인트 받아와 보여주기
                 Integer point = snapshot.child("user_point").getValue(Integer.class);
                 user_point.setText(point.toString());
             }
@@ -63,6 +66,7 @@ public class MyPageActivity extends AppCompatActivity {
             public void onCancelled(@NonNull DatabaseError error) {}
         });
 
+        // 홈 버튼 터치 시 홈 화면으로 이동
         ImageView btn_home = (ImageView) findViewById(R.id.btn_home);
         btn_home.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -72,6 +76,7 @@ public class MyPageActivity extends AppCompatActivity {
             }
         });
 
+        // 알림 버튼 터치 시 알림 화면으로 이동
         ImageView btn_alert = (ImageView) findViewById(R.id.btn_alert);
         btn_alert.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -81,7 +86,7 @@ public class MyPageActivity extends AppCompatActivity {
             }
         });
 
-        // 상단바 설정 버튼 클릭 시 설정 액티비티 전환
+        // 설정 버튼 터치 시 설정 화면으로 이동
         ImageView btn_settings = (ImageView) findViewById(R.id.btn_settings);
         btn_settings.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -91,7 +96,7 @@ public class MyPageActivity extends AppCompatActivity {
             }
         });
 
-        // 상단바 뒤로가기 버튼 클릭 시 홈 액티비티 전환
+        // 뒤로가기 버튼 터치 시 홈 액티비티 전환
         ImageButton btn_back = (ImageButton) findViewById(R.id.btn_back);
         btn_back.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -151,7 +156,7 @@ public class MyPageActivity extends AppCompatActivity {
             }
         });
 
-        // 로그아웃 버튼 클릭 시 로그아웃 후 로그인 화면으로 이동
+        // 로그아웃 버튼 클릭 시 로그아웃 후 로그인 화면으로 이동 (자동 로그인 해제)
         Button btn_logout = (Button) findViewById(R.id.btn_logout);
         btn_logout.setOnClickListener(new View.OnClickListener() {
             @Override

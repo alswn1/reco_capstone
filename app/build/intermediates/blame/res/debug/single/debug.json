@@ -12,6 +12,10 @@
         "source": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\src\\main\\res\\layout\\activity_login.xml"
     },
     {
+        "merged": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_frame_loading_02.png.flat",
+        "source": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\src\\main\\res\\drawable-v24\\frame_loading_02.png"
+    },
+    {
         "merged": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\build\\intermediates\\res\\merged\\debug\\layout_title_bar.xml.flat",
         "source": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\src\\main\\res\\layout\\title_bar.xml"
     },
@@ -76,6 +80,10 @@
         "source": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\src\\main\\res\\drawable\\address_detail.png"
     },
     {
+        "merged": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btn_1.png.flat",
+        "source": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\src\\main\\res\\drawable\\btn_1.png"
+    },
+    {
         "merged": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_map_detail.xml.flat",
         "source": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\src\\main\\res\\layout\\activity_map_detail.xml"
     },
@@ -130,6 +138,14 @@
     {
         "merged": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\build\\intermediates\\res\\merged\\debug\\drawable_trashcan_marker.png.flat",
         "source": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\src\\main\\res\\drawable\\trashcan_marker.png"
+    },
+    {
+        "merged": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\build\\intermediates\\res\\merged\\debug\\drawable_quiz_bg.png.flat",
+        "source": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\src\\main\\res\\drawable\\quiz_bg.png"
+    },
+    {
+        "merged": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_frame_loading_03.png.flat",
+        "source": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\src\\main\\res\\drawable-v24\\frame_loading_03.png"
     },
     {
         "merged": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\build\\intermediates\\res\\merged\\debug\\drawable_qr.png.flat",
@@ -196,6 +212,10 @@
         "source": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\src\\main\\res\\drawable\\btn_admin_recobin.png"
     },
     {
+        "merged": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btn_2.png.flat",
+        "source": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\src\\main\\res\\drawable\\btn_2.png"
+    },
+    {
         "merged": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btn_map.png.flat",
         "source": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\src\\main\\res\\drawable\\btn_map.png"
     },
@@ -210,6 +230,10 @@
     {
         "merged": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_base.png.flat",
         "source": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\src\\main\\res\\drawable-v24\\base.png"
+    },
+    {
+        "merged": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\build\\intermediates\\res\\merged\\debug\\drawable_quiz_answer_bg.png.flat",
+        "source": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\src\\main\\res\\drawable\\quiz_answer_bg.png"
     },
     {
         "merged": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_coupon_admin_detail.xml.flat",
@@ -244,6 +268,10 @@
         "source": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\src\\main\\res\\drawable\\mypage_bg2.png"
     },
     {
+        "merged": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_frame_loading_04.png.flat",
+        "source": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\src\\main\\res\\drawable-v24\\frame_loading_04.png"
+    },
+    {
         "merged": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\build\\intermediates\\res\\merged\\debug\\layout_home.xml.flat",
         "source": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\src\\main\\res\\layout\\home.xml"
     },
@@ -258,6 +286,10 @@
     {
         "merged": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\build\\intermediates\\res\\merged\\debug\\drawable_reco.png.flat",
         "source": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\src\\main\\res\\drawable\\reco.png"
+    },
+    {
+        "merged": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_logo.png.flat",
+        "source": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\src\\main\\res\\drawable-v24\\logo.png"
     },
     {
         "merged": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_launcher_foreground.png.flat",
@@ -298,6 +330,10 @@
     {
         "merged": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_coin.png.flat",
         "source": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\src\\main\\res\\drawable-v24\\coin.png"
+    },
+    {
+        "merged": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_frame_loading_01.png.flat",
+        "source": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\src\\main\\res\\drawable-v24\\frame_loading_01.png"
     },
     {
         "merged": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\build\\intermediates\\res\\merged\\debug\\drawable_search_bg.png.flat",
@@ -396,6 +432,10 @@
         "source": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\src\\main\\res\\drawable\\plant.png"
     },
     {
+        "merged": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\build\\intermediates\\res\\merged\\debug\\drawable_frame_loading.xml.flat",
+        "source": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\src\\main\\res\\drawable\\frame_loading.xml"
+    },
+    {
         "merged": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_item_login.xml.flat",
         "source": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\src\\main\\res\\layout\\activity_item_login.xml"
     },
@@ -436,6 +476,10 @@
         "source": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\src\\main\\res\\layout\\recobin_detail.xml"
     },
     {
+        "merged": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_frame_loading_05.png.flat",
+        "source": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\src\\main\\res\\drawable-v24\\frame_loading_05.png"
+    },
+    {
         "merged": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\build\\intermediates\\res\\merged\\debug\\layout_quiz_answer.xml.flat",
         "source": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\src\\main\\res\\layout\\quiz_answer.xml"
     },
@@ -454,6 +498,10 @@
     {
         "merged": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\build\\intermediates\\res\\merged\\debug\\xml_file_paths.xml.flat",
         "source": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\src\\main\\res\\xml\\file_paths.xml"
+    },
+    {
+        "merged": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_coin2.png.flat",
+        "source": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\src\\main\\res\\drawable-v24\\coin2.png"
     },
     {
         "merged": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btn_mypage.png.flat",
@@ -496,8 +544,16 @@
         "source": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\src\\main\\res\\drawable-v24\\whitebg.png"
     },
     {
+        "merged": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\build\\intermediates\\res\\merged\\debug\\drawable_plant2.png.flat",
+        "source": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\src\\main\\res\\drawable\\plant2.png"
+    },
+    {
         "merged": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\build\\intermediates\\res\\merged\\debug\\drawable_whitebg.png.flat",
         "source": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\src\\main\\res\\drawable\\whitebg.png"
+    },
+    {
+        "merged": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_frame_loading_06.png.flat",
+        "source": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\src\\main\\res\\drawable-v24\\frame_loading_06.png"
     },
     {
         "merged": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_item_service.xml.flat",
@@ -634,6 +690,10 @@
     {
         "merged": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_coupon_admin_detail2.xml.flat",
         "source": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\src\\main\\res\\layout\\activity_coupon_admin_detail2.xml"
+    },
+    {
+        "merged": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\build\\intermediates\\res\\merged\\debug\\layout_progress_loading.xml.flat",
+        "source": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\src\\main\\res\\layout\\progress_loading.xml"
     },
     {
         "merged": "C:\\AndroidProjects\\RECO\\kmj_reco\\app\\build\\intermediates\\res\\merged\\debug\\drawable_base_home.png.flat",

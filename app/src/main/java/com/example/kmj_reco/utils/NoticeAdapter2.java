@@ -40,12 +40,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class NoticeAdapter2 extends ArrayAdapter<NOTICE> {
-    private FirebaseStorage storage;
-    private DatabaseReference databaseReference;
+    private DatabaseReference databaseReference; // 데이터베이스 선언
+
     private Context context2;
     private List notice2list;
     private ListView notice2ListView;
 
+    // xml에서 받아올 변수 담은 클래스 정의
     class UserViewHolder {
         private TextView notice_num;
         private TextView notice_title;
@@ -53,6 +54,7 @@ public class NoticeAdapter2 extends ArrayAdapter<NOTICE> {
         private TextView notice_date;
     }
 
+    // Adapter content
     public NoticeAdapter2(Context context2, int resource2, List<NOTICE> notice2list, ListView notice2ListView) {
         super(context2, resource2, notice2list);
         this.context2 = context2;
@@ -67,9 +69,12 @@ public class NoticeAdapter2 extends ArrayAdapter<NOTICE> {
         String Status2;
         View m2View = convertView2;
 
+        // 뷰를 받아오지 않았을 경우
+        // xml에서 요소를 받아온다.
         if (m2View == null) {
             m2View = LayoutInflater.from(getContext()).inflate(R.layout.item_notice2, parent, false);
 
+            // 뷰 변수 선언
             viewHolder2 = new UserViewHolder();
             viewHolder2.notice_title = (TextView) m2View.findViewById(R.id.notice2title);
             viewHolder2.notice_detail = (TextView) m2View.findViewById(R.id.notice2detail);
@@ -83,21 +88,25 @@ public class NoticeAdapter2 extends ArrayAdapter<NOTICE> {
             Status2 = "reused";
         }
 
+        NOTICE notice = (NOTICE) notice2list.get(position2); // 리스트에 추가될 공지 개별 정보 받아오기
+
         // DB 에서 NOTICE 데이터 가져오기
-        NOTICE notice = (NOTICE) notice2list.get(position2);
-        databaseReference= FirebaseDatabase.getInstance().getReference();
+        databaseReference= FirebaseDatabase.getInstance().getReference(); // DB 설정
         databaseReference.child("NOTICE").addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                notice2list.clear();
+                notice2list.clear(); // 리스트 초기화
+
                 for (DataSnapshot data: snapshot.getChildren()){
                         NOTICE notice = data.getValue(NOTICE.class);
-                        notice2list.add(notice);}
+                        notice2list.add(notice);
+                }
             }
             @Override
             public void onCancelled(@NonNull DatabaseError error) {}
         });
 
+        // 뷰 데이터 설정
         viewHolder2.notice_title.setText(notice.getNotice_title());
         viewHolder2.notice_detail.setText(notice.getNotice_detail());
 

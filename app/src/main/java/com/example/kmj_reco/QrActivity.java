@@ -15,6 +15,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -30,20 +35,32 @@ import java.io.IOException;
 
 public class QrActivity extends AppCompatActivity {
     private Button scanBtn;
-    private TextView recobin_num, recobin_roadname, recobin_address, star_score;
+    private TextView recobin_num, recobin_roadname, recobin_address;
 
     private IntentIntegrator qrScan;
 
-    // 데이터베이스
+    // 데이터베이스 선언
     FirebaseDatabase database;
     DatabaseReference myRef;
+
+    AdView mAdView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_qr);
 
-        // RECO 글씨 클릭 이벤트
+        // Google AD
+        MobileAds.initialize(this, new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(InitializationStatus initializationStatus) {}
+        });
+
+        mAdView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+
+        // 홈 버튼 클릭 이벤트
         ImageView btn_home = (ImageView) findViewById(R.id.btn_home);
         btn_home.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -65,7 +82,7 @@ public class QrActivity extends AppCompatActivity {
             }
         });
 
-        // 종 버튼 클릭 이벤트
+        // 알림 버튼 클릭 이벤트
         ImageView btn_alert = (ImageView) findViewById(R.id.btn_alert);
         btn_alert.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -76,7 +93,7 @@ public class QrActivity extends AppCompatActivity {
             }
         });
 
-        // 큐알 스캔 버튼
+        // QR 스캔 버튼
         scanBtn = findViewById(R.id.scanBtn);
         qrScan = new IntentIntegrator(this);
         scanBtn.setOnClickListener(new View.OnClickListener() {
@@ -136,7 +153,7 @@ public class QrActivity extends AppCompatActivity {
                     e.printStackTrace();
                 }
             }
-        }else {
+        } else {
             super.onActivityResult(requestCode, resultCode, data);
         }
     }

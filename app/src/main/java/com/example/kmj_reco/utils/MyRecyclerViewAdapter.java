@@ -15,6 +15,7 @@ import java.util.ArrayList;
 
 public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAdapter.ViewHolder> {
     private ArrayList<ServiceAccount> ServiceAccount;
+
     public MyRecyclerViewAdapter(ArrayList<ServiceAccount> ServiceAccount) {
         this.ServiceAccount = ServiceAccount;
     }
@@ -23,7 +24,6 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAd
         void onItemClicked(int position);
         void onTitleClicked(int position);
         void onContentClicked(int position);
-
     }
 
     private MyRecyclerViewClickListener mListener;
@@ -32,6 +32,7 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAd
         this.mListener = listener;
     }
 
+    // xml에서 요소를 받아온다.
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -40,6 +41,7 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAd
         return new ViewHolder(view);
     }
 
+    // ServiceAccount에서 받아온 정보로 set
     @Override
     public void onBindViewHolder(@NonNull final ViewHolder holder, int position) {
         ServiceAccount service = ServiceAccount.get(position);

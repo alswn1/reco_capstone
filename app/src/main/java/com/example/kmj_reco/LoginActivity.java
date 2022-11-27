@@ -24,7 +24,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import java.util.Objects;
 
 public class LoginActivity extends AppCompatActivity {
-    private FirebaseAuth mFirebaseAuth;
+    private FirebaseAuth mFirebaseAuth; // 데이터베이스 선언
     private EditText et_id, et_pass;
 
     @Override
@@ -32,18 +32,17 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        mFirebaseAuth = FirebaseAuth.getInstance();
+        mFirebaseAuth = FirebaseAuth.getInstance(); // DB 설정
 
         et_id = findViewById(R.id.et_id);
         et_pass = findViewById(R.id.et_pass);
 
         // 자동 로그인
-        /*
         if (mFirebaseAuth.getCurrentUser() != null) {
             Intent intent = new Intent(LoginActivity.this, Home.class);
             startActivity(intent);
             finish();
-        }*/
+        }
 
         // 회원가입 버튼을 클릭 시 수행
         Button btn_register = (Button) findViewById(R.id.btn_check);
@@ -72,8 +71,10 @@ public class LoginActivity extends AppCompatActivity {
         btn_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                // xml 데이터 받아오기
                 String userID = et_id.getText().toString();
                 Log.v("USERID", userID);
+
                 String userPass = et_pass.getText().toString();
                 Log.v("USERPASS", userPass);
 
@@ -86,19 +87,17 @@ public class LoginActivity extends AppCompatActivity {
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if (Objects.isNull(mFirebaseAuth.getCurrentUser())) {
                                 Toast.makeText(LoginActivity.this, "회원 정보가 없습니다.", Toast.LENGTH_SHORT).show();
-                            }
-                            else if (Objects.requireNonNull(mFirebaseAuth.getCurrentUser()).isEmailVerified()) {
+                            } else if (Objects.requireNonNull(mFirebaseAuth.getCurrentUser()).isEmailVerified()) {
                                 Log.v("Email", "이메일 인증 확인");
                                 if (task.isSuccessful()) {
                                     // 로그인 성공
                                     Intent intent = new Intent(LoginActivity.this, Home.class);
                                     startActivity(intent);
-                                    finish(); // 현재 액티비티 파괴
-
-                                } else {// 로그인 실패
+                                    finish(); // 현재 액티비티 종료
+                                } else { // 로그인 실패
                                     Toast.makeText(LoginActivity.this, "로그인 실패", Toast.LENGTH_SHORT).show();
                                 }
-                            }else{
+                            } else{
                                 Log.v("Email", "이메일 인증 미확인");
                                 Toast.makeText(LoginActivity.this, "이메일 인증을 진행해주세요.", Toast.LENGTH_LONG).show();
                                 sendEmailVerification();
@@ -111,8 +110,8 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
 
+    // 인증 메일 전송
     private void sendEmailVerification() {
-
         AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
         builder.setTitle("로그인 문제").setMessage("인증 메일을 재발송해드릴까요?");
 
@@ -122,9 +121,11 @@ public class LoginActivity extends AppCompatActivity {
 
             }
         });
+
         builder.setPositiveButton("예", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
+                // DB 내 USER 테이블에 있는 사용자와 현재 사용자가 같으면 메일 보냄
                 mFirebaseAuth.getCurrentUser().sendEmailVerification().addOnCompleteListener(task -> {
                     if (task.isSuccessful()) {
                         Toast.makeText(LoginActivity.this, "확인메일을 보냈습니다.", Toast.LENGTH_SHORT).show();
@@ -137,6 +138,5 @@ public class LoginActivity extends AppCompatActivity {
         });
         AlertDialog alertDialog = builder.create();
         alertDialog.show();
-
     }
 }

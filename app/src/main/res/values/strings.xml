@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ImageClassifier</string>
+    <string name="app_name">RECO</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_buy_finish">BuyFinish</string>

@@ -19,16 +19,17 @@ public class RecobinDetail extends FragmentActivity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.recobin_detail);
 
-        // recobin 상세주소
+        // Map Activity에서 recobin 상세주소 받아옴
         String recobin_ad = getIntent().getStringExtra("recobin_fulladdress");
-
         TextView recobin_fulladdress = (TextView) findViewById(R.id.recobin_fulladdress);
-        recobin_fulladdress.setText(recobin_ad);
+        recobin_fulladdress.setText(recobin_ad); // 받아온 데이터 설정 후 보여줌
 
+        // 팝업 레이아웃 설정
         getWindow().getAttributes().gravity = Gravity.BOTTOM;
         getWindow().clearFlags(WindowManager.LayoutParams.FLAG_DIM_BEHIND);
         getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
 
+        // QR 스캔 버튼 터치 시 QR Activity로 이동
         ImageView btn_qr_scan = (ImageView) findViewById(R.id.btn_qr_scan);
         btn_qr_scan.setOnClickListener(new View.OnClickListener() {
             @Override

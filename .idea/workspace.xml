@@ -12,33 +12,121 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0caea0a-cf73-4b43-b70c-f6e07e9a8a03" name="Changes" comment="최종본-주석 X">
+    <list default="true" id="e0caea0a-cf73-4b43-b70c-f6e07e9a8a03" name="Changes" comment="최종본-주석 민주">
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/jarAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/debug.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/debug.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/classes.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex_archive_input_jar_hashes/debug/out" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex_archive_input_jar_hashes/debug/out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/androidResources" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/androidResources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/kmj_reco/CameraActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/kmj_reco/CameraActivity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/kmj_reco/CameraSuccess.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/kmj_reco/CameraSuccess.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/out/resources-debug.ap_" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/out/resources-debug.ap_" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/kmj_reco/CameraActivity.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/kmj_reco/CameraActivity.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/kmj_reco/CameraSuccess.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/kmj_reco/CameraSuccess.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_activity_camera.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_activity_camera.xml.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_activity_camera_success.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_activity_camera_success.xml.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_title_bar.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_title_bar.xml.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values_values.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values_values.arsc.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/runtime_symbol_list/debug/R.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/runtime_symbol_list/debug/R.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/AddressDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/AddressDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/AdminHome.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/AdminHome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/AdminLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/AdminLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/Alert.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/Alert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/BuyCoupon.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/BuyCoupon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/BuyFinish.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/BuyFinish.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/CameraActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/CameraActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/CameraSuccess.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/CameraSuccess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/Coupon.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/Coupon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/CouponAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/CouponAdmin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/CouponAdminDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/CouponAdminDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/CouponAdminDetail2.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/CouponAdminDetail2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/CouponAdminDetail2Edit.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/CouponAdminDetail2Edit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/CouponAdminDetail2Plus.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/CouponAdminDetail2Plus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/CouponAdminDetailPlus.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/CouponAdminDetailPlus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/CouponDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/CouponDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/CouponHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/CouponHistory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/CouponHistoryDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/CouponHistoryDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/DTO/ALERT.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/DTO/ALERT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/DTO/GIFTICONADST.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/DTO/GIFTICONADST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/DTO/GIFTICONDATA.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/DTO/GIFTICONDATA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/DTO/NOTICE.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/DTO/NOTICE.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/DTO/QUIZ.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/DTO/QUIZ.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/DTO/RECOBIN.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/DTO/RECOBIN.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/DTO/TRASHCAN.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/DTO/TRASHCAN.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/DTO/USER.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/DTO/USER.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/DTO/USER_GIFTICON.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/DTO/USER_GIFTICON.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/DTO/USER_SETTING.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/DTO/USER_SETTING.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/DeleteAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/DeleteAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/DeleteAccountFinish.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/DeleteAccountFinish.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/Event.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/Home.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/InformationActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/InformationActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/LoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/LoginActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/LoginAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/LoginAdmin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/Map.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/NoticeAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/NoticeAdmin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/MyPageActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/MyPageActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/Notice.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/Notice.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/NoticeDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/NoticeDetail.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/QrActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/QrActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/QuizAnswer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/QuizAnswer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/QuizFail.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/QuizFail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/QuizMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/QuizMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/QuizSuccess.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/QuizSuccess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/RecobinAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/RecobinAdmin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/RecobinAdminAdd.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/RecobinAdminAdd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/RecobinAdminEdit.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/RecobinAdminEdit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/RecobinDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/RecobinDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/RegisterActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/RegisterActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/ServiceAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/ServiceAdmin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/ServiceAdminDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/ServiceAdminDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/ServiceCenterActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/ServiceCenterActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/ServiceDetailActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/ServiceDetailActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_information.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_information.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/ServiceHistoryActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/ServiceHistoryActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/Settings.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/Settings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/utils/GifticonAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/utils/GifticonAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/utils/GifticonAdminAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/utils/GifticonAdminAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/utils/GifticonAdminDetailAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/utils/GifticonAdminDetailAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/utils/GifticonHistoryAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/utils/GifticonHistoryAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/utils/LoginAdminAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/utils/LoginAdminAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/utils/MyRecyclerViewAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/utils/MyRecyclerViewAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/utils/NoticeAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/utils/NoticeAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/utils/NoticeAdapter2.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/utils/NoticeAdapter2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/utils/PushAlarm.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/utils/PushAlarm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/utils/RecobinAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/utils/RecobinAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/utils/ServiceAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/utils/ServiceAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/utils/ServiceAdminAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/kmj_reco/utils/ServiceAdminAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_camera.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_camera.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_coupon_admin_detail_plus.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_coupon_admin_detail_plus.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_coupon_history_detail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_coupon_history_detail.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_qr.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_qr.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_service_admin_detail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_service_admin_detail.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_service_center.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_service_center.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_service_detail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_service_detail.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_service_history.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_service_history.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/intro.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/intro.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_gifticon.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_gifticon.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +167,9 @@
       </list>
     </option>
   </component>
+  <component name="GenerateSignedApkSettings">
+    <option name="BUILD_TARGET_KEY" value="apk" />
+  </component>
   <component name="Git.Settings">
     <favorite-branches>
       <branch-storage>
@@ -112,6 +203,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ApkExportedModule" value="kmj-reco.app" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
@@ -126,6 +218,9 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.kmj_reco" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\res\layout" />
       <recent name="C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\java\com\example\kmj_reco\DTO" />
@@ -137,11 +232,11 @@
       <recent name="com.example.kmj_reco" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\AndroidProjects\RECO\kmj_reco\app\src\main\res\drawable-v24" />
       <recent name="C:\AndroidProjects\RECO\kmj_reco\app\src\main\res\drawable" />
       <recent name="C:\AndroidProjects\RECO\kmj_reco\app\src\main\res\layout" />
       <recent name="C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\res\drawable" />
       <recent name="C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\res\layout" />
-      <recent name="C:\AndroidProjects\RECO_admin\kmj_reco\app\src\main\java\com\example\kmj_reco" />
     </key>
     <key name="android.template.598995382">
       <recent name="com.example.kmj_reco" />
@@ -383,7 +478,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668831709102</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="최종본-주석 민주">
+      <created>1668834284496</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1668834284496</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -430,6 +532,7 @@
     <MESSAGE value="고객센터 어드민 및 답변 보이기" />
     <MESSAGE value="고객센터 어드민 수정" />
     <MESSAGE value="최종본-주석 X" />
-    <option name="LAST_COMMIT_MESSAGE" value="최종본-주석 X" />
+    <MESSAGE value="최종본-주석 민주" />
+    <option name="LAST_COMMIT_MESSAGE" value="최종본-주석 민주" />
   </component>
 </project>

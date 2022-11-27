@@ -25,8 +25,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Notice extends AppCompatActivity {
+    // 데이터베이스 선언
     FirebaseDatabase database;
     DatabaseReference reference;
+
     ListView notice2ListView;
 
     static List<NOTICE> noticeList = new ArrayList<>();
@@ -38,6 +40,7 @@ public class Notice extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notice);
 
+        // 설정 버튼 터치 시 설정 화면으로 이동
         ImageView btn_settings = (ImageView) findViewById(R.id.btn_settings);
         btn_settings.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,6 +50,7 @@ public class Notice extends AppCompatActivity {
             }
         });
 
+        // 뒤로가기 버튼 터치 시 마이 페이지 화면으로 이동
         ImageButton btn_back = (ImageButton) findViewById(R.id.btn_back);
         btn_back.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,6 +60,7 @@ public class Notice extends AppCompatActivity {
             }
         });
 
+        // 이벤트 버튼 터치 시 이벤트 화면으로 이동
         ImageButton btn_event = (ImageButton) findViewById(R.id.btn_event);
         btn_event.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -65,19 +70,24 @@ public class Notice extends AppCompatActivity {
             }
         });
 
+        // DB 설정
         database = FirebaseDatabase.getInstance();
         reference = database.getReference();
 
+        // DB 내 NOTICE 테이블에서 데이터 불러오기
         reference.child("NOTICE").limitToLast(20).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                noticeList.clear();
-                count = (int) snapshot.getChildrenCount();
+                noticeList.clear(); // 공지 리스트 초기화
+
+                count = (int) snapshot.getChildrenCount(); // 테이블 내 데이터 수
 
                 for(DataSnapshot data : snapshot.getChildren()){
                     NOTICE notice = data.getValue(NOTICE.class);
                     noticeList.add(0, notice);
                 }
+
+                // 어댑터에서 데이터 불러오기
                 final NoticeAdapter2 noticeAdapter2 = new NoticeAdapter2(getApplicationContext(),R.layout.item_notice2, noticeList, notice2ListView);
                 notice2ListView.setAdapter(noticeAdapter2);
             }
@@ -97,6 +107,7 @@ public class Notice extends AppCompatActivity {
         notice2ListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position2, long l) {
+                // 공지 데이터 전송 및 이동
                 NOTICE selectedNotice = (NOTICE) notice2ListView.getItemAtPosition(count - position2 - 1);
                 Intent showDetail = new Intent(getApplicationContext(), NoticeDetail.class);
                 showDetail.putExtra("num", selectedNotice.getNotice_num());

@@ -38,10 +38,12 @@ public class NoticeDetail extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notice_detail);
+
+        // 공지 화면에서 데이터 받아오기
         Intent intent = getIntent();
         int num = intent.getIntExtra("num", 0);
 
-        // 설정 버튼 클릭 이벤트
+        // 설정 버튼 터치 시 설정 화면으로 이동
         ImageView btn_settings = (ImageView) findViewById(R.id.btn_settings);
         btn_settings.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,7 +54,7 @@ public class NoticeDetail extends AppCompatActivity {
             }
         });
 
-        // 뒤로가기 버튼 클릭 이벤트
+        // 뒤로가기 버튼 터치 시 뒤로가기 화면으로 이동
         ImageButton btn_back = (ImageButton) findViewById(R.id.btn_back);
         btn_back.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -63,14 +65,15 @@ public class NoticeDetail extends AppCompatActivity {
             }
         });
 
+        // DB 내 NOTICE 데이터 불러오기
         DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference();
         databaseReference.child("NOTICE").addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 for (DataSnapshot data: snapshot.getChildren()){
                     NOTICE notice = data.getValue(NOTICE.class);
-                    if(notice.getNotice_num()==num){
-                        noticeList.add(notice);}
+
+                    if(notice.getNotice_num() == num){ noticeList.add(notice);} // 테이블과 리스트의 데이터가 일치할 경우 불러옴
                 }
             }
             @Override
@@ -81,11 +84,13 @@ public class NoticeDetail extends AppCompatActivity {
         setValues();
     }
 
+    // 데이터 설정
     private void setValues(){
         TextView notice_date = findViewById(R.id.notice_date);
         TextView notice_title = findViewById(R.id.notice_title);
         TextView notice_detail = findViewById(R.id.notice_detail);
 
+        // 공지 화면에서 데이터 받아와 설정
         Intent intent = getIntent();
 
         String date = intent.getStringExtra("date");

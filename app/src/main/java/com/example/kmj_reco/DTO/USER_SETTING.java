@@ -1,9 +1,9 @@
 package com.example.kmj_reco.DTO;
 
 public class USER_SETTING{
-	private String user_num;
-	private int locationagree=0;
-	private int pushalarm=1;
+	private String user_num; // 사용자 식별번호
+	private int locationagree=0; // 위치정보허용설정
+	private int pushalarm=1; // 푸시알림 설정
 
 	public void setUser_num(String user_num){
 		this.user_num = user_num;

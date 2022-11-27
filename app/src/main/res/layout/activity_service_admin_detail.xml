@@ -85,11 +85,10 @@
         android:layout_width="80dp"
         android:layout_height="30dp"
         android:layout_marginTop="96dp"
+        android:layout_marginEnd="55dp"
         android:hint="작성일"
         android:textColor="#444444"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.758"
-        app:layout_constraintStart_toEndOf="@+id/et_publisher"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView

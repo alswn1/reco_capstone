@@ -1,14 +1,14 @@
 package com.example.kmj_reco.DTO;
 
 public class USER {
-    private String idToken; //Firebase Uid (고유 토큰 정보)
-    private String user_name; //이름
-    private String user_birth; //생일
-    private String user_id; //아이디
-    private String user_pwd; //패스워드
-    private String user_phone; //전화번호
-    private String user_email; //이메일
-    private int user_point;
+    private String idToken; // Firebase Uid (고유 토큰 정보)
+    private String user_name; // 이름
+    private String user_birth; // 생일
+    private String user_id; // 아이디
+    private String user_pwd; // 패스워드
+    private String user_phone; // 전화번호
+    private String user_email; // 이메일
+    private int user_point; // 현재 가진 포인트
 
     public USER() {}
 
@@ -86,6 +86,4 @@ public class USER {
     public void setUser_point(int user_point) {
         this.user_point = user_point;
     }
-
-
 }

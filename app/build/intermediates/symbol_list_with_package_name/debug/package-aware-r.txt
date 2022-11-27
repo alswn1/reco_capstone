@@ -1804,6 +1804,8 @@ drawable bananamilk
 drawable base
 drawable base_home
 drawable border
+drawable btn_1
+drawable btn_2
 drawable btn_admin_recobin
 drawable btn_back
 drawable btn_checkbox_checked_mtrl
@@ -1831,6 +1833,7 @@ drawable check
 drawable check2
 drawable coffie
 drawable coin
+drawable coin2
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -1856,6 +1859,13 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable ellipse_26
+drawable frame_loading
+drawable frame_loading_01
+drawable frame_loading_02
+drawable frame_loading_03
+drawable frame_loading_04
+drawable frame_loading_05
+drawable frame_loading_06
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_clock_black_24dp
@@ -1866,6 +1876,7 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable logo
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
@@ -1906,9 +1917,12 @@ drawable notify_panel_notification_icon_bg
 drawable personal1
 drawable phone
 drawable plant
+drawable plant2
 drawable point
 drawable qr
 drawable quiz_answer
+drawable quiz_answer_bg
+drawable quiz_bg
 drawable radius
 drawable reco
 drawable recobin_add_line
@@ -2020,6 +2034,8 @@ id autoCompleteToStart
 id backHome
 id barrier
 id base
+id base2
+id base5
 id baseline
 id beginOnFirstDraw
 id beginning
@@ -2205,7 +2221,6 @@ id gifticonImage2
 id gifticonName
 id gifticonPrice
 id gifticonStock
-id gifticonStodk
 id gifticon_Brand_edit
 id gifticon_Detail_edit
 id gifticon_Name_edit
@@ -2254,6 +2269,7 @@ id imageView13
 id imageView14
 id imageView15
 id imageView16
+id imageView17
 id imageView18
 id imageView19
 id imageView2
@@ -2261,8 +2277,15 @@ id imageView20
 id imageView21
 id imageView22
 id imageView23
+id imageView24
 id imageView25
+id imageView26
+id imageView27
+id imageView28
+id imageView29
 id imageView3
+id imageView30
+id imageView31
 id imageView4
 id imageView5
 id imageView6
@@ -2274,6 +2297,7 @@ id invisible
 id inward
 id italic
 id item_touch_helper_previous_elevation
+id iv_frame_loading
 id jumpToEnd
 id jumpToStart
 id labeled
@@ -2287,6 +2311,7 @@ id linear
 id linearLayout
 id listMode
 id list_item
+id loading_frame_container
 id login
 id login2
 id loginAdminListView
@@ -2403,7 +2428,6 @@ id quiz_question
 id radio
 id ratio
 id reco_plant
-id reco_plant2
 id recobin_address
 id recobin_fulladdress
 id recobin_index
@@ -2578,7 +2602,9 @@ id textView62
 id textView63
 id textView64
 id textView65
+id textView66
 id textView7
+id textView70
 id textView8
 id textView9
 id text_input_end_icon
@@ -2609,6 +2635,7 @@ id transition_scene_layoutid_cache
 id transition_transform
 id trashcan_fulladdress
 id triangle
+id tv_progress_message
 id txt
 id txt_contents
 id txt_date
@@ -2844,6 +2871,7 @@ layout notification_template_media
 layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout progress_loading
 layout quiz_answer
 layout quiz_fail
 layout quiz_item

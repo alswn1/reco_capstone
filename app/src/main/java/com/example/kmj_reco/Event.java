@@ -25,13 +25,17 @@ public class Event extends AppCompatActivity {
         super.onCreate(saveInstanceState);
         setContentView(R.layout.event);
 
-        load=(ImageView)findViewById(R.id.event_img);
+        load = (ImageView) findViewById(R.id.event_img);
+
+        // FirebaseStorage 경로 선언
         FirebaseStorage storage = FirebaseStorage.getInstance();
         StorageReference storageReference = storage.getReference();
-        StorageReference pathReference = storageReference.child("EVENT");
-        if (pathReference == null) {
+        StorageReference pathReference = storageReference.child("EVENT"); // 스토리지 내 EVENT 폴더에서 이미지 받아오기
+
+        if (pathReference == null) { // 이미지가 없는 경우
             Toast.makeText(Event.this, "The file don't exist" ,Toast.LENGTH_SHORT).show();
-        } else {
+        } else { // 이미지가 있을 경우
+            // 지정한 이미지를 Glide로 이미지 불러오기
             StorageReference submitProfile = storageReference.child("EVENT/event_2.png");
             submitProfile.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
                 @Override
@@ -47,6 +51,7 @@ public class Event extends AppCompatActivity {
             });
         }
 
+        // 홈 버튼 터치 시 홈 화면으로 이동
         ImageView btn_home = (ImageView) findViewById(R.id.btn_home);
         btn_home.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,24 +61,27 @@ public class Event extends AppCompatActivity {
             }
         });
 
+        // 설정 버튼 터치 시 설정 화면으로 이동
         ImageView btn_settings = (ImageView) findViewById(R.id.btn_settings);
         btn_settings.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View view) {
-        Intent intent = new Intent(getApplicationContext(), Settings.class);
-        startActivity(intent);
-        }
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), Settings.class);
+                startActivity(intent);
+            }
         });
 
+        // 알림 버튼 터치 시 알림 화면으로 이동
         ImageView btn_alert = (ImageView) findViewById(R.id.btn_alert);
         btn_alert.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View view) {
-        Intent intent = new Intent(getApplicationContext(), Alert.class);
-        startActivity(intent);
-        }
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), Alert.class);
+                startActivity(intent);
+            }
         });
 
+        // 뒤로가기 버튼 터치 시 공지 화면으로 이동
         ImageButton btn_back = (ImageButton) findViewById(R.id.btn_back);
         btn_back.setOnClickListener(new View.OnClickListener() {
             @Override

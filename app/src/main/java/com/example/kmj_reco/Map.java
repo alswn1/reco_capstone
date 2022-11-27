@@ -55,12 +55,12 @@ public class Map extends AppCompatActivity implements OnMapReadyCallback {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_map);
 
-        checkDangerousPermissions();
+        checkDangerousPermissions(); // 권한 설정 체크 함수 불러오기
 
         editText = findViewById(R.id.editText);
         btn_search = findViewById(R.id.btn_search);
 
-        // RECO 글씨 클릭 이벤트
+        // 홈 버튼 클릭 이벤트
         ImageView btn_home = (ImageView) findViewById(R.id.btn_home);
         btn_home.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -71,7 +71,7 @@ public class Map extends AppCompatActivity implements OnMapReadyCallback {
             }
         });
 
-        // 톱니바퀴 버튼 클릭 이벤트
+        // 설정 버튼 클릭 이벤트
         ImageView btn_settings = (ImageView) findViewById(R.id.btn_settings);
         btn_settings.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -82,7 +82,7 @@ public class Map extends AppCompatActivity implements OnMapReadyCallback {
             }
         });
 
-        // 종 버튼 클릭 이벤트
+        // 알림 버튼 클릭 이벤트
         ImageView btn_alert = (ImageView) findViewById(R.id.btn_alert);
         btn_alert.setOnClickListener(new View.OnClickListener() {
             @Override

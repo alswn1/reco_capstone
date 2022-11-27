@@ -12,8 +12,6 @@
         android:layout_width="match_parent"
         android:layout_height="71dp" />
 
-
-
     <ScrollView
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -26,7 +24,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-
 
             <ImageButton
                 android:id="@+id/btn_back"
@@ -43,15 +40,12 @@
                 android:id="@+id/gifticonImage"
                 android:layout_width="333dp"
                 android:layout_height="615dp"
-                android:layout_below="@+id/title_bar"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="50dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/title_bar"
+                app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="?attr/listChoiceBackgroundIndicator"
                 tools:srcCompat="@tools:sample/avatars" />
-
 
             <TextView
                 android:id="@+id/gifticonBrand"

@@ -1,18 +1,17 @@
 package com.example.kmj_reco.DTO;
 
 public class TRASHCAN {
-        public int trash_num;
-        public String trashcan_roadname;
-        public String trashcan_address;
-        public String trashcan_locate;
-        public String trashcan_fulladdress;
-        public int Latitude;
-        public int Longitude;
-        public int star_score;
+        public int trash_num; // trashcan Index
+        public String trashcan_roadname; // 도로명
+        public String trashcan_address; // 주소
+        public String trashcan_locate; // 위치
+        public String trashcan_fulladdress; // 상세주소
+        public int Latitude; // 위도
+        public int Longitude; // 경도
 
         public TRASHCAN() {}
 
-        public TRASHCAN(int trash_num, String trashcan_roadname, String trashcan_address, String trashcan_locate, int Latitude,  int Longitude,String trashcan_fulladdress, int star_score) {
+        public TRASHCAN(int trash_num, String trashcan_roadname, String trashcan_address, String trashcan_locate, int Latitude,  int Longitude,String trashcan_fulladdress) {
             this.trash_num = trash_num;
             this.trashcan_roadname = trashcan_roadname;
             this.trashcan_address = trashcan_address;
@@ -20,7 +19,6 @@ public class TRASHCAN {
             this.trashcan_fulladdress = trashcan_fulladdress;
             this.Latitude = Latitude;
             this.Longitude = Longitude;
-            this.star_score = star_score;
         }
 
         public int getTrash_num() {
@@ -60,13 +58,6 @@ public class TRASHCAN {
     }
         public void setLongitude(int Longitude) { this.Longitude = Longitude; }
 
-        public int getStar_score() {
-            return star_score;
-        }
-        public void setStar_score(int star_score) {
-            this.star_score = star_score;
-        }
-
         @Override
         public String toString() {
             return "TRASHCAN{" +
@@ -77,7 +68,6 @@ public class TRASHCAN {
                     ", trashcan_fulladdress" + trashcan_fulladdress + '\'' +
                     ", Latitude" + Latitude + '\'' +
                     ", Longitude" + Longitude + '\'' +
-                    ", star_score=" + star_score +
                     '}';
         }
 }

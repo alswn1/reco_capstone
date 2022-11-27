@@ -31,9 +31,12 @@ public class RecobinAdapter extends ArrayAdapter<RECOBIN> {
     private Context context;
     private List recobinList;
     private ListView recobinListView;
+
+    // 데이터베이스 선언
     private FirebaseDatabase database;
     private DatabaseReference databaseReference;
 
+    // xml에서 받아올 변수 담은 클래스 정의
     class ViewHolder {
         private TextView recobin_num;
         private TextView recobin_roadname;
@@ -44,12 +47,14 @@ public class RecobinAdapter extends ArrayAdapter<RECOBIN> {
         private TextView recobin_longitude;
     }
 
+    // Adapter content
     public RecobinAdapter(Context context, int resource, List<RECOBIN>recobinList, ListView recobinListView){
         super(context,resource,recobinList);
         this.context = context;
         this.recobinList=recobinList;
         this.recobinListView=recobinListView;
     }
+
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
@@ -57,9 +62,12 @@ public class RecobinAdapter extends ArrayAdapter<RECOBIN> {
         String Status;
         View mView = convertView;
 
+        // 뷰를 받아오지 않았을 경우
+        // xml에서 요소를 받아온다.
         if (mView == null) {
             mView = LayoutInflater.from(getContext()).inflate(R.layout.item_recobin_admin, parent, false);
 
+            // 뷰 변수 선언
             viewHolder = new ViewHolder();
             viewHolder.recobin_num = (TextView) mView.findViewById(R.id.recobin_index);
             viewHolder.recobin_fulladdress = (TextView) mView.findViewById(R.id.recobin_fulladdress);
@@ -72,23 +80,28 @@ public class RecobinAdapter extends ArrayAdapter<RECOBIN> {
 
             Status = "reused";
         }
-        RECOBIN recobin = (RECOBIN) recobinList.get(position);
 
+        RECOBIN recobin = (RECOBIN) recobinList.get(position); // 리스트에 추가될 레코빈 개별 정보 받아오기
+
+        // 뷰 데이터 설정
         viewHolder.recobin_num.setText("" + recobin.getRecobin_num());
         viewHolder.recobin_fulladdress.setText("" + recobin.getRecobin_fulladdress());
 
+        // DB 에서 RECOBIN 데이터 가져오기
         ImageButton btn_recobin_delete = (ImageButton) mView.findViewById(R.id.btn_recobin_delete);
         btn_recobin_delete.setFocusable(false);
         btn_recobin_delete.setClickable(false);
         View finalMView = mView;
-        databaseReference = FirebaseDatabase.getInstance().getReference();
+        databaseReference = FirebaseDatabase.getInstance().getReference(); // DB 설정
         databaseReference.child("RECOBIN").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 for (DataSnapshot data : snapshot.getChildren()){
                     RECOBIN recoBin = data.getValue(RECOBIN.class);
-                    if(recobin.getRecobin_num() == recoBin.getRecobin_num()){}
 
+                    if(recobin.getRecobin_num() == recoBin.getRecobin_num()){}  // DB와 리스트의 데이터가 같을 경우만 불러옴
+
+                    // 버튼 터치 시 레코빈 삭제
                     btn_recobin_delete.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
@@ -97,6 +110,7 @@ public class RecobinAdapter extends ArrayAdapter<RECOBIN> {
                             builder.setPositiveButton("예", new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialogInterface, int i) {
+                                    // DB 내 RECOBIN에서 레코빈 INDEX 받아와 삭제
                                     databaseReference.child("RECOBIN").child(String.valueOf(recobin.getRecobin_num())).removeValue();
                                     Toast.makeText(context, recobin.getRecobin_num()+"번째 레코빈 삭제 완료",Toast.LENGTH_SHORT).show();
                                 }
@@ -107,6 +121,7 @@ public class RecobinAdapter extends ArrayAdapter<RECOBIN> {
 
                                 }
                             });
+                            // 팝업 생성 및 show
                             AlertDialog alertDialog = builder.create();
                             alertDialog.show();
                         }
@@ -117,14 +132,14 @@ public class RecobinAdapter extends ArrayAdapter<RECOBIN> {
             public void onCancelled(@NonNull DatabaseError error) {}
         });
 
+        // 수정 버튼 터치 시 레코빈 정보 수정 화면으로 이동
         ImageButton btn_recobin_admin_detail = (ImageButton) mView.findViewById(R.id.btn_recobin_admin_detail);
         btn_recobin_admin_detail.setFocusable(false);
         btn_recobin_admin_detail.setClickable(false);
-
         btn_recobin_admin_detail.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // 수정하러 가기
+                // 레코빈 정보 수정 화면에 데이터 전송 및 이동
                 Intent intent = new Intent(context, RecobinAdminEdit.class);
                 intent.addFlags(intent.FLAG_ACTIVITY_NEW_TASK);
                 intent.putExtra("num", recobin.getRecobin_num());

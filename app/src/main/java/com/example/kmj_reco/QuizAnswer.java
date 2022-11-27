@@ -15,19 +15,17 @@ public class QuizAnswer extends Activity {
         super.onCreate(saveInstanceState);
         setContentView(R.layout.quiz_answer);
 
-        // 퀴즈 정답 O or X
+        // 전 화면에서 퀴즈 정답 받아오기
         String quizAnswer = getIntent().getStringExtra("quiz_answer");
-
         TextView quiz_answer = (TextView) findViewById(R.id.quiz_answer);
-        quiz_answer.setText(quizAnswer);
+        quiz_answer.setText(quizAnswer); // 받아온 데이터로 설정
 
-        // 퀴즈 정답 설명
+        // 전 화면에서 퀴즈 정답 설명 받아오기
         String quizAnswerContent = getIntent().getStringExtra("quiz_answer_content");
-
         TextView quiz_answer_content = (TextView) findViewById(R.id.quiz_answer_content);
         quiz_answer_content.setText(quizAnswerContent);
 
-        // 각 버튼 클릭 시 화면 이동
+        // 홈 버튼 터치 시 홈 화면으로 이동
         ImageView btn_home = (ImageView) findViewById(R.id.btn_home);
         btn_home.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -37,6 +35,7 @@ public class QuizAnswer extends Activity {
             }
         });
 
+        // 설정 버튼 터치 시 설정 화면으로 이동
         ImageView btn_settings = (ImageView) findViewById(R.id.btn_settings);
         btn_settings.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,6 +45,7 @@ public class QuizAnswer extends Activity {
             }
         });
 
+        // 알림 버튼 터치 시 알림 화면으로 이동
         ImageView btn_alert = (ImageView) findViewById(R.id.btn_alert);
         btn_alert.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,6 +55,7 @@ public class QuizAnswer extends Activity {
             }
         });
 
+        // 확인 버튼 터치 시 알림 화면으로 이동
         Button btn_quiz_answer_check = (Button) findViewById(R.id.btn_quiz_answer_check);
         btn_quiz_answer_check.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -1,13 +1,13 @@
 package com.example.kmj_reco.DTO;
 
 public class GIFTICONDATA {
-    private int gifticon_Num = 0;
-    private String gifticon_Type = "";
-    private String gifticon_Name = "";
-    private int gifticon_Price=0;
-    private String gifticon_Image="";
-    private String gifticon_Detail="";
-    private String gifticon_Brand="";
+    private int gifticon_Num = 0; // 기프티콘 식별번호
+    private String gifticon_Type = ""; // 기프티콘 물품 종류
+    private String gifticon_Name = ""; // 기프티콘 이름
+    private int gifticon_Price = 0; // 기프티콘 가격
+    private String gifticon_Image = ""; // 기프티콘 이미지 url
+    private String gifticon_Detail = ""; // 기프티콘 설명
+    private String gifticon_Brand = ""; // 기프티콘 브랜드
 
     public void setgifticon_Image(String gifticon_Image){
         this.gifticon_Image = gifticon_Image;
@@ -68,20 +68,20 @@ public class GIFTICONDATA {
     public GIFTICONDATA(int gifticon_Price, String gifticon_Detail, int gifticon_Num,String gifticon_Image, String gifticon_Name, String gifticon_Type, String gifticon_Brand){
         this.gifticon_Num = gifticon_Num;
         this.gifticon_Image = gifticon_Image;
-        this.gifticon_Price=gifticon_Price;
-        this.gifticon_Name=gifticon_Name;
-        this.gifticon_Brand=gifticon_Brand;
-        this.gifticon_Type=gifticon_Type;
-        this.gifticon_Detail=gifticon_Detail;
+        this.gifticon_Price = gifticon_Price;
+        this.gifticon_Name = gifticon_Name;
+        this.gifticon_Brand = gifticon_Brand;
+        this.gifticon_Type = gifticon_Type;
+        this.gifticon_Detail = gifticon_Detail;
     }
 
     public static int lastNum(java.util.List<GIFTICONDATA> gifticondataList){
-            int k=0;
-            int i;
-            for(GIFTICONDATA data:gifticondataList){
-                i = data.getgifticon_Num();
-                if (k<=i) {k=i;}
-            }
-            return k;
+        int k=0;
+        int i;
+        for(GIFTICONDATA data:gifticondataList){
+            i = data.getgifticon_Num();
+            if (k<=i) {k=i;}
+        }
+        return k;
     }
 }

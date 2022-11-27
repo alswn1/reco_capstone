@@ -1,9 +1,9 @@
 package com.example.kmj_reco.DTO;
 
 public class USER_GIFTICON{
-	private String user_num;
-	private int user_gifticon_Num;
-	private int gifticon_ad_num;
+	private String user_num; // 사용자 식별번호
+	private int user_gifticon_Num; // 사용자가 구매한 기프티콘 식별번호
+	private int gifticon_ad_num; // 기프티콘 바코드 식별번호
 
 	public void setuser_num(String user_num){
 		this.user_num = user_num;

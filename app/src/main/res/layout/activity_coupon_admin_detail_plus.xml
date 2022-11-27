@@ -144,16 +144,16 @@
 
     <TextView
         android:id="@+id/emptyalert"
-        android:layout_width="wrap_content"
-        android:layout_height="28dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="143dp"
+        android:layout_height="40dp"
         android:gravity="center|center_horizontal|center_vertical"
         android:text="재고없음"
         android:textColor="#ff2222"
         android:textStyle="bold"
         android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title_bar" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView16" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
